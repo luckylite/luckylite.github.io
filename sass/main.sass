@@ -134,6 +134,42 @@ a.button
 			color: $accent
 			border-color: $accent
 
+.nav-sandwich_content
+	position: fixed
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	display: none
+	background-color: rgba(26,26,26,0.8)
+	z-index: 999
+	.nav-sandwich_menu
+		height: 100vh
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		ul
+			li
+				width: 800px
+				padding: 20px
+				text-align: center
+				&.sandwich-close
+					margin-bottom: 50px
+					cursor: pointer
+				&:hover
+					background-color: rgba(26,26,26,0.4)
+				img
+					width: 50px
+					height: 50px
+				a
+					color: #fff
+					text-decoration: none
+					font-size: 20px
+
 .header
 	height: 100vh
 	background-position: center center
@@ -154,7 +190,28 @@ a.button
 		display: flex
 		justify-content: space-between
 	.logotype
-		line-height: 120px
+		line-height: 100px
+		a
+			text-decoration: none
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			img
+				margin-top: 15px
+				margin-right: 15px
+				width: 70px
+				height: 60px
+				fill: red
+			p
+				font-family: $logo-font
+				font-size: 22px
+				text-transform: uppercase
+				color: #fff
+				letter-spacing: 1.1px
+				span
+					color: $accent
 	.nav
 		line-height: 100px
 		a
@@ -168,6 +225,13 @@ a.button
 				color: $accent
 			i
 				margin-right: 10px
+	.nav-sandwich
+		display: none
+		cursor: pointer
+		img
+			margin-top: 32px
+			width: 40px
+			height: 40px
 
 .main-head
 	width: 100%
@@ -270,6 +334,7 @@ a.button
 		justify-content: space-around
 		position: relative
 		z-index: 10
+		flex-wrap: wrap
 		.reviews_item
 			flex-basis: 50%
 			text-align: center
@@ -277,7 +342,7 @@ a.button
 			.review-text
 				margin-bottom: 60px
 				p
-					width: 400px
+					width: 80%
 					margin: 0 auto
 					color: #fff
 			.review-author
@@ -344,6 +409,7 @@ a.button
 		.receiving_item
 			text-align: center
 			flex-basis: 33.3%
+			position: relative
 			.receiving-number
 				margin-bottom: 35px
 				.number
@@ -359,11 +425,26 @@ a.button
 				h3
 					text-transform: none
 					letter-spacing: 0.5px
+		.line_left
+			width: calc(100% - 90px)
+			height: 1px
+			background-color: $accent
+			top: 25px
+			left: calc(50% + 45px)
+			position: absolute
+		.line_right
+			width: calc(100% - 90px)
+			height: 1px
+			background-color: $accent
+			top: 25px
+			right: calc(50% + 45px)
+			position: absolute
 
 .footer
 	height: 100px
 	background-color: #f7f7f7
-	.footer_container
+	.footer_container	
+		padding: 0 15px
 		height: 100px
 		display: -webkit-flex
 		display: -moz-flex
