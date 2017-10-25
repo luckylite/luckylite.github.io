@@ -1,3 +1,5 @@
+@import "_vars"
+
 @media screen and (max-width: 1300px)
 	.container
 		width: 850px
@@ -10,6 +12,10 @@
 	.slick-dots
 		bottom: 200px !important
 
+@media screen and (max-height: 850px)
+	.menu-start_progect-top
+		border-bottom: none !important
+
 @media screen and (max-width: 1170px)
 	.container
 		width: 770px
@@ -21,6 +27,46 @@
 @media screen and (max-width: 1030px)
 	.container
 		width: 660px
+	.menu-exit-second
+		display: block !important
+	.menu-start_progect
+		width: 100% !important
+		height: auto !important
+		color: #000 !important
+		font-size: 16px
+		h2
+			margin-bottom: 30px
+		label
+			font-family: $medium-font
+		input
+			width: 320px
+			padding: 15px
+			margin-bottom: 15px
+			margin-top: 20px
+			background: none
+			color: #000 !important
+			border: 1px solid #000 !important
+		.menu-start_progect-top
+			height: 40%
+			margin: 50px
+			border-bottom: 1px solid #787a7a
+			padding-bottom: 30px
+		.menu-start_progect-bottom
+			height: 60%
+			padding: 0 50px 50px 50px
+	.menu-main_content
+		.menu-block
+			width: 100% !important
+			height: 33.3vh !important
+			background-color: $accent !important
+			&:nth-child(even)
+				background-color: #fff !important
+			&:nth-child(even) a
+				color: #000
+			&:last-child
+				border-bottom: 1px solid #000 !important
+	.left-side_bar
+		display: none !important
 
 @media screen and (max-height: 650px)
 	body
@@ -35,6 +81,16 @@
 @media screen and (max-width: 920px)
 	.container
 		width: 550px
+
+@media screen and (max-width: 680px)
+	.popap-start_progect
+		width: 400px !important
+		input
+			width: 100% !important
+		textarea
+			width: 100% !important
+	.popap-content
+		padding-top: 0 !important
 
 @media screen and (max-height: 600px)
 	.slick-dots
@@ -105,6 +161,18 @@
 		a.button-lite
 			button
 				margin-left: 33% !important
+	.menu-start_progect
+		width: 100% !important
+		height: auto !important
+		color: #000 !important
+		font-size: 16px
+		h2
+			margin-bottom: 30px
+		label
+			font-family: $medium-font
+		input
+			width: 100% !important
+
 
 @media screen and (max-width: 380px)
 	h1

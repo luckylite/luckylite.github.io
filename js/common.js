@@ -27,6 +27,10 @@ $(document).ready(function() {
 		$('.menu-content').fadeOut();
 	});
 
+	$('.menu-exit-second').click(function() {
+		$('.menu-content').fadeOut();
+	});
+
 	$('#name_m').keyup(function() {
 		var name_m_val = $('#name_m').val();
 		if (name_m_val.length >= 5) {
