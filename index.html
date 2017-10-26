@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Start Gulp</title>
+	<title>Round Lab</title>
 
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -20,9 +20,10 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="libs/reset-css/reset.css">
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css">
+	<link rel="stylesheet" href="libs/hamburgers-css/hamburgers.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
 
 	<link rel="stylesheet" href="css/fonts.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
@@ -30,45 +31,55 @@
 
 </head>
 
-<body>
+<body class="ishome">
 
 	<div class="menu-content">
 		
 		<div class="menu-container">
 			
-			<div class="left-side_bar">
+			<div class="menu-left_side_bar">
 				
-				<div class="menu-exit">
+				<div class="social_icons">
 					
-					<img src="img/exit-button.png">
-
-				</div>
-
-				<div class="social-icons">
-					
-					<div class="icon">
+					<a href="#">
 						
-						<a href="#"><img src="img/vk.png"></a>
-
-					</div>
-
-					<div class="icon">
+						<div class="icon">
 						
-						<a href="#"><img src="img/facebook.png"></a>
+							<img src="img/socials/vk.svg" alt="Социальная иконка">
 
-					</div>
+						</div>
 
-					<div class="icon">
+					</a>
+
+					<a href="#">
 						
-						<a href="#"><img src="img/twitter.png"></a>
-
-					</div>
-
-					<div class="icon">
+						<div class="icon">
 						
-						<a href="#"><img src="img/instagram.png"></a>
+							<img src="img/socials/facebook.svg" alt="Социальная иконка">
 
-					</div>
+						</div>
+
+					</a>
+
+					<a href="#">
+						
+						<div class="icon">
+						
+							<img src="img/socials/twitter.svg" alt="Социальная иконка">
+
+						</div>
+
+					</a>
+
+					<a href="#">
+						
+						<div class="icon">
+						
+							<img src="img/socials/instagram.svg" alt="Социальная иконка">
+
+						</div>
+
+					</a>
 
 				</div>
 
@@ -76,52 +87,67 @@
 
 			<div class="menu-main_content">
 				
-				<div class="menu-main_container">
-
-					<div class="menu-exit-second">
+				<div class="menu-block">
+					
+					<a href="#">
 						
-						<img src="img/exit-button-white.png">
+						<div class="menu-link">
+							
+							Услуги
 
-					</div>
-					
-					<div class="services menu-block" style="background-color: rgba(0,0,0,0.8)">
-					
-						<a href="#">Услуги</a>
+						</div>
 
-					</div>
-					
-					<div class="portoflio menu-block">
-					
-						<a href="#">Портфолио</a>
+					</a>
 
-					</div>
-					
-					<div class="team menu-block">
-					
-						<a href="#">Команда</a>
+				</div>
 
-					</div>
+				<div class="menu-block">
+					
+					<a href="#">
+						
+						<div class="menu-link">
+							
+							Портфолио
 
+						</div>
+
+					</a>
+
+				</div>
+
+				<div class="menu-block">
+					
+					<a href="#">
+						
+						<div class="menu-link">
+							
+							Команда
+
+						</div>
+
+					</a>
+
+				</div>
+
+				<div class="menu-block menu-last-block">
+					
 					<div class="menu-start_progect">
 						
-						<div class="menu-start_progect-top">
-							
-							<h2>Начать проект</h2>
+						<h2>Начать проект</h2>
 
-							<label for="name_m">Введите ваше имя:</label><br>
-							<input type="text" id="name_m">
+						<label for="name_m">Ваше имя:</label><br>
 
-						</div>
+						<input type="text"><br>
 
-						<div class="menu-start_progect-bottom">
-							
-							<p class="phone">+7 (927) <span>000-21-43</span></p>
+					</div>
 
-							<p class="mail">info@adartdev.com</p>
+					<div class="contacts">
+						
+						<p class="phone">+7 (927) <span>000-21-43</span></p>
 
-							<p class="copyright">ArtAdDev.com © 2017</p>
+						<p class="mail">info@adartdev.com</p>
 
-						</div>
+						<p class="copyright">ArtAdDev.com © 2017 </p>
 
 					</div>
 
@@ -133,203 +159,120 @@
 
 	</div>
 
-	<div class="popap-start_progect-container">
-		
-		<div class="popap-vertical_align">
-			
-			<div class="popap-start_progect">
-			
-				<div class="popap-exit_button">
-					
-					<img src="img/exit-button.png">
-
-				</div>
-
-				<div class="popap-content">
-					
-					<h2>Начать проект</h2>
-
-					<form action="">
-						
-						<label for="name">Ваше имя:</label><br>
-						<input type="text" id="name"><br>
-
-						<label for="mail">Ваша почта:</label>
-						<input type="text" id="mail"><br>
-
-						<label for="about-progect">О вашем проекте:</label>
-						<textarea id="about-progect"></textarea><br>
-
-						<div class="upload-input">
-							
-							<p><i class="fa fa-paperclip"></i><input type="file" id="upload" data-multiple-caption="{count} files selected" multiple class="hide inputfile"><label class="upload" for="upload"><span>Прикрепите файл</span></label></p>
-
-						</div>
-
-						<a href="#" class="button">
-							
-							<button>Отправить</button>
-
-						</a>				
-
-					</form>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<main class="main" style="background-image: url(img/main-bg.png);">
+	<main class="site-main" style="background-image: url(img/background.jpg)">
 		
 		<div class="top-line">
 			
-			<div class="menu-button">
-				
-				<img src="img/menu-button.png" alt="Round Lab">
-
-			</div>
-
 			<div class="container">
-				
-				<nav class="main-nav">
+				<div class="row">
 						
-					<div class="left-nav">
-
-						<div class="menu-button-top_line">
+					<div class="menu-button">
 				
-							<img src="img/menu-button.png" alt="Round Lab">
+						<button class="hamburger hamburger--spring" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
 
-						</div>
-						
-						<div class="logotype">
+					</div>
+
+					<div class="top-line_left pull-left">
 					
-							<a href="/">
-								
+						<div class="logotype">
+				
+							<a href="/" title="Round Lab">
 								<img src="img/logo.png" alt="Round Lab">
-
 							</a>
 
 						</div>
 
-						<div class="text">
+						<div class="tagline">
 							
-							<p>Клевые сайты, приложения,<br>Web-сервисы HighLoad-класса</p>
+							<p>Клевые сайты, приложения,<br>web-сервисы highload-класса</p>
 
 						</div>
 
 					</div>
 
-					<div class="right-nav">
+					<div class="top-line_right pull-right">
 						
 						<div class="phone">
-						
+							
 							<p>+7 (927) <span>000-21-43</span></p>
 
 						</div>
 
-						<div class="button-start_progect">
+						<div class="top-line_create_progect_button">
 							
 							<a href="#" class="button">
-								
 								<button>Начать проект</button>
-
 							</a>
 
 						</div>
 
 					</div>
 
-				</nav>
-
+				</div>
 			</div>
 
 		</div>
 
-		<div class="main-content">
+		<div class="site-main_content">
 			
-			<div class="slider_content">
-
-				<div class="slide">
-					
-					<div class="container">
-						
-						<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
-
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-							на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-							Lorem Ipsum для распечатки образцов.</p>
-
-						<a href="#" class="button-lite">
+			<div class="site-main_container">
+				
+				<div class="container">
+					<div class="row">
 							
-							<button>Подробнее</button>
+						<div class="owl-carousel content-slider">
+							
+							<div class="block">
+							
+								<div class="b-title">
+									
+									<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
 
-						</a>
+								</div>
+
+								<div class="b-text">
+									
+									<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+									на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+									Lorem Ipsum для распечатки образцов.</p>
+
+								</div>
+
+								<a href="#" class="button button-lite">
+									<button>Подробнее</button>
+								</a>
+
+							</div>
+
+							<div class="block">
+							
+								<div class="b-title">
+									
+									<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
+
+								</div>
+
+								<div class="b-text">
+									
+									<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+									на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
+									Lorem Ipsum для распечатки образцов.</p>
+
+								</div>
+
+								<a href="#" class="button button-lite">
+									<button>Подробнее</button>
+								</a>
+
+							</div>
+
+						</div>
 
 					</div>
-
-				</div>
-
-				<div class="slide">
-					
-					<div class="container">
-						
-						<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
-
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-							на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-							Lorem Ipsum для распечатки образцов.</p>
-
-						<a href="#" class="button-lite">
-							
-							<button>Подробнее</button>
-
-						</a>
-
-					</div>
-
-				</div>
-
-				<div class="slide">
-					
-					<div class="container">
-						
-						<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
-
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-							на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-							Lorem Ipsum для распечатки образцов.</p>
-
-						<a href="#" class="button-lite">
-							
-							<button>Подробнее</button>
-
-						</a>
-
-					</div>
-
-				</div>
-
-				<div class="slide">
-					
-					<div class="container">
-						
-						<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
-
-						<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-							на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-							Lorem Ipsum для распечатки образцов.</p>
-
-						<a href="#" class="button-lite">
-							
-							<button>Подробнее</button>
-
-						</a>
-
-					</div>
-
 				</div>
 
 			</div>
@@ -351,8 +294,7 @@
 	</main>
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<script src="libs/file-input/jquery.custom-file-input.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/common.min.js"></script>
 
 </body>
