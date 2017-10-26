@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="libs/hamburgers-css/hamburgers.min.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="css/fonts.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
@@ -32,6 +33,52 @@
 </head>
 
 <body class="ishome">
+
+	<div class="popap-start_progect">
+		
+		<div class="popap-container">
+			
+			<div class="popap-window">
+				
+				<div class="exit-popap">
+					
+					<img src="img/close-button.svg">
+
+				</div>
+
+				<h2>Начать проект</h2>
+
+				<form action="">
+					
+					<label for="name">Ваше имя:</label><br>
+
+					<input type="text" id="name"><br>
+
+					<label for="mail">Ваша почта:</label><br>
+
+					<input type="text" id="mail"><br>
+
+					<label for="progect">О проекте:</label><br>
+
+					<textarea id="progect"></textarea><br>
+
+					<div class="upload-input">
+							
+						<p><i class="fa fa-paperclip"></i><input type="file" id="upload" data-multiple-caption="{count} files selected" multiple class="hide inputfile"><label class="upload" for="upload"><span>Прикрепите файл</span></label></p>
+
+					</div>
+
+					<a href="#" class="button">
+						<button>Отправить</button>
+					</a>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
 
 	<div class="menu-content">
 		
@@ -219,51 +266,73 @@
 
 		<div class="site-main_content">
 			
-			<div class="site-main_container">
-				
-				<div class="container">
-					<div class="row">
+			<div class="container">
+				<div class="row">
+					
+					<div class="owl-carousel slider-blocks">
+						
+						<div class="block">
 							
-						<div class="owl-carousel content-slider">
-							
-							<div class="block">
-							
-								<div class="b-title">
-									
-									<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
+							<div class="block-header">
+								<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
+							</div>
 
-								</div>
-
-								<div class="b-text">
-									
-									<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+							<div class="block-text">
+								
+								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
 									на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
 									Lorem Ipsum для распечатки образцов.</p>
 
-								</div>
+							</div>
 
+							<div class="block-more">
+								
 								<a href="#" class="button button-lite">
 									<button>Подробнее</button>
 								</a>
 
 							</div>
 
-							<div class="block">
+						</div>
+
+						<div class="block">
 							
-								<div class="b-title">
-									
-									<h1>Разработка сайтов<br><span>на высшем уровне</span></h1>
+							<div class="block-header">
+								<h1>У нас работают только<br><span>проверенные специалисты</span></h1>
+							</div>
 
-								</div>
+							<div class="block-text">
+								
+								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+									на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
 
-								<div class="b-text">
-									
-									<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
-									на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя
-									Lorem Ipsum для распечатки образцов.</p>
+							</div>
 
-								</div>
+							<div class="block-more">
+								
+								<a href="#" class="button button-lite">
+									<button>Подробнее</button>
+								</a>
 
+							</div>
+
+						</div>
+
+						<div class="block">
+							
+							<div class="block-header">
+								<h1>Люди обращаются<br><span>к нам снова и снова</span></h1>
+							</div>
+
+							<div class="block-text">
+								
+								<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
+									на латинице с начала XVI века.</p>
+
+							</div>
+
+							<div class="block-more">
+								
 								<a href="#" class="button button-lite">
 									<button>Подробнее</button>
 								</a>
@@ -273,8 +342,8 @@
 						</div>
 
 					</div>
-				</div>
 
+				</div>
 			</div>
 
 		</div>
@@ -295,6 +364,7 @@
 
 	<script src="libs/jquery/jquery.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/file-input/jquery.custom-file-input.js"></script>
 	<script src="js/common.min.js"></script>
 
 </body>

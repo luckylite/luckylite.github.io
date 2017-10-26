@@ -12,8 +12,18 @@ $(document).ready(function() {
 
 	});
 
-	$('.content-slider').owlCarousel({
-		items: 1
+	$('.slider-blocks').owlCarousel({
+		items: 1,
+		smartSpeed: 700,
+		nav: false
+	});
+
+	$('.top-line_create_progect_button a.button').click(function() {
+		$('.popap-start_progect').fadeIn();
+	});
+
+	$('.popap-window .exit-popap').click(function() {
+		$('.popap-start_progect').fadeOut();
 	});
 
 });
