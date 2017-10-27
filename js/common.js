@@ -8,6 +8,7 @@ $(document).ready(function() {
 		} else {
 			$('.menu-button .hamburger').addClass('is-active');
 			$('.menu-content').fadeIn();
+			$('body').style("overflow: scroll;");
 		}
 
 	});
