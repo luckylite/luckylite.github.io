@@ -13,17 +13,19 @@ $(document).ready(function() {
 	});
 
 	$('.slider-blocks').owlCarousel({
-		items: 1,
-		smartSpeed: 700,
-		nav: false
-	});
-
-	$('.mobile-slider-blocks').owlCarousel({
 		loop: true,
 		items: 1,
 		smartSpeed: 700,
-		nav: true,
-		navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+		responsiveClass: true,
+		responsive: {
+			0:{
+				nav: true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+			},
+			768: {
+				nav: false
+			}
+		}
 	});
 
 	$('.top-line_create_progect_button a.button').click(function() {

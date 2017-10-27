@@ -5,7 +5,6 @@ body
   padding: 0
   font-size: 16px
   font-family: $default-font
-  overflow: hidden
 
 *:focus
 	outline: none
@@ -196,6 +195,7 @@ a.button
 	overflow-x: hidden
 	.site-main
 		height: 100vh
+		min-height: 700px
 		background-size: cover
 		background-position: center
 		position: relative
@@ -256,23 +256,9 @@ a.button
 					span
 						font-weight: bold
 		.site-main_content
-			.mobile-slider-blocks
-				display: none
-				.block
-					background-size: cover
-					background-position: center center
-					height: calc(100vh - 85px)
-					&-header
-						width: 100%
-						position: absolute
-						bottom: 100px
-						text-align: center
-						h2
-							color: #fff
-							font-size: 24px
-							font-weight: bold
-							text-align: center
+			.slider-blocks
 				.owl-nav
+					opacity: 0
 					top: -80px
 					position: relative
 					display: -webkit-flex
@@ -285,7 +271,6 @@ a.button
 					color: #fff
 					.owl-prev
 						margin-right: 15px
-			.slider-blocks
 				.owl-dots
 					width: 100%
 					text-align: center
@@ -310,21 +295,36 @@ a.button
 								background-color: $accent
 				.block
 					color: #fff
+					background: none !important
 					&-header
+						position: relative
+						z-index: 6
 						h1
 							margin: 0
 							margin-bottom: 30px
 							line-height: 0.9
 							font-size: 46px
 							font-weight: bold
+
 							span
 								font-size: 36px
 								font-weight: 500
 					&-text
+						position: relative
+						z-index: 6
 						p
 							margin: 0
 							width: 65%
 							line-height: 2
+					&-bg
+						width: 100%
+						height: 100%
+						position: absolute
+						left: 0
+						top: 0
+						background-size: cover
+						z-index: 5
+						display: none
 
 		.bottom-line
 			margin-bottom: 40px

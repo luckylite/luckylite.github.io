@@ -12,11 +12,6 @@
 			margin-left: 30px !important
 		.phone
 			margin-right: 30px !important
-	.content-slider
-		.block
-			text-align: center
-			p
-				margin: 0 auto
 	.slider-blocks
 		padding: 0 20px
 
@@ -46,14 +41,33 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	.mobile-slider-blocks
-		display: block !important
 	.slider-blocks
-		display: none !important
-	.content-slider
-		margin-left: 25%
+		padding: 0 !important
+		.block
+			width: calc(100% + 40px)
+		.block-bg
+			display: block !important
 		.owl-dots
-			display: none
+			display: none !important
+		.owl-nav
+			opacity: 1 !important
+		.block
+			height: calc(100vh - 85px) !important
+			&-header
+				width: 100% !important
+				position: absolute !important
+				bottom: 80px !important
+				text-align: center !important
+				h1
+					color: #fff !important
+					font-size: 24px !important
+					font-weight: bold !important
+					text-align: center !important
+					line-height: 1.2 !important
+					span
+						font-size: 24px !important
+			&-text
+				display: none !important
 	.bottom-line
 		display: none
 	.menu-content
