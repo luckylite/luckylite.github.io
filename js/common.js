@@ -4,9 +4,11 @@ $(document).ready(function() {
 
 		if ($('.menu-button .hamburger').hasClass('is-active')) {
 			$('.menu-button .hamburger').removeClass('is-active');
+			$('.menu-button').css('position', 'absolute');
 			$('.menu-content').fadeOut();
 		} else {
 			$('.menu-button .hamburger').addClass('is-active');
+			$('.menu-button').css('position', 'fixed');
 			$('.menu-content').fadeIn();
 			$('body').style("overflow: scroll;");
 		}
