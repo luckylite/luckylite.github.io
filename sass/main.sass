@@ -1,662 +1,287 @@
+@import "libs"
 @import "vars"
 
-body
-  margin: 0
-  padding: 0
-  font-size: 16px
-  font-family: $default-font
-
-*:focus
-	outline: none
-
 *
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
 	box-sizing: border-box
-	resize: none
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
 
-a.button
-	&.button-lite
-		button
-			background: none !important
-			box-shadow: none !important
-			border: 1px solid #fff
-			&:hover
-				color: silver
-				border-color: silver
-	button
-		padding: 10px 20px 14px 20px
-		background-color: $accent
-		border: none
-		font-weight: bold
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*, *:focus, *:active
+	outline: none
+	box-sizing: border-box
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 1px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
 		color: #fff
-		box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.5) inset; 
-		border-radius: 3px
-		&:hover
-			background-color: #E4513E
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+h1, h2, h3, h4, h5
+	margin: 0
+	font-family: $bold-font
+
+h1
+	color: #fff
+	margin-bottom: 20px
+	font-size: 46px
+
+h2
+	color: #1a1a1a
+	font-size: 34px
+	position: relative
+	&::before
+		content: ''
+		width: 80px
+		height: 3px
+		background-color: $accent
+		position: absolute
+		bottom: -8px
+		left: calc(50% - 40px)
+
+h3
+	font-size: 20px
+	line-height: 1.5
+
+p
+	line-height: 1.8	
+
+.text-right
+	text-align: right
 
 .text-center
 	text-align: center
 
-.popap-start_progect
+.header, .section
+	position: relative
+
+.header
+	min-height: 700px
+	height: 100vh
+	background-size: cover
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: rgba(#1a1a1a, 0.85)
+	> *
+		z-index: 2
+		position: relative
+
+.top-line
+	height: 100px
+	background-color: rgba(#1a1a1a, 0.5)
+	.logo
+		line-height: 90px
+		img
+			width: 80px
+			height: 80px
+	.nav
+		line-height: 90px
+		margin: 0
+		padding: 0
+		li
+			margin-right: 30px
+			list-style-type: none
+			display: inline
+			&:last-child
+				margin-right: 0
+			a
+				text-decoration: none
+				color: #fff
+				font-size: 18px
+				&:hover
+					color: $accent
+	.hamburger-button
+		line-height: 100px
+
+.main-head
 	width: 100%
 	height: 100%
 	position: absolute
+	z-index: 1
 	left: 0
 	top: 0
-	background-color: rgba(0,0,0,0.8)
-	z-index: 999
-	display: none
-	.popap-container
-		width: 100%
+	.main-head_container
 		height: 100%
+		position: relative
 		display: -webkit-flex
 		display: -moz-flex
 		display: -ms-flex
 		display: -o-flex
 		display: flex
 		align-items: center
-		justify-content: center
-		.popap-window
-			padding: 50px
-			width: 500px
-			background-color: #fff
-			position: relative
-			.exit-popap
-				width: 35px
-				height: 35px
-				position: absolute
-				right: 50px
-				z-index: 9999
-				cursor: pointer
-				img
-					width: 35px
-					height: 35px
-			h2
-				font-size: 24px
-				font-weight: 500
-				margin-top: 8px
-				margin-bottom: 23px
-			form
-				color: #000
-				label
-					font-weight: 500
-				input
-					margin: 15px 0
-					padding: 11px
-					width: 300px
-					background: none
-					border: 1px solid #000
-				textarea
-					width: 340px
-					height: 120px
-					padding: 11px
-					margin-top: 15px
-					border: 1px solid #000
-				.upload-input
-					margin-top: 10px
-					margin-bottom: 30px
-					.fa
-						font-size: 24px
-						margin-right: 15px
-					label
-						font-weight: normal
-						border-bottom: 1px solid #000
-						padding-bottom: 4px						
-
-.menu-content
-	overflow-y: scroll
-	width: 100%
-	height: 100%
-	position: fixed
-	left: 0
-	top: 0
-	z-index: 10
-	display: none
-	.menu-container
-		width: 100%
-		height: 100%
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		background-color: rgba(0,0,0,0.8)
-		.menu-left_side_bar
-			width: 100px
-			height: 100%
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flex
-			display: -o-flex
-			display: flex
-			justify-content: flex-end
-			flex-direction: column
-			.social_icons
-				.icon
-					width: 100px
-					height: 100px
-					line-height: 100px
-					text-align: center
-					&:hover
-						background-color: rgba(0,0,0,0.5)
-					img
-						width: 50px
-						height: 50px
-		.menu-main_content
-			flex: auto
-			height: 100vh
-			.menu-block
-				float: left
-				width: 50%
-				height: 50%
-				background-color: $accent
-				&:first-child, &:last-child
-					background-color: rgba(0,0,0,0.8)
-				a
-					text-decoration: none
-					color: #fff
-					font-size: 32px
-					font-weight: bold
-					.menu-link
-						width: 100%
-						height: 100%
-						display: -webkit-flex
-						display: -moz-flex
-						display: -ms-flex
-						display: -o-flex
-						display: flex
-						align-items: center
-						justify-content: center
-			.menu-last-block
-				color: #fff
-				.menu-start_progect
-					height: 45%
-					margin: 40px
-					border-bottom: 1px solid rgba(255,255,255,0.6)
-					h2
-						font-size: 30px
-						font-weight: 500
-						margin-bottom: 25px
-					label
-						font-weight: 500
-					input
-						padding: 12px
-						width: 330px
-						background: none
-						margin-top: 15px
-						border: 1px solid #fff
-				.contacts
-					padding: 20px 40px 40px 40px
-					p.phone
-						margin-bottom: 5px
-						span
-							font-weight: bold
-					p.mail
-						margin-bottom: 30px
-						font-weight: bold
-					p.copyright
-						font-weight: bold
-.ishome
-	overflow-x: hidden
-	.site-main
-		height: 100vh
-		min-height: 700px
-		background-size: cover
-		background-position: center
-		position: relative
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		&:before
-			content: ''
-			width: 100%
-			height: 100%
-			position: absolute
-			left: 0
-			top: 0
-			background-image: url(../img/bg-opacity.png)
-		.top-line
-			height: 100px
-			position: relative
-			.menu-button
-				width: 100px
-				height: 100px
-				position: absolute
-				left: 0
+		p
+			margin:
 				top: 0
-				background-color: #fff
-				z-index: 50 !important
-				cursor: pointer
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-				justify-content: center
-				.hamburger
-					padding-top: 21px
-			.top-line_left, .top-line_right
-				height: 100px
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-			.logotype
-				img
-					height: 65px
-			.tagline
-				margin-left: 40px
-				p
-					color: #fff
-					text-transform: uppercase
-					line-height: 24px
-			.phone
-				margin-right: 40px
-				p
-					color: #fff
-					span
-						font-weight: bold
-		.site-main_content
-			.slider-blocks
-				.owl-nav
-					opacity: 0
-					top: -80px
-					position: relative
-					display: -webkit-flex
-					display: -moz-flex
-					display: -ms-flex
-					display: -o-flex
-					display: flex
-					justify-content: center
-					font-size: 36px
-					color: #fff
-					.owl-prev
-						margin-right: 15px
-				.owl-dots
-					width: 100%
-					text-align: center
-					margin-top: 60px
-					.owl-dot
-						width: 17px
-						height: 17px
-						border: 2px solid #fff
-						border-radius: 10em
-						display: inline-block
-						margin: 7px
-						position: relative
-						&.active
-							&::before
-								content: ''
-								width: 7px
-								height: 7px
-								left: 3px
-								top: 3px
-								position: absolute
-								border-radius: 10em
-								background-color: $accent
-				.block
-					color: #fff
-					background: none !important
-					&-header
-						position: relative
-						z-index: 6
-						h1
-							margin: 0
-							margin-bottom: 30px
-							line-height: 0.9
-							font-size: 46px
-							font-weight: bold
+				left: 0
+				right: 0
+				bottom: 30px
+			color: #fff
+			font-size: 18px
+		.button
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
 
-							span
-								font-size: 36px
-								font-weight: 500
-					&-text
-						position: relative
-						z-index: 6
-						p
-							margin: 0
-							width: 65%
-							line-height: 2
-					&-bg
-						width: 100%
-						height: 100%
-						position: absolute
-						left: 0
-						top: 0
-						background-size: cover
-						z-index: 5
-						display: none
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	background-color: #fff
+	border-radius: 0
+	height: 4px
+	width: 40px
 
-		.bottom-line
-			margin-bottom: 40px
+.hamburger
+	padding: 0
+
+.mm-listview > li > a, .mm-listview > li > span
+	padding: 25px 30px
+
+.mm-listview > li:not(.mm-divider):after
+	border: none
+
+.mm-menu.mm-theme-black
+	background-color: #272726
+
+.section
+	padding: 70px 0
+	&.s-gray
+		background-color: #f7f7f7
+	.s-title
+		margin-bottom: 40px
+	.s-content
+		p
+			width: 70%
+			margin: 0 auto
+
+#advantages
+	.a-items
+		margin-bottom: 70px
+		.a-item
 			text-align: center
-			z-index: 9
-			ul
-				li
-					margin-right: 50px
-					display: inline
-					padding-bottom: 8px
-					&:last-child
-						margin-right: 0
-					&:hover
-						border-bottom: 3px solid $accent
-					a
-						font-size: 24px
-						color: #fff
-						font-weight: bold
-						text-decoration: none
-
-.isteam
-	overflow-x: hidden
-	.site-team
-		height: 100vh
-		min-height: 700px
-		background-color: #fff
-		.top-line
-			height: 100px
-			position: relative
-			background-color: #0e0e0e
-			.menu-button
-				width: 100px
-				height: 100px
-				position: absolute
-				background-color: #0e0e0e
-				left: 0
-				top: 0
-				z-index: 50 !important
-				cursor: pointer
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-				justify-content: center
-				.hamburger
-					padding-top: 21px
-					.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after
-						background-color: #fff
-			.hamburger--spring.is-active .hamburger-inner
-				background-color: transparent !important
-			.top-line_left, .top-line_right
-				height: 100px
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-			.logotype
-				img
-					height: 65px
-			.tagline
-				margin-left: 40px
-				p
-					color: #fff
-					text-transform: uppercase
-					line-height: 24px
-			.phone
-				margin-right: 40px
-				p
-					color: #fff
-					span
-						font-weight: bold
-		.site-main_content
-			padding-top: 40px
-			padding-bottom: 140px
-			h2
-				font-size: 30px
-				font-weight: bold
-				margin-bottom: 40px
+			img
+				width: 80px
+				margin-bottom: 35px
 			h3
-				font-weight: 500
-				font-size: 24px
-				margin-bottom: 25px
-			p
-				line-height: 1.7
-			.teammate
 				margin-bottom: 20px
-				img
-					height: 210px
-					margin-bottom: 25px
-
-		.bottom-line
-			width: 100%
-			position: fixed
-			bottom: 0
-			text-align: center
-			background-color: #fff
-			z-index: 9
-			box-shadow: 0px 0px 8px rgba(0,0,0,0.5)
-			height: 100px
-			line-height: 100px
-			ul
-				li
-					margin-right: 50px
-					display: inline
-					padding-bottom: 8px
-					&:last-child
-						margin-right: 0
-					&:hover
-						border-bottom: 3px solid $accent
-					a
-						font-size: 24px
-						color: #333
-						font-weight: bold
-						text-decoration: none
-
-
-.iswhatdo
-	overflow-x: hidden
-	.site-what_do
-		height: 100vh
-		min-height: 700px
-		background-color: #fff
-		.top-line
-			height: 100px
-			position: relative
-			background-color: #0e0e0e
-			.menu-button
-				width: 100px
-				height: 100px
-				position: absolute
-				left: 0
-				top: 0
-				z-index: 50 !important
-				background-color: #0e0e0e
-				cursor: pointer
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-				justify-content: center
-				.hamburger
-					padding-top: 21px
-					.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after
-						background-color: #fff
-			.hamburger--spring.is-active .hamburger-inner
-				background-color: transparent !important
-			.top-line_left, .top-line_right
-				height: 100px
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-			.logotype
-				img
-					height: 65px
-			.tagline
-				margin-left: 40px
-				p
-					color: #fff
-					text-transform: uppercase
-					line-height: 24px
-			.phone
-				margin-right: 40px
-				p
-					color: #fff
-					span
-						font-weight: bold
-		.site-main_content
-			padding-top: 40px
-			padding-bottom: 140px
-			h2
-				font-size: 30px
-				font-weight: bold
-				margin-bottom: 40px
-			h3
-				font-size: 19px
-				margin-bottom: 25px
 			p
-				line-height: 1.7
-			.service
-				margin-bottom: 70px
-				img
-					width: auto
-					height: 68px
-					margin-bottom: 25px
+				width: 95%
 
-		.bottom-line
-			width: 100%
-			position: fixed
-			bottom: 0
-			text-align: center
-			background-color: #fff
-			z-index: 9
-			box-shadow: 0px 0px 8px rgba(0,0,0,0.5)
-			height: 100px
-			line-height: 100px
-			ul
-				li
-					margin-right: 50px
-					display: inline
-					padding-bottom: 8px
-					&:last-child
-						margin-right: 0
-					&:hover
-						border-bottom: 3px solid $accent
-					a
-						font-size: 24px
-						color: #333
-						font-weight: bold
-						text-decoration: none
-
-.isportfolio
-	overflow-x: hidden
-	.site-portfolio
-		height: 100vh
-		min-height: 700px
-		background-size: cover
-		background-position: center
-		position: relative
-		&:before
-			content: ''
-			width: 100%
-			height: 100%
-			position: absolute
-			left: 0
-			top: 0
-			background-image: url(../img/bg-opacity.png)
-		.top-line
-			height: 100px
-			position: relative
-			.menu-button
-				width: 100px
-				height: 100px
-				position: absolute
-				left: 0
-				top: 0
-				background-color: #fff
-				z-index: 50 !important
+#portfolio
+	.mix
+		display: none
+	.p-nav
+		margin-bottom: 30px
+		text-align: center
+		ul
+			margin: 0
+			padding: 0
+			li
+				margin-right: 30px
+				list-style-type: none
+				display: inline
 				cursor: pointer
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-				justify-content: center
-				.hamburger
-					padding-top: 21px
-			.top-line_left, .top-line_right
-				height: 100px
-				display: -webkit-flex
-				display: -moz-flex
-				display: -ms-flex
-				display: -o-flex
-				display: flex
-				align-items: center
-			.logotype
+				&:last-child
+					margin-right: 0
+					font-size: 18px
+					color: #000
+				&.active
+					color: $accent
+	.p-items
+		.p-item
+			margin-bottom: 30px
+			box-shadow: 0px 0px 3px rgba(0,0,0,0.15)
+			.p-img
+				overflow: hidden
+				height: 150px
 				img
-					height: 65px
-			.tagline
-				margin-left: 40px
-				p
-					color: #fff
-					text-transform: uppercase
-					line-height: 24px
-			.phone
-				margin-right: 40px
-				p
-					color: #fff
-					span
-						font-weight: bold
-		.site-main_content
-			padding-top: 40px
-			padding-bottom: 140px
-			position: relative
-			z-index: 9
-			h2
-				font-size: 30px
-				font-weight: bold
-				margin-bottom: 40px
-				color: #fff
-			.portfolio-links
-				ul
-					li
-						margin-right: 50px
-						display: inline
-						font-weight: 500
-						color: #fff
-						font-size: 19px
-						cursor: pointer
-						&:hover
-							color: $accent
-						&:last-child
-							margin-right: 0
+					width: 100%
 
+#my-footer
+	background-color: #1a1a1a
+	padding: 15px 0
+	color: #fff
+	font-size: 17px
+	text-align: center
 
-		.bottom-line
-			width: 100%
-			position: fixed
-			bottom: 0
-			text-align: center
-			z-index: 9
-			height: 100px
-			line-height: 100px
-			ul
-				li
-					margin-right: 50px
-					display: inline
-					padding-bottom: 8px
-					&:last-child
-						margin-right: 0
-					&:hover
-						border-bottom: 3px solid $accent
-					a
-						font-size: 24px
-						color: #fff
-						font-weight: bold
-						text-decoration: none
-
-
+@import "media" // Всегда в конце
