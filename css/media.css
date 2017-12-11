@@ -1,0 +1,11 @@
+@media screen and (max-width: 550px) {
+  .hamburger {
+    display: block; }
+  .menu {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  #stats .col-sm-4, #contact .col-sm-4 {
+    margin-bottom: 50px; }
+  .serv-item {
+    margin-bottom: 50px; } }

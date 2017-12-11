@@ -1,56 +1,37 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-	$('.menu-button').click(function() {
+    $('.hamburger-menu').fadeOut();
 
-		if ($('.menu-button .hamburger').hasClass('is-active')) {
-			$('.menu-button .hamburger').removeClass('is-active');
-			$('.menu-button').css('position', 'absolute');
-			$('.menu-content').fadeOut();
-			$('body').css("overflow", "auto");
-			$('body').css("overflow-x", "hidden");
-		} else {
-			$('.menu-button .hamburger').addClass('is-active');
-			$('.menu-button').css('position', 'fixed');
-			$('.menu-content').fadeIn();
-			$('body').css("overflow", "hidden");
-		}
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= $('.header').height()) {
+            $('.top-line').addClass('fixed-nav');
+        } else {
+            $('.top-line').removeClass('fixed-nav');
+        }
+    });
 
-	});
+    function p_item_height () {
+        $('.p-item').css('height', $('.p-item').width() / (1920 / 1080) + 'px');
+    }
 
-	$('.slider-blocks').owlCarousel({
-		loop: true,
-		items: 1,
-		smartSpeed: 700,
-		responsiveClass: true,
-		responsive: {
-			0:{
-				nav: true,
-				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-			},
-			768: {
-				nav: false
-			}
-		}
-	});
+    p_item_height();
 
-	$('.top-line_create_progect_button a.button').click(function() {
-		$('.popap-start_progect').fadeIn();
-	});
+    $(window).resize(p_item_height());
 
-	$('.popap-window .exit-popap').click(function() {
-		$('.popap-start_progect').fadeOut();
-	});
+    $('.hamburger').click(function () {
+        if ($('.hamburger-menu').is(':visible')) {
+            $('.hamburger-menu').fadeOut();
+        } else {
+            $('.hamburger-menu').fadeIn();
+        }
+    });
 
-	$('#name_m').keyup(function() {
-		var name_m_val = $('#name_m').val();
-		if (name_m_val.length >= 5) {
-			$('.menu-content').fadeOut();
-			$('.popap-start_progect').fadeIn();
-			$('#name').val(name_m_val);
-			$('#name').focus();
-			$('#name_m').val('');
-			$('.menu-button .hamburger').removeClass('is-active');
-		}
-	});
+    $("a[href*='#']").mPageScroll2id();
 
+});
+
+$(window).load(function () {
+    setTimeout(function () {
+        $('.preloader').fadeOut()
+    }, 1000);
 });
