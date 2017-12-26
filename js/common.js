@@ -1,37 +1,54 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $('.hamburger-menu').fadeOut();
+	$('.menu-button').click(function() {
 
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= $('.header').height()) {
-            $('.top-line').addClass('fixed-nav');
-        } else {
-            $('.top-line').removeClass('fixed-nav');
-        }
-    });
+		if ($('.menu-button .hamburger').hasClass('is-active')) {
+			$('.menu-button .hamburger').removeClass('is-active');
+			$('.menu-button').css('position', 'absolute');
+			$('.menu-content').fadeOut();
+		} else {
+			$('.menu-button .hamburger').addClass('is-active');
+			$('.menu-button').css('position', 'fixed');
+			$('.menu-content').fadeIn();
+			$('body').style("overflow: scroll;");
+		}
 
-    function p_item_height () {
-        $('.p-item').css('height', $('.p-item').width() / (1920 / 1080) + 'px');
-    }
+	});
 
-    p_item_height();
+	$('.slider-blocks').owlCarousel({
+		loop: true,
+		items: 1,
+		smartSpeed: 700,
+		responsiveClass: true,
+		responsive: {
+			0:{
+				nav: true,
+				navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+			},
+			768: {
+				nav: false
+			}
+		}
+	});
 
-    $(window).resize(p_item_height());
+	$('.top-line_create_progect_button a.button').click(function() {
+		$('.popap-start_progect').fadeIn();
+	});
 
-    $('.hamburger').click(function () {
-        if ($('.hamburger-menu').is(':visible')) {
-            $('.hamburger-menu').fadeOut();
-        } else {
-            $('.hamburger-menu').fadeIn();
-        }
-    });
+	$('.popap-window .exit-popap').click(function() {
+		$('.popap-start_progect').fadeOut();
+	});
 
-    $("a[href*='#']").mPageScroll2id();
+	$('#name_m').keyup(function() {
+		var name_m_val = $('#name_m').val();
+		if (name_m_val.length >= 5) {
+			$('.menu-content').fadeOut();
+			$('.popap-start_progect').fadeIn();
+			$('#name').val(name_m_val);
+			$('#name').focus();
+			$('#name_m').val('');
+			$('.menu-button .hamburger').removeClass('is-active');
+		}
+	});
 
-});
-
-$(window).load(function () {
-    setTimeout(function () {
-        $('.preloader').fadeOut()
-    }, 1000);
 });
