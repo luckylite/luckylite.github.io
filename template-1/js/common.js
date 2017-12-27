@@ -6,11 +6,13 @@ $(document).ready(function() {
 			$('.menu-button .hamburger').removeClass('is-active');
 			$('.menu-button').css('position', 'absolute');
 			$('.menu-content').fadeOut();
+			$('body').css("overflow", "auto");
+			$('body').css("overflow-x", "hidden");
 		} else {
 			$('.menu-button .hamburger').addClass('is-active');
 			$('.menu-button').css('position', 'fixed');
 			$('.menu-content').fadeIn();
-			$('body').style("overflow: scroll;");
+			$('body').css("overflow", "hidden");
 		}
 
 	});

@@ -18,6 +18,19 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.work-item
+		.work-text
+			padding: 25px !important
+		p
+			font-size: 15px
+		&:nth-child(1), &:nth-child(6)
+			.work-img
+				width: auto !important
+			.work-text
+				width: auto !important
+			img
+				width: auto !important
+				height: 200px !important
 	.top-line
 		.tagline
 			display: none
@@ -41,6 +54,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.isportfolio
+		.site-main_content
+			padding-left: 20px !important
+			padding-right: 20px !important
+			padding-bottom: 40px !important
+			.work-text
+				p
+					font-size: 14px !important
 	.slider-blocks
 		padding: 0 !important
 		height: calc(100vh - 85px)
@@ -130,7 +151,6 @@
 		.contacts
 			padding: 20px !important
 
-
 @media only screen and (max-width : 510px)
 	.top-line
 		.top-line_create_progect_button
@@ -141,6 +161,48 @@
 		input, textarea
 			width: 100% !important
 
+@media only screen and (max-width : 550px)
+	.work-item
+		display: block !important
+		.work-img
+			padding-bottom: 40px !important
+		.work-img, .work-text
+			width: 50% !important
+			text-align: center !important
+			margin: 0 auto !important
+			img
+				width: 100% !important
+				height: auto !important
+		&:nth-child(1)
+			.work-img
+				width: 100% !important
+			.work-text
+				width: 100% !important
+		&:nth-child(2)
+			.work-img
+				width: 100% !important
+			.work-text
+				width: 100% !important
+		&:nth-child(3)
+			.work-img
+				width: 100% !important
+			.work-text
+				width: 100% !important
+		&:nth-child(4)
+			.work-img
+				width: 100% !important
+			.work-text
+				width: 100% !important
+		&:nth-child(5)
+			.work-img
+				width: 100% !important
+			.work-text 
+				width: 100% !important
+		&:nth-child(6)
+			.work-img
+				width: 100% !important
+			.work-text
+				width: 100% !important
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
