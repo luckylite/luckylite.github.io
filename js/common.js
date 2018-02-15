@@ -62,5 +62,9 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.page-menu .btn-category').click(function() {
+		$('.page-menu .page-menu_ul').toggle(400);
+	});
+
 
 });
