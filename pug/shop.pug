@@ -1,0 +1,98 @@
+extends layout/main
+
+block variables
+	- var title = 'Reversales — магазин AliExpress!'
+	- var pageClass = 'shop-page'
+
+block libs
+
+block content
+	.container
+		.row
+			.bread-crumbs
+				ul
+					li
+						a(href="#") Главная
+					li
+						a(href="#") Магазины
+					li AliExpress
+			.page-title
+				h2 Магазины с кэшбэком
+			.shop
+				.col-sm-12
+					.shop_add-favorite
+						i.fas.fa-heart
+				.col-lg-3.hidden-md.hidden-sm.hidden-xs
+					.page-menu
+						.shop-block_title Как получить кэшбэк?
+						.how-get-item
+							.how-get-item_icon
+								img(src="img/how_work/login.svg", alt="Reversales")
+							p Регистрируйтесь
+						.how-get-item
+							.how-get-item_icon
+								img(src="img/how_work/shopping-cart.svg", alt="Reversales")
+							p Совершайте покупки
+						.how-get-item
+							.how-get-item_icon
+								img(src="img/how_work/currency.svg", alt="Reversales")
+							p Получайте кэшбэк
+				.col-lg-9.col-md-12
+					.shop-info.shop-block
+						.shop-info_main
+							img(src="img/shops/1.png", alt="AliExpress")
+							h3 6%
+						.shop-info_text
+							p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+							a(href="#").btn Перейти в магазин
+					.shop-other-blocks
+						.shop-rates.shop-block
+							.shop-block_title Тарифы
+							p Оплаченый заказ — 5%
+							p Заказ по промокоду — 3%
+						.shop-shares.shop-block
+							.shop-block_title Купоны и промокоды
+							.shop-shares_item
+								.shop-shares_item-info
+									p Название акции
+									a(href="#") Подробнее
+								.shop-shares_item-for_end
+									p
+										| До конца:
+										br
+										| 5 дней
+							.shop-shares_item
+								.shop-shares_item-info
+									p Название акции
+									a(href="#") Подробнее
+								.shop-shares_item-for_end
+									p
+										| До конца:
+										br
+										| 5 дней
+							.shop-shares_item
+								.shop-shares_item-info
+									p Название акции
+									a(href="#") Подробнее
+								.shop-shares_item-for_end
+									p
+										| До конца:
+										br
+										| 5 дней
+
+							.shop-shares_item
+								.shop-shares_item-info
+									p Название акции
+									a(href="#") Подробнее
+								.shop-shares_item-for_end
+									p
+										| До конца:
+										br
+										| 5 дней
+							.shop-shares_load-more.text-center
+								a(href="#") Еще
+
+
+
+
+block script

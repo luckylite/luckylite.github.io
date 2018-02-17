@@ -1,0 +1,73 @@
+extends layout/main
+
+block variables
+	- var title = 'Reversales — новости в мире покупок и продаж!'
+	- var pageClass = 'news-page'
+
+block libs
+
+block content
+	.container
+		.row
+			.bread-crumbs
+				ul
+					li
+						a(href="#") Главная
+					li Новости
+			.page-title
+				h2 Новости Reversales
+			.news
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это текст-"рыба", используемый в печати...
+					a(href="#").article_link-more Читать далее
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это текст-"рыба", часто используемый в печати...
+					a(href="#").article_link-more Читать далее
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это текст-"рыба", часто используемый в печати...
+					a(href="#").article_link-more Читать далее
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это текст-"рыба", часто в печати...
+					a(href="#").article_link-more Читать далее
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это текст-"рыба",  используемый в печати...
+					a(href="#").article_link-more Читать далее
+				.news-item
+					.news-item_img
+						img(src="img/article.png", alt="Название новости")
+					h3 Название статьи
+					span.date 2 января, 2017
+					p Lorem Ipsum - это "рыба", часто используемый в печати...
+					a(href="#").article_link-more Читать далее
+				.news-pagination.pagination
+					.load-more
+						a(href="#") Загрузить еще
+					.main-pagination
+						a(href="#").active 1
+						a(href="#") 2
+						a(href="#") 3
+						a(href="#") 4
+						span ...
+						a(href="#") 24
+			
+block script

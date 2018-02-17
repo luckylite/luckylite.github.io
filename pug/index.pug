@@ -1,0 +1,135 @@
+extends layout/main
+
+block variables
+	- var title = 'Reversales — лучший кэшбэк сервис!'
+	- var pageClass = 'index-page'
+
+block libs
+	link(rel="stylesheet", href="libs/owl-carousel/css/owl.carousel.min.css")
+	link(rel="stylesheet", href="libs/owl-carousel/css/owl.theme.default.min.css")
+
+block content
+	.slider(style="background-image: url(img/main-bg.png)")
+		.slider-container.text-center
+			h1 Мы — Reversales
+			p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+			a.btn(href="#") Смотреть магазины
+
+	section.section#how-do
+		.container
+			.row
+				.s-title
+					h2 Как это работает?
+				.s-content
+					.how-do_container
+						.how-do_item
+							.icon
+								img(src="img/how_work/login.svg", alt="Reversales")
+							h3 Регистрируйтесь
+							p Зарегистрируйтесь на нашем сервисе
+							.left-line
+						.how-do_item
+							.icon
+								img(src="img/how_work/shopping-cart.svg", alt="Reversales")
+							h3 Совершайте покупки
+							p Покупайте товар, как делали это всегда
+							.left-line
+						.how-do_item
+							.icon
+								img(src="img/how_work/currency.svg", alt="Reversales")
+							h3 Получайте кэшбэк
+							p Получайте процент, от потраченых денег
+							.left-line
+
+	section.section#popular-shops
+		.container
+			.row
+				.s-title
+					h2 Популярные магазины
+				.s-content
+					.popular-shops_container.owl-carousel
+						.popular-shops_item
+							.popular-shops_item-icon
+								img(src="img/shops/1.png", alt="AliExpress")
+							.popular-shops_item-text
+								p
+									span до 3%
+									br
+									|кэшбэк
+								a(href="shop.html") Подробнее
+						.popular-shops_item
+							.popular-shops_item-icon
+								img(src="img/shops/2.png", alt="Ozon.ru")
+							.popular-shops_item-text
+								p
+									span до 3%
+									br
+									|кэшбэк
+								a(href="shop.html") Подробнее
+						.popular-shops_item
+							.popular-shops_item-icon
+								img(src="img/shops/3.png", alt="Lamoda")
+							.popular-shops_item-text
+								p
+									span до 3%
+									br
+									|кэшбэк
+								a(href="shop.html") Подробнее
+						.popular-shops_item
+							.popular-shops_item-icon
+								img(src="img/shops/4.png", alt="M.Видео")
+							.popular-shops_item-text
+								p
+									span до 3%
+
+									br
+									|кэшбэк
+								a(href="shop.html") Подробнее
+					.popular-shops_dots
+						.dot.dot-prev
+							img(src="img/dots/prev.png")
+						.dot.dot-next
+							img(src="img/dots/next.png")
+	
+	section.section#blog
+		.container
+			.row
+				.s-title
+					h2 Последние новости
+				.s-content
+					.blog_container
+						.article.big-article
+							.big-article_img
+								img(src="img/article.png ", alt="Название статьи")
+							.big-article_text
+								h3 Название статьи
+								span.date 2 января, 2017
+								p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала время некий безымянный печатник создал большую коллекцию размеров, для распечатки...
+								a(href="#").article_link-more Читать далее
+						.small-articles
+							.article
+								.article_text
+									h3 Название статьи
+									span.date 2 января, 2017
+									p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...
+									a(href="#").article_link-more Читать далее
+							.article
+								.article_text
+									h3 Название статьи
+									span.date 2 января, 2017
+									p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...
+									a(href="#").article_link-more Читать далее
+							.article
+								.article_text
+									h3 Название статьи
+									span.date 2 января, 2017
+									p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов...
+									a(href="#").article_link-more Читать далее
+						.our-blog-link
+							a.btn(href="#") Наш блог
+
+
+block script
+	script(src="libs/owl-carousel/js/owl.carousel.min.js")
+	script(src="js/index.js")
+	
