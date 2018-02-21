@@ -11,6 +11,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.article-page
+		.article-block
+			&_img
+				height: auto
+
 	.shops-page
 		.shops
 			&-item
@@ -118,6 +123,14 @@
 		.shops
 			&-item
 				flex-basis: calc(100% - 30px)
+	.auth-page
+		.auth-form
+			&_links
+				display: flex
+				flex-direction: column
+				div
+					margin-left: 0
+					margin-top: 30px
 
 
 /* Custom, iPhone Retina */

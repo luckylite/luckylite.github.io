@@ -1,0 +1,61 @@
+extends layout/main
+
+block variables
+	- var title = 'Reversales — авторизация на сайте!'
+	- var pageClass = 'auth-page'
+
+block libs
+	link(rel="stylesheet", href="libs/owl-carousel/css/owl.carousel.min.css")
+	link(rel="stylesheet", href="libs/owl-carousel/css/owl.theme.default.min.css")
+
+block content
+	.auth-container(style="background-image: url(img/auth-bg.png)")
+		.auth-container_content
+			.container
+				.row
+					.col-sm-7.text-block.hidden-md.hidden-sm.hidden-xs
+						.text-block_container
+							h1 Мы — Reversales
+							p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+					.col-lg-5
+						.auth-form#auth
+							.auth-form_container
+								h2 Авторизация
+								form(action="")
+									input(type="text" placeholder="Логин")
+									input(type="text" placeholder="Пароль")
+									.auth-form_links
+										button(type="submit").btn Авторизоваться
+										div
+											a(href="#").reg-button Нету аккаунта?
+											br
+											a(href="#") Забыли пароль?
+									.auth-form_socials
+										a(href="#")
+											i.fab.fa-vk
+										a(href="#")
+											i.fab.fa-facebook-f
+										a(href="#")
+											i.fab.fa-google-plus-g
+						.auth-form.reg-form.hide-elem#reg
+							.auth-form_container
+								h2 Регистрация
+								form(action="")
+									input(type="text" placeholder="Логин")
+									input(type="text" placeholder="Пароль")
+									input(type="text" placeholder="Повторите пароль")
+									.auth-form_links
+										button(type="submit").btn Зарегистрироваться
+										div
+											a(href="#").login-button Авторизоваться
+									.auth-form_socials
+										a(href="#")
+											i.fab.fa-vk
+										a(href="#")
+											i.fab.fa-facebook-f
+										a(href="#")
+											i.fab.fa-google-plus-g
+
+
+block script
+	script(src="js/auth.js")

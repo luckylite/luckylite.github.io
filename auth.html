@@ -2,13 +2,13 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Reversales — магазин AliExpress!</title><!--[if IE]>
+    <title>Reversales — авторизация на сайте!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content=""><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="shop-page">
+  <body class="auth-page">
     <div class="wrapper">
       <div class="hide">
         <div class="menu-mobile">
@@ -67,89 +67,45 @@
         </div>
       </header>
       <div class="content">
-        <div class="container">
-          <div class="row">
-            <div class="bread-crumbs">
-              <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Магазины</a></li>
-                <li>AliExpress</li>
-              </ul>
-            </div>
-            <div class="page-title">
-              <h2>Магазины с кэшбэком</h2>
-            </div>
-            <div class="shop">
-              <div class="col-sm-12">
-                <div class="shop_add-favorite"><i class="fas fa-heart"></i></div>
-              </div>
-              <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
-                <div class="page-menu">
-                  <div class="shop-block_title">Как получить кэшбэк?</div>
-                  <div class="how-get-item">
-                    <div class="how-get-item_icon"><img src="img/how_work/login.svg" alt="Reversales"></div>
-                    <p>Регистрируйтесь</p>
-                  </div>
-                  <div class="how-get-item">
-                    <div class="how-get-item_icon"><img src="img/how_work/shopping-cart.svg" alt="Reversales"></div>
-                    <p>Совершайте покупки</p>
-                  </div>
-                  <div class="how-get-item">
-                    <div class="how-get-item_icon"><img src="img/how_work/currency.svg" alt="Reversales"></div>
-                    <p>Получайте кэшбэк</p>
+        <div class="auth-container" style="background-image: url(img/auth-bg.png);">
+          <div class="auth-container_content">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-7 text-block hidden-md hidden-sm hidden-xs">
+                  <div class="text-block_container">
+                    <h1>Мы — Reversales</h1>
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-9 col-md-12">
-                <div class="shop-info shop-block">
-                  <div class="shop-info_main"><img src="img/shops/1.png" alt="AliExpress">
-                    <h3>6%</h3>
+                <div class="col-lg-5">
+                  <div class="auth-form" id="auth">
+                    <div class="auth-form_container">
+                      <h2>Авторизация</h2>
+                      <form action="">
+                        <input type="text" placeholder="Логин">
+                        <input type="text" placeholder="Пароль">
+                        <div class="auth-form_links">
+                          <button class="btn" type="submit">Авторизоваться</button>
+                          <div><a class="reg-button" href="#">Нету аккаунта?</a><br><a href="#">Забыли пароль?</a></div>
+                        </div>
+                        <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                      </form>
+                    </div>
                   </div>
-                  <div class="shop-info_text">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p><a class="btn" href="#">Перейти в магазин</a>
-                  </div>
-                </div>
-                <div class="shop-other-blocks">
-                  <div class="shop-rates shop-block">
-                    <div class="shop-block_title">Тарифы</div>
-                    <p>Оплаченый заказ — 5%</p>
-                    <p>Заказ по промокоду — 3%</p>
-                  </div>
-                  <div class="shop-shares shop-block">
-                    <div class="shop-block_title">Купоны и промокоды</div>
-                    <div class="shop-shares_item">
-                      <div class="shop-shares_item-info">
-                        <p>Название акции</p><a href="#">Подробнее</a>
-                      </div>
-                      <div class="shop-shares_item-for_end">
-                        <p>До конца:<br>5 дней</p>
-                      </div>
+                  <div class="auth-form reg-form hide-elem" id="reg">
+                    <div class="auth-form_container">
+                      <h2>Регистрация</h2>
+                      <form action="">
+                        <input type="text" placeholder="Логин">
+                        <input type="text" placeholder="Пароль">
+                        <input type="text" placeholder="Повторите пароль">
+                        <div class="auth-form_links">
+                          <button class="btn" type="submit">Зарегистрироваться</button>
+                          <div><a class="login-button" href="#">Авторизоваться</a></div>
+                        </div>
+                        <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+                      </form>
                     </div>
-                    <div class="shop-shares_item">
-                      <div class="shop-shares_item-info">
-                        <p>Название акции</p><a href="#">Подробнее</a>
-                      </div>
-                      <div class="shop-shares_item-for_end">
-                        <p>До конца:<br>5 дней</p>
-                      </div>
-                    </div>
-                    <div class="shop-shares_item">
-                      <div class="shop-shares_item-info">
-                        <p>Название акции</p><a href="#">Подробнее</a>
-                      </div>
-                      <div class="shop-shares_item-for_end">
-                        <p>До конца:<br>5 дней</p>
-                      </div>
-                    </div>
-                    <div class="shop-shares_item">
-                      <div class="shop-shares_item-info">
-                        <p>Название акции</p><a href="#">Подробнее</a>
-                      </div>
-                      <div class="shop-shares_item-for_end">
-                        <p>До конца:<br>5 дней</p>
-                      </div>
-                    </div>
-                    <div class="shop-shares_load-more text-center"><a href="#">Еще</a></div>
                   </div>
                 </div>
               </div>
@@ -203,9 +159,12 @@
     </div>
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
     <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">
     <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/media.min.css">
