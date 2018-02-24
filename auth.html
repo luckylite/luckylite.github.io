@@ -11,6 +11,24 @@
   <body class="auth-page">
     <div class="wrapper">
       <div class="hide">
+        <div class="recollect-password">
+          <div class="recollect-password_overlay"></div>
+          <div class="recollect-password_container">
+            <div class="recollect-password_header">
+              <h3>Вспомнить пароль</h3>
+              <div class="recollect-password_exit"><img src="img/header/close-button.svg" alt="Menu Mobile Close"></div>
+            </div>
+            <div class="recollect-password_form">
+              <form action="" id="password-recoll" method="POST">
+                <input type="text" placeholder="Введите ваш логин" name="login">
+                <button type="submit">Отправить</button>
+              </form>
+            </div>
+            <div class="recollect-password_message">
+              <p>На вашу почту будет отправлено сообщение с вашим паролем!</p>
+            </div>
+          </div>
+        </div>
         <div class="menu-mobile">
           <div class="menu-mobile_overlay"></div>
           <div class="menu-mobile_container">
@@ -81,12 +99,12 @@
                   <div class="auth-form" id="auth">
                     <div class="auth-form_container">
                       <h2>Авторизация</h2>
-                      <form action="">
-                        <input type="text" placeholder="Логин">
-                        <input type="text" placeholder="Пароль">
+                      <form action="" method="POST">
+                        <input type="text" placeholder="Логин" name="login">
+                        <input type="text" placeholder="Пароль" name="pass">
                         <div class="auth-form_links">
                           <button class="btn" type="submit">Авторизоваться</button>
-                          <div><a class="reg-button" href="#">Нету аккаунта?</a><br><a href="#">Забыли пароль?</a></div>
+                          <div><a class="reg-button">Нету аккаунта?</a><br><a class="password-button">Забыли пароль?</a></div>
                         </div>
                         <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                       </form>
@@ -95,13 +113,13 @@
                   <div class="auth-form reg-form hide-elem" id="reg">
                     <div class="auth-form_container">
                       <h2>Регистрация</h2>
-                      <form action="">
-                        <input type="text" placeholder="Логин">
-                        <input type="text" placeholder="Пароль">
-                        <input type="text" placeholder="Повторите пароль">
+                      <form action="" method="POST">
+                        <input type="text" placeholder="Логин" name="login">
+                        <input type="text" placeholder="Пароль" name="pass">
+                        <input type="text" placeholder="Повторите пароль" name="repass">
                         <div class="auth-form_links">
                           <button class="btn" type="submit">Зарегистрироваться</button>
-                          <div><a class="login-button" href="#">Авторизоваться</a></div>
+                          <div><a class="login-button">Есть аккаунт?</a></div>
                         </div>
                         <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                       </form>
