@@ -41,7 +41,7 @@
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="shops.html">Все магазины</a></li>
                 <li><a href="news.html">Новости</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="questions.html">FAQ</a></li>
                 <li><a href="contact.html">Контакты</a></li>
                 <li><a href="auth.html">Войти в аккаунт</a></li>
               </ul>
@@ -59,26 +59,26 @@
           </div>
         </div>
       </div>
-      <header class="header">
+      <header class="header header-auth">
         <div class="container">
           <div class="row">
             <div class="header-container">
               <div class="logo"><a href="#"><img src="img/logo.svg" title="Reversales" alt="Reversales"></a></div>
-              <div class="menu hidden-sm hidden-xs">
+              <div class="menu hidden-sm hidden-xs hidden-md">
                 <ul>
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="shops.html">Все магазины</a></li>
                   <li><a href="news.html">Новости</a></li>
-                  <li><a href="#">FAQ</a></li>
+                  <li><a href="questions.html">FAQ</a></li>
                   <li><a href="contact.html">Контакты</a></li>
                 </ul>
               </div>
-              <div class="right-container hidden-sm hidden-xs"><a href="auth.html"><img src="img/header/login.svg" title="Войти в аккаунт"></a>
+              <div class="right-container">
                 <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-              </div>
-              <div class="header-menu_mobile hidden-lg hidden-md">
-                <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-                <button class="menu_button"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <button class="menu_button hidden-lg"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <div class="header-user_info">
+                  <p>3556 руб.</p><a href="office.html"><img src="img/user.png"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -99,30 +99,30 @@
                   <div class="auth-form" id="auth">
                     <div class="auth-form_container">
                       <h2>Авторизация</h2>
-                      <form action="" method="POST">
+                      <form action="" method="POST" id="auth-form">
                         <input type="text" placeholder="Логин" name="login">
                         <input type="text" placeholder="Пароль" name="pass">
                         <div class="auth-form_links">
                           <button class="btn" type="submit">Авторизоваться</button>
                           <div><a class="reg-button">Нету аккаунта?</a><br><a class="password-button">Забыли пароль?</a></div>
                         </div>
-                        <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                       </form>
+                      <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                     </div>
                   </div>
                   <div class="auth-form reg-form hide-elem" id="reg">
                     <div class="auth-form_container">
                       <h2>Регистрация</h2>
-                      <form action="" method="POST">
+                      <form action="" method="POST" id="reg-form">
                         <input type="text" placeholder="Логин" name="login">
-                        <input type="text" placeholder="Пароль" name="pass">
+                        <input type="text" placeholder="Пароль" name="pass" id="pass">
                         <input type="text" placeholder="Повторите пароль" name="repass">
                         <div class="auth-form_links">
                           <button class="btn" type="submit">Зарегистрироваться</button>
                           <div><a class="login-button">Есть аккаунт?</a></div>
                         </div>
-                        <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                       </form>
+                      <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                   <ul>
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="shops.html">Магазины</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
                     <li><a href="reviews.html">Отзывы</a></li>
                     <li><a href="news.html">Блог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
@@ -150,7 +150,7 @@
                 <div class="footer_help">
                   <h3>Помощь</h3>
                   <ul>
-                    <li><a href="#">Тех. поддержка</a></li>
+                    <li><a href="help.html">Тех. поддержка</a></li>
                     <li><a href="#">Вопросы и ответы</a></li>
                   </ul>
                 </div>
@@ -177,6 +177,7 @@
     </div>
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="libs/jquery-validate/jquery.validate.min.js"></script>
     <script src="js/auth.js"></script>
     <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">

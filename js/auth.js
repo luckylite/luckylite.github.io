@@ -28,52 +28,83 @@ $(document).ready(function() {
 		$('body').css('overflow-y', 'scroll');
 	});
 
-	$('#password-recoll').submit(function(event) {
-		$('#password-recoll *').removeClass('not-valid');
-		var name = $('#password-recoll input[name="login"]');
+	$.validator.addMethod(
+		"regex",
+		function(value, element, regexp) {
+		    var re = new RegExp(regexp);
+		    return this.optional(element) || re.test(value);
+		},
+		"Please check your input."
+	);
 
-		if (name.val() == '') {
-			name.addClass('not-valid');
-			event.preventDefault();
+	$('#auth-form').validate({
+		rules: {
+			login: {
+				required: true
+			},
+			pass: {
+				required: true
+			}
+		},
+		messages: {
+			login: {
+				required: 'Логин введен не верно!',
+			},
+			pass: {
+				required: 'Пароль введен не верно!'
+			}
 		}
 	});
 
-	$('#auth').submit(function(event) {
-		$('#auth *').removeClass('not-valid');
-		var name = $('#auth input[name="login"]');
-		var pass = $('#auth input[name="pass"]');
-
-		if (name.val() == '') {
-			name.addClass('not-valid');
-			event.preventDefault();
-		}
-
-		if (pass.val() == '') {
-			pass.addClass('not-valid');
-			event.preventDefault();
+	$('#reg-form').validate({
+		rules: {
+			login: {
+				required: true,
+				minlength: 3,
+				regex: '^[a-zA-Z0-9]+$'
+			},
+			pass: {
+				required: true,
+				minlength: 6,
+				regex: '^[a-zA-Z0-9]+$'
+			},
+			repass: {
+				required: true,
+				equalTo: '#pass'
+			}
+		},
+		messages: {
+			login: {
+				required: 'Поле логина не заполнено!',
+				minlength: 'Логин минимум 3 символа!',
+				regex: 'В логин только латинские буквы и цифры!'
+			},
+			pass: {
+				required: 'Поле пароля не заполнено!',
+				minlength: 'Пароль минимум 6 символов!',
+				regex: 'В пароле только латинские буквы и цифры!'
+			},
+			repass: {
+				required: 'Повторный пароль введен не верно!',
+				equalTo: 'Повторный пароль введен не верно!'
+			}
 		}
 	});
 
-	$('#reg').submit(function(event) {
-		$('#reg *').removeClass('not-valid');
-
-		var name = $('#reg input[name="login"]');
-		var pass = $('#reg input[name="pass"]');
-		var repass = $('#reg input[name="repass"]');
-
-		if (name.val() == '') {
-			name.addClass('not-valid');
-			event.preventDefault();
-		}
-
-		if (pass.val() == '') {
-			pass.addClass('not-valid');
-			event.preventDefault();
-		}
-
-		if (repass.val() == '') {
-			repass.addClass('not-valid');
-			event.preventDefault();
+	$('#password-recoll').validate({
+		errorPlacement: function(error, element) {
+			$('.recollect-password_message label.error').remove();
+			error.insertBefore('.recollect-password_message p');
+		},
+		rules: {
+			login: {
+				required: true
+			}
+		},
+		messages: {
+			login: {
+				required: 'Поле логина обязательно для заполнения!'
+			}
 		}
 	});
 
