@@ -11,6 +11,18 @@ $(document).ready(function() {
 		$('#sex-select .select-input').text($(this).text());
 	});
 
+	if ($('#pick-way ul li').hasClass('selected')) {
+		$('#pick-way .select-input').text($('#pick-way ul li.selected').text());
+	}
+	$('#pick-way').click(function() {
+		$('#pick-way .select-options').toggleClass('visible');
+	});
+	$('#pick-way .select-options li').click(function() {
+		$('#pick-way .selected').removeClass('selected');
+		$(this).addClass('selected');
+		$('#pick-way .select-input').text($(this).text());
+	});
+
 	if ($('#date-select-day ul li').hasClass('selected')) {
 		$('#date-select-day .select-input').text($('#date-select-day ul li.selected').text());
 	}
@@ -45,6 +57,17 @@ $(document).ready(function() {
 		$('#date-select-year .selected').removeClass('selected');
 		$(this).addClass('selected');
 		$('#date-select-year .select-input').text($(this).text());
+	});
+
+	$('.payment-form .form-select .select-options li').click(function() {
+		$('.payment-form form').addClass('hide-elem');
+		if ($('.payment-form .form-select .select-options li.selected').text() == 'WebMoney') {
+			$('.payment-form form#payment-webmoney').removeClass('hide-elem');
+		} else if ($('.payment-form .form-select .select-options li.selected').text() == 'Qiwi') {
+			$('.payment-form form#payment-qiwi').removeClass('hide-elem');
+		} else if ($('.payment-form .form-select .select-options li.selected').text() == 'PayPal') {
+			$('.payment-form form#payment-paypal').removeClass('hide-elem');
+		}
 	});
 
 	jQuery.validator.addMethod("phoneno", function(phone_number, element) {

@@ -2,14 +2,14 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Reversales — отзывы наших покупателей!</title><!--[if IE]>
+    <title>Reversales — избранные магазины!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/preloader.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="reviews-page">
+  <body class="office-page">
     <div class="wrapper">
       <div class="hide">
         <div class="preloader"><img src="img/logo.svg" alt="Reversales"></div>
@@ -43,12 +43,12 @@
           </div>
         </div>
       </div>
-      <header class="header">
+      <header class="header header-auth">
         <div class="container">
           <div class="row">
             <div class="header-container">
               <div class="logo"><a href="#"><img src="img/logo.svg" title="Reversales" alt="Reversales"></a></div>
-              <div class="menu hidden-sm hidden-xs">
+              <div class="menu hidden-sm hidden-xs hidden-md">
                 <ul>
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="shops.html">Все магазины</a></li>
@@ -57,12 +57,12 @@
                   <li><a href="contact.html">Контакты</a></li>
                 </ul>
               </div>
-              <div class="right-container hidden-sm hidden-xs"><a href="auth.html"><img src="img/header/login.svg" title="Войти в аккаунт"></a>
+              <div class="right-container">
                 <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-              </div>
-              <div class="header-menu_mobile hidden-lg hidden-md">
-                <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-                <button class="menu_button"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <button class="menu_button hidden-lg"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <div class="header-user_info">
+                  <p>3556 руб.</p><a href="office.html"><img src="img/user.png"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -74,95 +74,62 @@
             <div class="bread-crumbs">
               <ul>
                 <li><a href="#">Главная</a></li>
-                <li>Отзывы</li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li>Избранное</li>
               </ul>
             </div>
             <div class="page-title">
-              <h2>Отзывы</h2>
+              <h2>Личный кабинет</h2>
             </div>
-            <div class="reviews">
-              <div class="reviews-info">
-                <p>
-                   Чтобы оставить отзыв <a href="auth.html">войдите</a> в личный кабинет</p>
+            <div class="shops">
+              <div class="col-md-3 col-sm-4">
+                <div class="page-menu">
+                  <div class="page-menu_ul">
+                    <ul>
+                      <li><a href="office.html">Мой кабинет</a></li>
+                      <li class="active"><a href="office_favorite.html">Избранное</a></li>
+                      <li><a href="office_purchase_history.html">История покупок</a></li>
+                      <li><a href="office_payment_history.html">История выплат</a></li>
+                      <li><a href="office_balance.html">Баланс</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="office_friends.html">Пригласи друга</a></li>
+                      <li><a href="questions.html">Вопросы и ответы</a></li>
+                      <li><a href="index.html">Выйти из аккаунта</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="reviews-items">
-                <div class="reviews-item">
-                  <div class="reviews-item_header">
-                    <div class="reviews-item_user"><img src="img/user.png" alt="Reversales user">
-                      <div>
-                        <p>Alexandra</p><span>ID: 55687</span>
-                      </div>
-                    </div>
-                    <div class="reviews-item_rating">
-                      <p>Оценка:</p><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png">
+              <div class="col-md-9 col-sm-8">
+                <div class="favorite">
+                  <div class="favorite-item">
+                    <div class="favorite-item_icon"><img src="img/shops/1.png" alt="AliExpress"></div>
+                    <div class="favorite-item_text">
+                      <p><span>до 3%</span><br>кэшбэк</p><a href="shop.html">Подробнее</a><br><a href="shop.html">Удалить</a>
                     </div>
                   </div>
-                  <div class="reviews-item_text">
-                    <p>Купила себе отличную сумку, которую давно хотела - деньги вывела без проблем, единственное подтверждение пришлось ждать, вот бы сразу можно было получить.</p>
+                  <div class="favorite-item">
+                    <div class="favorite-item_icon"><img src="img/shops/1.png" alt="AliExpress"></div>
+                    <div class="favorite-item_text">
+                      <p><span>до 3%</span><br>кэшбэк</p><a href="shop.html">Подробнее</a><br><a href="shop.html">Удалить</a>
+                    </div>
+                  </div>
+                  <div class="favorite-item">
+                    <div class="favorite-item_icon"><img src="img/shops/1.png" alt="AliExpress"></div>
+                    <div class="favorite-item_text">
+                      <p><span>до 3%</span><br>кэшбэк</p><a href="shop.html">Подробнее</a><br><a href="shop.html">Удалить</a>
+                    </div>
+                  </div>
+                  <div class="favorite-item">
+                    <div class="favorite-item_icon"><img src="img/shops/1.png" alt="AliExpress"></div>
+                    <div class="favorite-item_text">
+                      <p><span>до 3%</span><br>кэшбэк</p><a href="shop.html">Подробнее</a><br><a href="shop.html">Удалить</a>
+                    </div>
                   </div>
                 </div>
-                <div class="reviews-item">
-                  <div class="reviews-item_header">
-                    <div class="reviews-item_user"><img src="img/user.png" alt="Reversales user">
-                      <div>
-                        <p>Alexandra</p><span>ID: 55687</span>
-                      </div>
-                    </div>
-                    <div class="reviews-item_rating">
-                      <p>Оценка:</p><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png">
-                    </div>
-                  </div>
-                  <div class="reviews-item_text">
-                    <p>Купила себе отличную сумку, которую давно хотела - деньги вывела без проблем, единственное подтверждение пришлось ждать, вот бы сразу можно было получить.</p>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-item_header">
-                    <div class="reviews-item_user"><img src="img/user.png" alt="Reversales user">
-                      <div>
-                        <p>Alexandra</p><span>ID: 55687</span>
-                      </div>
-                    </div>
-                    <div class="reviews-item_rating">
-                      <p>Оценка:</p><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png">
-                    </div>
-                  </div>
-                  <div class="reviews-item_text">
-                    <p>Купила себе отличную сумку, которую давно хотела - деньги вывела без проблем, единственное подтверждение пришлось ждать, вот бы сразу можно было получить.</p>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-item_header">
-                    <div class="reviews-item_user"><img src="img/user.png" alt="Reversales user">
-                      <div>
-                        <p>Alexandra</p><span>ID: 55687</span>
-                      </div>
-                    </div>
-                    <div class="reviews-item_rating">
-                      <p>Оценка:</p><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png">
-                    </div>
-                  </div>
-                  <div class="reviews-item_text">
-                    <p>Купила себе отличную сумку, которую давно хотела - деньги вывела без проблем, единственное подтверждение пришлось ждать, вот бы сразу можно было получить.</p>
-                  </div>
-                </div>
-                <div class="reviews-item">
-                  <div class="reviews-item_header">
-                    <div class="reviews-item_user"><img src="img/user.png" alt="Reversales user">
-                      <div>
-                        <p>Alexandra</p><span>ID: 55687</span>
-                      </div>
-                    </div>
-                    <div class="reviews-item_rating">
-                      <p>Оценка:</p><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png"><img src="img/star.png">
-                    </div>
-                  </div>
-                  <div class="reviews-item_text">
-                    <p>Купила себе отличную сумку, которую давно хотела - деньги вывела без проблем, единственное подтверждение пришлось ждать, вот бы сразу можно было получить.</p>
-                  </div>
-                </div>
-                <div class="pagination">
-                  <div class="load-more" style="padding-bottom: 0;"><a href="#">Загрузить еще</a></div>
+                <div class="favorite-pagination pagination">
+                  <div class="load-more"><a href="#">Загрузить еще</a></div>
+                  <div class="main-pagination"><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><span>...</span><a href="#">24</a></div>
                 </div>
               </div>
             </div>
@@ -215,6 +182,7 @@
     </div>
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/shops.js"></script>
     <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">
     <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/fontawesome-all.min.css">

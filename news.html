@@ -5,12 +5,14 @@
     <title>Reversales — новости в мире покупок и продаж!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content=""><!--[if lt IE 9]>
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/preloader.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body class="news-page">
     <div class="wrapper">
       <div class="hide">
+        <div class="preloader"><img src="img/logo.svg" alt="Reversales"></div>
         <div class="menu-mobile">
           <div class="menu-mobile_overlay"></div>
           <div class="menu-mobile_container">
@@ -41,12 +43,12 @@
           </div>
         </div>
       </div>
-      <header class="header header-auth">
+      <header class="header">
         <div class="container">
           <div class="row">
             <div class="header-container">
               <div class="logo"><a href="#"><img src="img/logo.svg" title="Reversales" alt="Reversales"></a></div>
-              <div class="menu hidden-sm hidden-xs hidden-md">
+              <div class="menu hidden-sm hidden-xs">
                 <ul>
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="shops.html">Все магазины</a></li>
@@ -55,12 +57,12 @@
                   <li><a href="contact.html">Контакты</a></li>
                 </ul>
               </div>
-              <div class="right-container">
+              <div class="right-container hidden-sm hidden-xs"><a href="auth.html"><img src="img/header/login.svg" title="Войти в аккаунт"></a>
                 <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-                <button class="menu_button hidden-lg"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
-                <div class="header-user_info">
-                  <p>3556 руб.</p><a href="office.html"><img src="img/user.png"></a>
-                </div>
+              </div>
+              <div class="header-menu_mobile hidden-lg hidden-md">
+                <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
+                <button class="menu_button"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
               </div>
             </div>
           </div>
@@ -137,7 +139,7 @@
                   <h3>Помощь</h3>
                   <ul>
                     <li><a href="help.html">Тех. поддержка</a></li>
-                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="questions.html">Вопросы и ответы</a></li>
                   </ul>
                 </div>
                 <div class="footer_work-with hidden-md hidden-sm hidden-xs">

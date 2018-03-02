@@ -2,14 +2,14 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Reversales — обращение в тех. поддержку!</title><!--[if IE]>
+    <title>Reversales — партнерская парограмма!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/preloader.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="help-page">
+  <body class="office-page">
     <div class="wrapper">
       <div class="hide">
         <div class="preloader"><img src="img/logo.svg" alt="Reversales"></div>
@@ -43,12 +43,12 @@
           </div>
         </div>
       </div>
-      <header class="header">
+      <header class="header header-auth">
         <div class="container">
           <div class="row">
             <div class="header-container">
               <div class="logo"><a href="#"><img src="img/logo.svg" title="Reversales" alt="Reversales"></a></div>
-              <div class="menu hidden-sm hidden-xs">
+              <div class="menu hidden-sm hidden-xs hidden-md">
                 <ul>
                   <li><a href="index.html">Главная</a></li>
                   <li><a href="shops.html">Все магазины</a></li>
@@ -57,12 +57,12 @@
                   <li><a href="contact.html">Контакты</a></li>
                 </ul>
               </div>
-              <div class="right-container hidden-sm hidden-xs"><a href="auth.html"><img src="img/header/login.svg" title="Войти в аккаунт"></a>
+              <div class="right-container">
                 <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-              </div>
-              <div class="header-menu_mobile hidden-lg hidden-md">
-                <button class="search_button"><img src="img/header/search.svg" title="Поиск по сайту"></button>
-                <button class="menu_button"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <button class="menu_button hidden-lg"><img src="img/header/menu-button.svg" alt="Reversales Mobile"></button>
+                <div class="header-user_info">
+                  <p>3556 руб.</p><a href="office.html"><img src="img/user.png"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -74,20 +74,72 @@
             <div class="bread-crumbs">
               <ul>
                 <li><a href="#">Главная</a></li>
-                <li>Тех. поддержка</li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li>Пригласи друга</li>
               </ul>
             </div>
             <div class="page-title">
-              <h2>Обращение в тех. поддержку</h2>
+              <h2>Личный кабинет</h2>
             </div>
-            <div class="help">
-              <form action="" method="POST" id="help">
-                <input type="text" placeholder="Тема обращения" name="subject"><br>
-                <input type="text" placeholder="Ваше имя" name="name"><br>
-                <input type="text" placeholder="Ваша почта" name="mail"><br>
-                <textarea placeholder="Сообщение" name="message"></textarea><br>
-                <button class="btn" type="submit">Отправить</button>
-              </form>
+            <div class="shops">
+              <div class="col-md-3 col-sm-4">
+                <div class="page-menu">
+                  <div class="page-menu_ul">
+                    <ul>
+                      <li><a href="office.html">Мой кабинет</a></li>
+                      <li><a href="office_favorite.html">Избранное</a></li>
+                      <li><a href="office_purchase_history.html">История покупок</a></li>
+                      <li><a href="office_payment_history.html">История выплат</a></li>
+                      <li><a href="office_balance.html">Баланс</a></li>
+                    </ul>
+                    <ul>
+                      <li class="active"><a href="office_friends.html">Пригласи друга</a></li>
+                      <li><a href="questions.html">Вопросы и ответы</a></li>
+                      <li><a href="index.html">Выйти из аккаунта</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9 col-sm-8">
+                <div class="office-block office-friends_info">
+                  <p>Ваша партнерская ссылка:</p><a href="#">https://otkat.me/welcome/?user=328</a>
+                  <p>Платим с каждой выплаты вашего друга.</p>
+                  <p>Приглашайте своих друзей пользоваться нашим сервисом и с каждой выплаты вашему другу мы заплатим вам 15%.</p>
+                  <p>Размещайте ссылку на своих страницах в соцсетях, присылайте ссылку знакомым которые совершают покупки в интернет-магазинах.</p>
+                </div>
+                <h3>Приглашенные друзья</h3>
+                <div class="office-block office-friends_table">
+                  <div class="table-wrapp">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th> <span>Дата регистрации</span></th>
+                          <th> <span>Логин друга</span></th>
+                          <th> <span>Выплачено другу</span></th>
+                          <th> <span>Процент вознаграждения</span></th>
+                          <th> <span>Ваша прибыль</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th> <span>02.05.2017</span></th>
+                          <th> <span>akim228</span></th>
+                          <th> <span>1 500 RUB</span></th>
+                          <th> <span>15%</span></th>
+                          <th> <span>225 RUB</span></th>
+                        </tr>
+                        <tr>
+                          <th> <span>02.05.2017</span></th>
+                          <th> <span>ralof4568</span></th>
+                          <th> <span>1 600 RUB</span></th>
+                          <th> <span>15%</span></th>
+                          <th> <span>22500 RUB</span></th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -139,7 +191,7 @@
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="libs/jquery-validate/jquery.validate.min.js"></script>
-    <script src="js/help.js"></script>
+    <script src="js/office.js"></script>
     <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">
     <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/fontawesome-all.min.css">

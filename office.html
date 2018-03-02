@@ -5,12 +5,14 @@
     <title>Reversales — личный кабинет!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content=""><!--[if lt IE 9]>
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/preloader.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body class="office-page">
     <div class="wrapper">
       <div class="hide">
+        <div class="preloader"><img src="img/logo.svg" alt="Reversales"></div>
         <div class="menu-mobile">
           <div class="menu-mobile_overlay"></div>
           <div class="menu-mobile_container">
@@ -81,19 +83,18 @@
             <div class="shops">
               <div class="col-md-3 col-sm-4">
                 <div class="page-menu">
-                  <button class="btn btn-category">Категории  <i class="fas fa-angle-down"></i></button>
                   <div class="page-menu_ul">
                     <ul>
-                      <li class="active"><a href="#">Мой кабинет</a></li>
-                      <li><a href="#">Избранное</a></li>
-                      <li><a href="#">История покупок</a></li>
-                      <li><a href="#">История выплат</a></li>
-                      <li><a href="#">Вывод средств</a></li>
+                      <li class="active"><a href="office.html">Мой кабинет</a></li>
+                      <li><a href="office_favorite.html">Избранное</a></li>
+                      <li><a href="office_purchase_history.html">История покупок</a></li>
+                      <li><a href="office_payment_history.html">История выплат</a></li>
+                      <li><a href="office_balance.html">Баланс</a></li>
                     </ul>
                     <ul>
-                      <li><a href="#">Пригласи друга</a></li>
-                      <li><a href="#">Вопросы и ответы</a></li>
-                      <li><a href="#">Выйти из аккаунта</a></li>
+                      <li><a href="office_friends.html">Пригласи друга</a></li>
+                      <li><a href="questions.html">Вопросы и ответы</a></li>
+                      <li><a href="index.html">Выйти из аккаунта</a></li>
                     </ul>
                   </div>
                 </div>
@@ -111,7 +112,7 @@
                   </div>
                   <div class="office-user_balance">
                     <p>На счету:</p>
-                    <h3>3566 руб.</h3><a class="btn" href="#">Вывод средств</a>
+                    <h3>3566 руб.</h3><a class="btn" href="office_balance.html">Вывод средств</a>
                   </div>
                 </div>
                 <h3>Контактные данные</h3>
@@ -221,8 +222,29 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn" type="submit">Отправить</button>
+                    <button class="btn" type="submit">Сохранить</button>
                   </form>
+                </div>
+                <h3>Безопасность и соц. сети</h3>
+                <div class="office-block user-security">
+                  <form action="" method="POST" id="security">
+                    <div class="user-security_columns">
+                      <div class="user-security_column">
+                        <label for="name">Старый пароль:</label><br>
+                        <input type="text" placeholder="Укажите старый пароль" name="old_pass">
+                      </div>
+                      <div class="user-security_column">
+                        <label for="name">Новый пароль:</label><br>
+                        <input type="text" placeholder="Укажите новый пароль" name="new_pass">
+                      </div>
+                    </div>
+                    <button class="btn" type="submit">Сохранить</button>
+                  </form>
+                  <div class="user-socials">
+                    <p>Вы можете привязать к своему аккаунту соц. сети:</p>
+                    <div class="user-socials_icons"><a href="#"><img src="img/user_socials/1.png" alt="Vk"></a><a href="#"><img src="img/user_socials/2.png" alt="FaceBook"></a><a href="#"><img src="img/user_socials/3.png" alt="Google">
+                        <p>— Подключено</p></a></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -249,7 +271,7 @@
                   <h3>Помощь</h3>
                   <ul>
                     <li><a href="help.html">Тех. поддержка</a></li>
-                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="questions.html">Вопросы и ответы</a></li>
                   </ul>
                 </div>
                 <div class="footer_work-with hidden-md hidden-sm hidden-xs">
