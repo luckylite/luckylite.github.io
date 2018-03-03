@@ -67,6 +67,8 @@ $(document).ready(function() {
 			$('.payment-form form#payment-qiwi').removeClass('hide-elem');
 		} else if ($('.payment-form .form-select .select-options li.selected').text() == 'PayPal') {
 			$('.payment-form form#payment-paypal').removeClass('hide-elem');
+		} else if ($('.payment-form .form-select .select-options li.selected').text() == 'Visa/Mastercard') {
+			$('.payment-form form#payment-visa').removeClass('hide-elem');
 		}
 	});
 

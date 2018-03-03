@@ -1,3 +1,8 @@
+$(window).on('load', function() {
+	$('.preloader').fadeOut('slow');
+	$('body').css('overflow-y', 'auto');
+});
+
 $(document).ready(function() {
 
 	$('.menu_button').click(function() {
@@ -36,11 +41,6 @@ $(document).ready(function() {
 		} else {
 			$('.search-form').addClass('hide-elem');
 		}
-	});
-
-	$(window).on('load', function() {
-		$('.preloader').fadeOut('slow');
-		$('body').css('overflow-y', 'auto');
 	});
 
 });
