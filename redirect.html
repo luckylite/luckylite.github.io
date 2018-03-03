@@ -2,34 +2,16 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Reversales — авторизация на сайте!</title><!--[if IE]>
+    <title>Reversales — редирект!</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/preloader.css"><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
-  <body class="auth-page">
+  <body class="redirect-page">
     <div class="wrapper">
       <div class="hide">
-        <div class="recollect-password">
-          <div class="recollect-password_overlay"></div>
-          <div class="recollect-password_container">
-            <div class="recollect-password_header">
-              <h3>Вспомнить пароль</h3>
-              <div class="recollect-password_exit"><img src="img/header/close-button.svg" alt="Menu Mobile Close"></div>
-            </div>
-            <div class="recollect-password_form">
-              <form action="" id="password-recoll" method="POST">
-                <input type="text" placeholder="Введите вашу почту" name="login">
-                <button type="submit">Отправить</button>
-              </form>
-            </div>
-            <div class="recollect-password_message">
-              <p>На вашу почту будет отправлено сообщение с вашим паролем!</p>
-            </div>
-          </div>
-        </div>
         <div class="preloader"><img src="img/logo.svg" alt="Reversales"></div>
         <div class="menu-mobile">
           <div class="menu-mobile_overlay"></div>
@@ -87,48 +69,14 @@
         </div>
       </header>
       <div class="content">
-        <div class="auth-container" style="background-image: url(img/auth-bg.png);">
-          <div class="auth-container_content">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-7 text-block hidden-md hidden-sm hidden-xs">
-                  <div class="text-block_container">
-                    <h1>Мы — Reversales</h1>
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                  </div>
-                </div>
-                <div class="col-lg-5">
-                  <div class="auth-form" id="auth">
-                    <div class="auth-form_container">
-                      <h2>Авторизация</h2>
-                      <form action="" method="POST" id="auth-form">
-                        <input type="text" placeholder="Логин" name="login">
-                        <input type="text" placeholder="Пароль" name="pass">
-                        <div class="auth-form_links">
-                          <button class="btn" type="submit">Авторизоваться</button>
-                          <div><a class="reg-button">Нету аккаунта?</a><br><a class="password-button">Забыли пароль?</a></div>
-                        </div>
-                      </form>
-                      <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="auth-form reg-form hide-elem" id="reg">
-                    <div class="auth-form_container">
-                      <h2>Регистрация</h2>
-                      <form action="" method="POST" id="reg-form">
-                        <input type="text" placeholder="Логин" name="login">
-                        <input type="text" placeholder="Пароль" name="pass" id="pass">
-                        <input type="text" placeholder="Повторите пароль" name="repass">
-                        <div class="auth-form_links">
-                          <button class="btn" type="submit">Зарегистрироваться</button>
-                          <div><a class="login-button">Есть аккаунт?</a></div>
-                        </div>
-                      </form>
-                      <div class="auth-form_socials"><a href="#"><i class="fab fa-vk"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="page-title">
+              <h2>Подождите секунду</h2>
+            </div>
+            <div class="redirect">
+              <p>Сейчас Вы будете перенаправлены, на сайт Aliexpress INT после покупки вам будет начислен кэшбэк в размере 44.1 % от стоимости заказа.</p>
+              <p>Средний срок обновления информации о совершенной покупки - от нескольких минут до несколько дней.</p><img src="img/redirect_loader.gif" alt="">
             </div>
           </div>
         </div>
@@ -179,13 +127,9 @@
     </div>
     <script defer src="libs/jquery/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="libs/jquery-validate/jquery.validate.min.js"></script>
-    <script defer src="js/auth.js"></script>
     <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">
     <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
     <link rel="stylesheet" type="text/css" href="css/media.min.css">
