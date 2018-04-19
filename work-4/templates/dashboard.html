@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cosmic IoT</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-white fixed-top">
+            <a class="navbar-brand" href="/dashboard">
+                <img src="../static/img/logo.png" class="d-inline-block align-top logo" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+                <div class="form-inline mt-2 mt-md-0">
+
+                    <button id="logout" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+        <div class="container  align-content-center">
+            </br>
+            </br>
+            <div class="row">
+                <div class="welcome-art">
+                    <img src="../static/img/welcome-art.png" alt="">
+                </div>
+                <div class="col-sm-12 text-center">
+                    <h1>Welcome to Cosmic IoT</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 text-center">
+                    <p class="welcome-text">To start configuring your devices press the create button, if you have already configured a device press the devices button.</p>
+                </div>
+            </div>
+            </br>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 text-center">
+                    <button id="scan" type="button" class="btn btn-success btn-lg welcome-button">Create</button><br>
+                    <button id="devices" type="button" class="btn btn-success btn-lg welcome-button">Devices</button>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+            </br>
+            <div id="datos">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6 " id="gateway_table">
+                        <table class="table">
+                            <thead class="thead-primary">
+                                <tr>
+                                    <th class="bg-primary text-center" scope="col">Gateway</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Name:
+                                        <p id="n_gateway" class="d-inline-block"> </p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Type:
+                                        <p id="t_gateway" class="d-inline-block"> </p>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row"><button type="button" id="scan_nodes" class="btn btn-success">scan nodes</button></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+
+                <div class="row" id="nodos">
+                </div>
+                
+            </br>
+            </br>
+            </br>
+
+                <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-8 text-center">
+                                <button id="start" type="button" class="btn btn-primary btn-lg">Start</button>
+                        </div>
+                        <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--<footer class="footer">
+      <div class="container">
+         <span class="text-muted">Cosmic IoT 2018 </span>
+      </div>
+    </footer>-->
+
+    <div class="modal fade" id="gatewayModal" tabindex="-1" role="dialog" aria-labelledby="gatewayModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gatewayModalLabel">Create Gateway</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form id="gatewayForm">
+                        <div class="form-group">
+                            <label for="name_gateway">Name of Gateway</label>
+                            <input type="text" class="form-control" id="name_gateway" name="name_gateway" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="type_gateway">Type of Gateway</label>
+                            <select id="type_gateway" class="form-control" name="type_gateway">
+                                    <option>433 MHZ</option>
+                                    <option>BLE</option>
+                                  </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="button_gateway" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="nodeModal" tabindex="-1" role="dialog" aria-labelledby="nodesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nodeModalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form id="NodeForm">
+                        <div class="form-group">
+                            <label for="name_node">Name of Node</label>
+                            <input type="text" class="form-control" id="name_node" name="name_node" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="type_node">Type of Node</label>
+                            <select id="type_node" class="form-control" name="type_node">
+                                    <option></option>
+                                    <option>Option 2</option>
+                                  </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button id="button_node" type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+<!-- js-->
+
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/tether.min.js"></script>
+<script type="text/javascript" src="../static/js/popper.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/app.js"></script>
+
+</html>
