@@ -21,4 +21,14 @@ $(document).ready(function() {
 		$('.price-text-1').css('display', 'none');
 	});
 
+	ymaps.ready(init);
+	var myMap;
+
+	function init(){     
+		myMap = new ymaps.Map("map", {
+			center: [55.76, 37.64],
+			zoom: 7
+		});
+	}
+
 });
