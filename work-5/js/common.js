@@ -31,4 +31,16 @@ $(document).ready(function() {
 		});
 	}
 
+	$('.menu-button-link').click(function() {
+		$('.menu-mobile').animate({
+			left: 0
+		}, 500);
+	});
+
+	$('.menu-mobile-exit').click(function() {
+		$('.menu-mobile').animate({
+			left: '-300px'
+		}, 500);
+	});
+
 });
