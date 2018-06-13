@@ -1,294 +1,92 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-  <head>
-    <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="css/fonts.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <link rel="stylesheet" type="text/css" href="css/media.min.css">
-    <link rel="stylesheet" type="text/css" href="libs/normalize/normalize.css">
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap-grid/boostrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/fontawesome-all.css"><!--[if lt IE 9]>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
-  </head>
-  <body class="index-page">
-    <div class="wrapper">
-      <div class="menu-mobile">
-        <div class="menu-mobile-overlay"></div>
-        <div class="menu-mobile-container">
-          <div class="search">
-            <form action="#" method="POST">
-              <div class="search-box">
-                <input type="text" placeholder="Поиск..." name="search-query">
-              </div>
-              <button type="submit">Найти</button>
-            </form>
-          </div>
-          <ul class="user-links">
-            <li><a href="#">vasya56</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Пригласи друга</a></li>
-            <li><a href="#">Помощь</a></li>
-            <li><a href="#">Выйти</a></li>
-          </ul>
-          <ul class="user-links">
-            <li><a href="#">Стать продавцом</a></li>
-            <li><a href="#">Сообщество</a></li>
-            <li><a href="#">Сообщения</a></li>
-            <li><a href="#">Покупки</a></li>
-            <li><a href="#">Панель приборов</a></li>
-          </ul>
-          <div class="shopping-cart">
-            <div class="cart-empty">
-              <h3>Корзина пуста</h3>
-              <p>Начинайте покупать и ищите кнопку "Добавить в корзину"</p>
-            </div>
-            <div class="cart-items">
-              <div class="cart-item">
-                <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                  <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                </div>
-                <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-              </div>
-              <div class="cart-item">
-                <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                  <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                </div>
-                <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-              </div>
-              <div class="cart-item">
-                <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                  <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                </div>
-                <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <header class="header">
-        <div class="header-container">
-          <div class="header-left">
-            <div class="logo"><a href="#">Logo</a></div>
-            <div class="search">
-              <form action="#" method="POST">
-                <div class="search-box">
-                  <input type="text" placeholder="Поиск..." name="search-query">
-                </div>
-                <button type="submit">Найти</button>
-              </form>
-            </div>
-          </div>
-          <div class="header-right">
-            <nav class="header_nav">
-              <ul class="ul-main">
-                <li><a href="#">Стать продавцом</a></li>
-                <li><a href="#">Сообщество</a></li>
-                <li><a href="#">Сообщения</a></li>
-                <li><a href="#">Покупки</a></li>
-                <li><a href="#"><i class="fas fa-signal"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a>
-                  <div class="nav-dropdown shopping-cart-dropdown">
-                    <div class="cart-empty">
-                      <h3>Корзина пуста</h3>
-                      <p>Начинайте покупать и ищите кнопку "Добавить в корзину"</p>
-                    </div>
-                    <div class="cart-items">
-                      <div class="cart-item">
-                        <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                          <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                        </div>
-                        <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-                      </div>
-                      <div class="cart-item">
-                        <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                          <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                        </div>
-                        <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-                      </div>
-                      <div class="cart-item">
-                        <div class="cart-item-info"><img src="img/cart-preview.webp" alt="">
-                          <p>Я могу сделать прелесный дизайн для Вашего сайта</p>
-                        </div>
-                        <div class="cart-item-price"><span class="item-price">46 €</span><i class="fas fa-trash-alt"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="user-link"><a href="#"><span class="user-button">v</span></a>
-                  <div class="nav-dropdown user-dropdown">
-                    <ul>
-                      <li><a href="#">vasya56</a></li>
-                      <li><a href="#">Настройки</a></li>
-                      <li><a href="#">Пригласи друга</a></li>
-                      <li><a href="#">Помощь</a></li>
-                      <li><a href="#">Выйти</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-            <div class="menu-button"><i class="fas fa-bars"></i></div>
-          </div>
-        </div>
-      </header>
-      <div class="menu">
-        <div class="menu-container">
-          <ul class="ul-main">
-            <li><a href="#">Графика и дизайн</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Цифровой маркетинг</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Письмо и перевод</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Видео и анимация</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Музыка и аудио</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Программирование & Tech</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Бизнес</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="#">Развлечения и стиль жизни</a>
-              <div class="li-dropdown">
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                  <li><a href="#">Lorem ipsum.</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="content">
-      </div>
-    </div>
-    <script src="libs/jquery/jquery.min.js"></script>
-    <script src="js/common.js"></script>
-  </body>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="main-container" style="background-image: url(img/bg.png);">
+				
+		<div class="top-line">
+
+			<div class="logo">
+				
+				<img src="img/logo.svg" alt="Weddee">
+
+			</div>
+
+			<div class="menu">
+				
+				<div class="reg-link">
+					<a href="#">Регистрация</a>
+				</div>
+
+				<div class="links">
+					<a href="#"><img src="img/app-store.png" alt="Weddee"></a>
+					<a href="#"><img src="img/google-play.png" alt="Weddee"></a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="text-container">
+			<div class="text-content">
+						
+				<div class="text-content_column">
+					
+					<h1>Weddee.ru<br><span>Поиск свадебных<br>специалистов.</span><br>У нас есть:</h1>
+
+					<ul>
+						<li>Фотографы</li>
+						<li>Декораторы</li>
+						<li>Ведущие</li>
+						<li>Организаторы</li>
+						<li>... и любые другие<br>свадебные специалисты</li>
+					</ul>
+
+					<a href="#" class="btn">Найти специалиста</a>
+
+					<div class="links-mobile">
+						<a href="#"><img src="img/app-store.png" alt="Weddee"></a>
+						<a href="#"><img src="img/google-play.png" alt="Weddee"></a>
+					</div>
+
+				</div>
+
+				<div class="text-content_column">
+					<img src="img/phones.png" class="phones" alt="Weddee">
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
 </html>
