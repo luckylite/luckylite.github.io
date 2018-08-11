@@ -22,6 +22,9 @@ h2
 h3
 	font-size 30px
 	font-family font-medium
+	
+span.alink
+	cursor pointer
 
 .clearfix
 	clear: both
@@ -334,6 +337,7 @@ h3
 		width 100%
 		position absolute
 		.contacts-text
+			position relative
 			padding 20px
 			padding-top 40px
 			height 600px
@@ -377,6 +381,16 @@ h3
 				padding-left 45px
 				font-size 24px
 				font-family font-medium
+			.contacts-close
+				position absolute
+				right 20px
+				top 20px
+				content ''
+				color #000
+				cursor pointer
+				font-size 24px
+				&:hover
+					color #fff
 
 #footer
 	padding 40px 0
@@ -388,7 +402,7 @@ h3
 			max-width 298px
 	.footer-socials
 		width 60%
-		a
+		span
 			margin-right 10px
 	.footer-menu
 		ul
@@ -400,7 +414,7 @@ h3
 					color #fff
 					text-decoration none
 					&:hover
-							color #792f5a
+						color #792f5a
 	.footer-address
 		text-align right
 		color #fff
@@ -426,7 +440,7 @@ h3
 				top -5px
 	.footer-contact-socials
 		text-align right
-		a
+		span
 			margin-left 10px
 	.footer-copy
 		color #fff
