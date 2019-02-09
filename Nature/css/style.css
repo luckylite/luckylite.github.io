@@ -344,18 +344,6 @@ footer {
 	color: #fff;
 }
 
-@media (max-width: 767px) {
-	.blogPost .imgBox {
-		height: 200px;
-	}
-}
-
-@media (max-width: 575px) {
-	.blogPost .imgBox {
-		height: 400px;
-	}
-}
-
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-nav .nav-link {
 	    padding-right: 1rem;
