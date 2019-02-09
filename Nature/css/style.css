@@ -60,7 +60,7 @@ p {
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-image: url(../img/banner_bg.jpeg);
+	background-image: url(../img/banner_bg.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
@@ -193,7 +193,7 @@ p {
 
 .sec-2 {
 	position: relative;
-	background-image: url(../img/adventure.jpeg);
+	background-image: url(../img/adventure.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
@@ -268,7 +268,7 @@ p {
 	padding: 100px 0;
 	position: relative;
 	min-height: 100vh;
-	background-image: url(../img/contact_bg.jpeg);
+	background-image: url(../img/contact_bg.jpg);
 	-webkit-background-size: contain;
 	background-size: cover;
 	background-position: center;
