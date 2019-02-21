@@ -1,0 +1,89 @@
+@media screen and (max-width: 1200px) {
+	.header .banner-form input {
+		width: 680px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header .banner-form .input-select {
+		min-width: 200px;
+	}
+
+	.header .banner-form input {
+		width: 480px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header .ul-nav li {
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 34px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+
+	.header .banner-title h1 {
+		margin-bottom: 20px;
+	}
+
+	.header .header-nav {
+		display: none;
+	}
+
+	.header .header-nav--mobile {
+		display: block;
+	}
+
+	.header .banner-form .input-select {
+		min-width: 90%;
+		border-radius: 30px;
+		margin-bottom: 20px;
+		text-align: left;
+		padding: 15px 50px;
+	}
+
+	.header .banner-form .input-select .fas {
+		right: 20px;
+	}
+
+	.header .banner-form .input-select.active {
+		border-radius: 30px 30px 0 0;
+	}
+
+	.header .banner-form input {
+		width: 90%;
+		position: static;
+		border-radius: 30px;
+		padding: 15px 50px;
+		margin-bottom: 20px;
+	}
+
+	.header .banner-form button {
+		position: static;
+		width: 90%;
+		border-radius: 30px;
+		padding: 15px;
+	}
+
+	.header .header-banner {
+		padding: 50px 0;
+		padding-bottom: 100px;
+		height: auto;
+		min-height: auto;
+	}
+
+	.footer .footer-right {
+		text-align: left;
+	}
+}
