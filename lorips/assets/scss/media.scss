@@ -18,9 +18,31 @@
 	.header .ul-nav li {
 		margin-right: 50px;
 	}
+
+	.isPage2 .page-2-form {
+		padding: 15px;
+		font-size: 14px;
+	}
+
+	.content button {
+		font-size: 14px;
+	}
+
+	.btn {
+		font-size: 13px;
+	}
+
+	.isPage3 .items .item .item_number p {
+		font-size: 19px;
+	}
 }
 
 @media screen and (max-width: 768px) {
+
+	.isPage2 .page-2-form input {
+		margin: 15px 0;
+	}
+
 	h1 {
 		font-size: 34px;
 	}
@@ -88,6 +110,26 @@
 	}
 
 	.advantages .buttons {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.sidebar {
+		text-align: center;
+	}
+
+	.isPage3 .items .item .item_number p {
+		font-size: 26px;
+	}
+
+	.isPage3 .items .item .item_number {
+		margin-bottom: 20px;
+	}
+
+	.isPage3 .items .item .item_text {
+		font-size: 16px;
+		margin-bottom: 20px;
 		text-align: center;
 	}
 }

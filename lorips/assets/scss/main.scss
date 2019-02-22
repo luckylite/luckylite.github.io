@@ -20,6 +20,11 @@ body {
 	}
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .wrapper {
 	overflow-x: hidden;
 	width: 100%;
@@ -42,8 +47,27 @@ h3 {
 	font-weight: 800;
 }
 
+h4 {
+	font-weight: 700;
+	font-size: 20px;
+}
+
 .text-center {
 	text-align: center !important;
+}
+
+.input-checkbox {
+	display: inline-block;
+	cursor: pointer;
+	&.active {
+		&::before {
+			content: '\f058';
+		}
+	}
+	&::before {
+		margin-right: 8px;
+		font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f111";
+	}
 }
 
 .popup {
@@ -618,4 +642,334 @@ h3 {
 			}
 		}
 	}
+}
+
+.content {
+
+	margin-top: 160px;
+	margin-bottom: 80px;
+
+	.sidebar {
+
+		h4 {
+			margin-bottom: 20px;
+		}
+
+		.sidebar-nav {
+
+			margin: 0;
+			padding: 0;
+
+			margin-left: 15px;
+
+			li {
+				list-style-type: none;
+				line-height: 2;
+
+				a {
+					color: #000;
+					&:hover {
+						color: #067eff;
+					}
+				}
+			}
+		}
+
+	}
+
+	.main-content {
+
+		h4 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+	}
+
+	.input-select {
+		cursor: pointer;
+		width: 100%;
+		display: inline-block;
+		background-color: #fff;
+		border: 1px solid silver;
+		color: #777;
+		padding: 10px 20px;
+		border-radius: 30px;
+		position: relative;
+		&.active {
+			border-radius: 25px 25px 0 0;
+			.input-list {
+				display: block;
+			}
+		}
+		.fas {
+			position: absolute;
+			right: 16px;
+			top: 17px;
+		}
+
+		.input-list {
+			position: absolute;
+			left: -1px;
+			top: 100%;
+			width: 100%;
+			background-color: #fff;
+			border-radius: 0 0 25px 25px;
+			border: 1px solid silver;
+			display: none;
+			z-index: 10;
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					border-bottom: 1px solid silver;
+					list-style-type: none;
+					padding: 10px 20px;
+					cursor: pointer;
+					&:hover {
+						background-color: #ccc;
+					}
+					&:last-child {
+						border-bottom: 0;
+						border-radius: 0 0 25px 25px;
+					}
+				}
+			}
+		}
+	}
+
+	input {
+
+		width: 100%;
+		border-radius: 30px;
+		padding: 10px 20px;
+		border-color: silver;
+
+	}
+
+	button {
+		width: 100%;
+		text-align: center;
+		padding: 8px;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.text-box {
+		padding: 40px;
+		border: 1px solid silver;
+		margin-bottom: 40px;
+
+		i {
+			font-size: 50px;
+			color: #067eff;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 15px;
+			color: #333;
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+.isPage2 {
+
+	.page-2-form {
+		
+		margin-bottom: 50px;
+		padding: 30px;
+		background-image: url(../img/blue-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+		border-radius: 30px;
+
+		.form-header {
+
+			margin-bottom: 30px;
+			text-align: center;
+
+			h4 {
+				margin-bottom: 5px;
+			}
+
+		}
+
+		.input-checkbox {
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+	}
+
+}
+
+.isPage3 {
+
+	.page-3-form {
+
+		input {
+			margin: 15px 0;
+		}
+		
+		margin: 30px 0;
+		padding: 30px 15px;
+		background-image: url(../img/blue-bg.jpg);
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+
+		.form-header {
+
+			margin-bottom: 30px;
+			text-align: center;
+
+			h4 {
+				margin-bottom: 5px;
+			}
+
+		}
+
+		.input-checkbox {
+			margin-top: 20px;
+			margin-left: 30px;
+		}
+
+	}
+
+	.items {
+		margin-top: 50px;
+
+		.item {
+
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+
+			border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+			.item_number {
+				text-align: center;
+				p {
+					margin-bottom: 0;
+					font-size: 28px;
+					font-weight: 800;
+				}
+			}
+
+			.item_text {
+				font-size: 13px;
+				color: #777;
+				margin-bottom: 0;
+			}
+
+			.btn {
+				width: 100%;
+				text-align: center;
+				padding: 10px;
+			}
+
+		}
+
+	}
+
+}
+
+.isAuthPage {
+
+	.auth-container {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	form {
+		text-align: center;
+		margin-bottom: 40px;
+
+		input {
+			margin-bottom: 30px;
+		}
+
+		button {
+
+			width: 100%;
+			max-width: 200px;
+
+		}
+
+	}
+
+	.auth-links {
+
+		p {
+			color: #777;
+		}
+
+		a {
+			color: #000;
+			text-decoration: underline !important;
+			font-size: 20px;
+		}
+
+	}
+
+}
+
+.isRegPage {
+
+	.reg-container {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	form {
+		text-align: center;
+		margin-bottom: 40px;
+
+		input {
+			margin-bottom: 30px;
+		}
+
+		button {
+
+			width: 100%;
+			max-width: 300px;
+
+		}
+
+	}
+
+	.reg-links {
+
+		p {
+			color: #777;
+		}
+
+		a {
+			color: #000;
+			text-decoration: underline !important;
+			font-size: 20px;
+		}
+
+	}
+
 }
