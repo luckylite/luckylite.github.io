@@ -1,0 +1,259 @@
+@import "vars"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background-color: #262C34
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.content-wrapper
+	width: 100%
+	max-width: 1440px
+	margin: 0 auto
+	padding: 0 15px
+
+b, strong
+	font-weight: bold
+
+h2
+	font-size: 30px
+	font-weight: 300
+
+h3
+	font-size: 21px
+
+.btn
+	border-radius: 40px
+	padding: 15px 25px
+	font-size: 19px
+	font-weight: 300
+	&.btn-blue
+		background-color: $accent
+		color: #fff
+		&:hover
+			background-color: $accent-dark
+
+.top-line
+	background-color: #404A57
+	&_logo
+		background-color: #57606B
+		padding: 10px 15px
+		text-transform: uppercase
+		a
+			color: #000
+
+.mobile-menu
+	display: none
+	&_button
+		font-size: 34px
+		padding: 10px 20px
+		background-color: #404A57
+		color: #5D6D80
+		cursor: pointer
+	&_content
+		color: #fff
+		display: none
+		ul
+			margin: 0
+			padding: 0
+			li
+				list-style-type: none
+				background-color: $accent-dark
+				border-bottom: 2px solid #2B333C
+				a
+					display: block
+					color: #fff
+					font-size: 21px
+					font-weight: 200
+					padding: 30px
+					width: 100%
+					text-align: center
+	&.active
+		.mobile-menu_button
+			color: #fff
+		.mobile-menu_content
+			display: block
+
+.menu
+	background-color: #3D4955
+	border-top: 2px solid #2B333C
+	border-bottom: 2px solid #2B333C
+	&_list
+		border-left: 2px solid #2B333C
+	ul
+		margin: 0
+		padding: 0
+		font-size: 0
+		li
+			list-style-type: none
+			display: inline-block
+			font-size: 16px
+	a
+		color: #fff
+		text-align: center
+		width: 135px
+		padding: 20px 0
+		display: inline-block
+		background-color: $accent-dark
+		border-right: 2px solid #2B333C
+		&:hover
+			text-decoration: none
+		span
+			text-align: center
+			font-weight: 300
+		i
+			display: block
+			font-size: 28px
+			margin-bottom: 5px
+	&_user
+		border-left: 2px solid #2B333C
+		a
+			background-color: transparent
+
+.progress-info
+	background-color: #3D4955
+	ul
+		margin: 0
+		padding: 7px 0
+		li
+			margin-right: 20px
+			list-style-type: none
+			display: inline-block
+			color: #fff
+			font-weight: 300
+			span
+				color: #00FF94
+			&:last-child
+				margin-right: 0
+
+.content
+	margin: 50px 0
+	.page-title
+		color: #fff
+		margin-bottom: 40px
+
+.index-page
+	.content-item
+		background-color: $accent
+		text-align: center
+		padding-top: 100px
+		padding-bottom: 60px
+		margin-bottom: 30px
+		h1
+			font-size: 40px
+			color: #fff
+			font-weight: 200
+		p
+			font-size: 25px
+			margin: 0
+			color: #000
+			font-weight: 200
+		&_gray
+			background-color: $accent-dark
+		&_desc
+			background-color: #47616F
+			padding: 30px
+			h3
+				font-size: 25px
+				font-weight: 300
+				color: #fff
+			p
+				color: #fff
+				font-weight: 200
+
+.auth-page
+	.auth
+		margin: 180px 0
+		display: flex
+		align-items: center
+		justify-content: center
+		&-container
+			background-color: #fff
+			width: 100%
+			max-width: 330px
+		&-title
+			padding: 30px
+			background-color: $accent
+			h3
+				color: #fff
+				text-align: center
+				margin: 0
+		&-form
+			padding: 30px
+			input
+				width: 100%
+				border-radius: 40px
+				padding: 10px
+				border: 1px solid #B3B3B3
+				text-align: center
+				font-size: 20px
+				font-weight: 300
+				margin-bottom: 15px
+			button
+				width: 100%
+		&-links
+			text-align: center
+			margin-bottom: 30px
+			padding: 0 30px
+			a
+				color: $accent
+				font-size: 21px
+				font-weight: 300
+		&-info
+			padding: 0 30px 30px 30px
+			p
+				margin: 0
+				font-size: 14px
+				font-weight: 300
+				text-align: center
+
+.footer
+	&_menu
+		padding: 18px
+		background-color: #262F39
+		ul
+			margin: 0
+			padding: 0
+			li
+				list-style-type: none
+				a
+					font-size: 25px
+					color: #fff
+					font-weight: 300
+	&_cr
+		padding: 18px
+		background-color: #3D4955
+		text-align: center
+		p
+			color: #9A9A9A
+			font-size: 21px
+			font-weight: 200
+			margin: 0
