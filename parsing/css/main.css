@@ -1,0 +1,302 @@
+::-webkit-input-placeholder {
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  color: #666;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::-moz-selection {
+  background-color: #2C91DA;
+  color: #fff;
+}
+
+::selection {
+  background-color: #2C91DA;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "roboto", sans-serif;
+  overflow-x: hidden;
+  color: #333;
+  background-color: #262C34;
+}
+
+body input, body textarea {
+  border: #666 1px solid;
+  outline: none;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  border-color: red;
+}
+
+body input:required:valid, body textarea:required:valid {
+  border-color: green;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive.img-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.top-line {
+  background-color: #404A57;
+}
+
+.top-line_logo {
+  background-color: #57606B;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.top-line_logo a {
+  color: #000;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu_button {
+  font-size: 34px;
+  padding: 10px 20px;
+  background-color: #404A57;
+  color: #5D6D80;
+  cursor: pointer;
+}
+
+.mobile-menu_content {
+  color: #fff;
+  display: none;
+}
+
+.mobile-menu_content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu_content ul li {
+  list-style-type: none;
+  background-color: #3E668D;
+  border-bottom: 2px solid #2B333C;
+}
+
+.mobile-menu_content ul li a {
+  display: block;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 200;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-menu.active .mobile-menu_button {
+  color: #fff;
+}
+
+.mobile-menu.active .mobile-menu_content {
+  display: block;
+}
+
+.menu {
+  background-color: #3D4955;
+  border-top: 2px solid #2B333C;
+  border-bottom: 2px solid #2B333C;
+}
+
+.menu_list {
+  border-left: 2px solid #2B333C;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.menu a {
+  color: #fff;
+  text-align: center;
+  width: 135px;
+  padding: 20px 0;
+  display: inline-block;
+  background-color: #3E668D;
+  border-right: 2px solid #2B333C;
+}
+
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu a span {
+  text-align: center;
+  font-weight: 300;
+}
+
+.menu a i {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.menu_user {
+  border-left: 2px solid #2B333C;
+}
+
+.menu_user a {
+  background-color: transparent;
+}
+
+.progress-info {
+  background-color: #3D4955;
+}
+
+.progress-info ul {
+  margin: 0;
+  padding: 7px 0;
+}
+
+.progress-info ul li {
+  margin-right: 20px;
+  list-style-type: none;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+}
+
+.progress-info ul li span {
+  color: #00FF94;
+}
+
+.progress-info ul li:last-child {
+  margin-right: 0;
+}
+
+.content {
+  margin: 50px 0;
+}
+
+.content .page-title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.index-page .content-item {
+  background-color: #2C91DA;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+
+.index-page .content-item h1 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.index-page .content-item p {
+  font-size: 25px;
+  margin: 0;
+  color: #000;
+  font-weight: 200;
+}
+
+.index-page .content-item_gray {
+  background-color: #3E668D;
+}
+
+.index-page .content-item_desc {
+  background-color: #47616F;
+  padding: 30px;
+}
+
+.index-page .content-item_desc h3 {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.index-page .content-item_desc p {
+  color: #fff;
+  font-weight: 200;
+}
+
+.footer_menu {
+  padding: 18px;
+  background-color: #262F39;
+}
+
+.footer_menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_menu ul li {
+  list-style-type: none;
+}
+
+.footer_menu ul li a {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer_cr {
+  padding: 18px;
+  background-color: #3D4955;
+  text-align: center;
+}
+
+.footer_cr p {
+  color: #9A9A9A;
+  font-size: 21px;
+  font-weight: 200;
+  margin: 0;
+}
