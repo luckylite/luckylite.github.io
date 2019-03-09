@@ -25,4 +25,7 @@
   .menu {
     display: none;
   }
+  .parsing-page .parsing-menu_params .checkbox {
+    display: block;
+  }
 }

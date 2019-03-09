@@ -24,9 +24,14 @@
   color: #fff;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
+  min-height: 100%;
   position: relative;
   line-height: 1.65;
   font-family: "roboto", sans-serif;
@@ -83,11 +88,12 @@ h3 {
 }
 
 .btn {
-  -webkit-border-radius: 40px;
-          border-radius: 40px;
-  padding: 15px 25px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  padding: 10px 40px;
   font-size: 19px;
   font-weight: 300;
+  color: #fff;
 }
 
 .btn.btn-blue {
@@ -97,6 +103,107 @@ h3 {
 
 .btn.btn-blue:hover {
   background-color: #3E668D;
+}
+
+.btn.btn-green {
+  background-color: #00A651;
+  color: #fff;
+}
+
+.btn.btn-green:hover {
+  background-color: #00803E;
+}
+
+.select-menu {
+  display: inline-block;
+  position: relative;
+  min-width: 130px;
+}
+
+.select-menu .selected {
+  display: inline-block;
+  background-color: #262C34;
+  border: 1px solid #3E4855;
+  padding: 10px;
+  padding-right: 20px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  color: #E47E07;
+}
+
+.select-menu .selected::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0dd";
+  right: 0;
+  top: 0;
+  position: absolute;
+  padding: 7px;
+  padding-right: 15px;
+}
+
+.select-menu .menu-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #262C34;
+  border: 1px solid #3E4855;
+  border-top: 0;
+  width: 100%;
+}
+
+.select-menu .menu-list ul {
+  margin: 0;
+  padding: 0;
+}
+
+.select-menu .menu-list ul li {
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-menu .menu-list ul li:hover {
+  background-color: #333B46;
+}
+
+.select-menu.active .menu-list {
+  display: inline-block;
+}
+
+.checkbox {
+  display: inline-block;
+  font-weight: 300;
+  padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #7D7D7D;
+  -webkit-border-radius: 5em;
+          border-radius: 5em;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  border: 1px solid #fff;
+}
+
+.checkbox.active::after {
+  background-color: #00A651;
+}
+
+.add-button {
+  display: inline-block;
+  background-color: #262C34;
+  border: 1px solid #3E4855;
+  padding: 10px 15px;
+  color: #E47E07;
+  cursor: pointer;
 }
 
 .top-line {
@@ -290,7 +397,6 @@ h3 {
 }
 
 .auth-page .auth {
-  margin: 180px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -363,6 +469,98 @@ h3 {
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+}
+
+.parsing-page .content {
+  margin-top: 0;
+}
+
+.parsing-page .parsing-menu {
+  background-color: #333B46;
+  color: #fff;
+  font-weight: 300;
+  border: 2px solid #2B333C;
+}
+
+.parsing-page .parsing-menu_category {
+  padding: 15px;
+  border-right: 2px solid #293038;
+}
+
+.parsing-page .parsing-menu_title {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #293038;
+  margin-bottom: 10px;
+}
+
+.parsing-page .parsing-menu_select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parsing-page .parsing-menu_select .select-menu {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.parsing-page .parsing-menu_params {
+  padding: 15px;
+}
+
+.parsing-page .parsing-menu_params .checkbox {
+  margin-right: 30px;
+}
+
+.parsing-page .parsing-menu_links {
+  border-top: 2px solid #293038;
+  border-bottom: 2px solid #293038;
+  padding: 15px;
+}
+
+.parsing-page .parsing-menu_links .parsing-menu_title {
+  border-bottom: none;
+}
+
+.parsing-page .parsing-menu_textarea textarea {
+  border: none;
+  background-color: #3D4955;
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.parsing-page .parsing-menu_textarea textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.parsing-page .parsing-menu_textarea textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.parsing-page .parsing-menu_textarea textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.parsing-page .parsing-menu_textarea textarea::placeholder {
+  color: #fff;
+}
+
+.parsing-page .parsing-menu_button {
+  padding: 15px;
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 .footer_menu {
