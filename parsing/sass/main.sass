@@ -74,6 +74,11 @@ h4
 		color: #fff
 		&:hover
 			background-color: #00803E
+		&.btn-wb
+			background-color: transparent
+			border: 1px solid #00A651
+			&:hover
+				background-color: #00A651
 
 .select-menu
 	display: inline-block
@@ -101,6 +106,8 @@ h4
 	.menu-list
 		display: none
 		position: absolute
+		max-height: 150px
+		overflow-y: auto
 		z-index: 10
 		left: 0
 		background-color: #262C34
@@ -140,6 +147,24 @@ h4
 		&::after
 			background-color: #00A651
 
+.captcha-block
+	width: 180px
+	.captcha
+		width: 100%
+		height: 80px
+		border: 1px solid #fff
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 3px
+	.answer
+		input
+			width: 100%
+			padding: 8px
+			text-align: center
+			border: 1px solid #fff
+			background: none
+			color: #fff
 
 .add-button
 	display: inline-block
@@ -148,6 +173,38 @@ h4
 	padding: 10px 15px
 	color: #E47E07
 	cursor: pointer
+	.exit
+		display: none
+		color: #E47E07
+	&.active
+		.exit
+			display: inline-block
+		.plus
+			display: none
+
+.add-form
+	width: 100%
+	position: absolute
+	z-index: 9
+	top: 100%
+	display: none
+	&.active
+		display: flex
+	input
+		padding: 10px
+		flex-grow: 1
+		background-color: #262C34
+		border: 1px solid #3E4855
+		color: #fff
+	button
+		padding: 0 13.5px
+		display: block
+		background-color: #262C34
+		border: 1px solid #3E4855
+		color: #fff
+
+.add-box
+	position: relative
 
 .top-line
 	background-color: #404A57
@@ -204,9 +261,6 @@ h4
 			list-style-type: none
 			display: inline-block
 			font-size: 16px
-			&.active
-				a
-					background-color: $accent
 	a
 		color: #fff
 		text-align: center
@@ -215,7 +269,8 @@ h4
 		display: inline-block
 		background-color: $accent-dark
 		border-right: 2px solid #2B333C
-		&:hover
+		&.active, &:hover
+			background-color: $accent
 			text-decoration: none
 		span
 			text-align: center
@@ -231,6 +286,7 @@ h4
 
 .progress-info
 	background-color: #3D4955
+	min-height: 35px
 	ul
 		margin: 0
 		padding: 7px 0
@@ -373,9 +429,11 @@ h4
 	.content
 		margin-top: 0
 	.base-list_mobile
+		padding-bottom: 150px
 		display: none
 		color: #fff
-		overflow-y: auto
+		overflow-x: auto
+		padding-bottom: 120px
 		h4
 			margin-bottom: 15px
 		.item-img
@@ -408,10 +466,18 @@ h4
 			align-items: center
 			background-color: #333B46
 			cursor: pointer
+			&:hover
+				background-color: #FF0000
 		.list-item
 			display: flex
 			background-color: #3D4955
 			min-width: 800px
+		.item-category_select
+			display: flex
+			.add-form
+				input
+					width: 130px
+					flex-grow: 0
 	.base-menu
 		padding: 30px 20px
 		background-color: #333B46
@@ -425,6 +491,10 @@ h4
 			margin-right: 20px
 		.select-menu
 			width: 200px
+		.add-form
+			input
+				flex-grow: 0
+				width: 200px
 	.base-download
 		span
 			font-size: 19px
@@ -440,6 +510,7 @@ h4
 		color: #fff
 		font-weight: 300
 		overflow-x: auto
+		padding-bottom: 120px
 		table
 			width: 100%
 			min-width: 1200px
@@ -503,6 +574,77 @@ h4
 				background-color: #333B46
 				font-size: 16px
 				cursor: pointer
+				&:hover
+					background-color: #FF0000
+
+.sidebar
+	background-color: #262C34
+	padding: 30px
+	overflow-y: auto
+	box-shadow: 10px 0 50px -10px rgba(0, 0, 0, 0.3)
+	& > ul > li:last-child
+		margin-top: 50px
+	ul
+		margin: 0
+		padding: 0
+	li
+		list-style-type: none
+		margin-bottom: 20px
+		color: #fff
+		font-weight: 200
+		&.active
+			a
+				font-weight: 300
+				font-size: 18px
+		& >
+			ul
+				margin-top: 20px
+				margin-left: 20px
+	a
+		color: #fff
+		font-weight: 200
+
+.password-reset-page
+	background-color: #333B46
+	.content
+		margin: 0
+	.reset-password-form
+		padding-top: 30px
+		color: #fff
+		h2
+			margin-bottom: 30px
+		p
+			margin-bottom: 10px
+			font-weight: 200
+		input
+			margin-bottom: 20px
+			padding: 8px
+			width: 100%
+			max-width: 400px
+
+.feedback-page
+	background-color: #333B46
+	.content
+		margin: 0
+	.feedback-form
+		padding-top: 30px
+		color: #fff
+		h2
+			margin-bottom: 30px
+		input[type="text"]
+			width: 100%
+			margin-bottom: 30px
+			padding: 8px
+		p
+			margin-bottom: 10px
+			font-weight: 300
+		textarea
+			width: 100%
+			min-height: 100px
+			margin-bottom: 30px
+			padding: 8px
+		input[type="file"]
+			margin-bottom: 20px
 
 .footer
 	position: absolute

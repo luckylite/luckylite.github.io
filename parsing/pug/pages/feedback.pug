@@ -1,0 +1,64 @@
+extends ../layout/settings
+
+block variables
+	- var title = 'Тех. поддержка';
+	- var pageClass = 'feedback-page';
+
+block content
+	.content-wrapper
+		.row
+			.col-lg-3.col-md-4.col-sm-5
+				.sidebar
+					ul
+						li.active
+							a(href="#") Сбросить пароль
+						li
+							a(href="#") Тех. поддержка
+						li
+							| Страницы
+							ul
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+								li
+									a(href="#") Страница
+						li
+							a(href="#") Выйти
+			.col-lg-9.col-md-8.col-sm-7.col-12
+				.feedback-form
+					h2 Тех. поддержка
+					.row
+						.col-sm-8
+							.row
+								.col-sm-6
+									p Ваш E-mail
+									input(type="text")
+								.col-sm-6
+									p Ваше имя
+									input(type="text")
+								.col-sm-12
+									p Сообщение
+									textarea
+							.row.justify-content-between
+								.col-auto
+									p Прикрепите файл
+									input(type="file")
+									p Допустимые типы файлов: .jpg, .png, .gif, .pdf, .doc, .docx<br>Максимальный размер файла: 3 Мб
+								.col-auto
+									.captcha-block
+										.captcha Тут капча
+										.answer
+											input(type="text" placeholder="Ответ")
+							.row.justify-content-end
+								.col-auto
+									button(type="submit").btn.btn-green.btn-wb Отправить
+						.col-sm-4
+							p Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.
+
+
+
+
+	

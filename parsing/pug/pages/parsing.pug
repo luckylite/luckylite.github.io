@@ -11,7 +11,7 @@ block content
 				.col-lg-3.col-md-4.col-sm-6
 					.parsing-menu_category
 						.parsing-menu_title Категория
-						.parsing-menu_select
+						.parsing-menu_select.add-box
 							.select-menu
 								.selected Овсянка
 								.menu-list
@@ -21,9 +21,15 @@ block content
 										li Пункт 2
 										li Пункт 3
 							.add-button
-								i.fas.fa-plus
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
+
 				.col-lg-9.col-md-8.col-sm-6
-					.parsing-menu_params
+					.parsing-menu_params.h-100.d-flex.flex-column.justify-content-between
 						.parsing-menu_title Что будем брать?
 						.parsing-menu_checkboxes
 							.checkbox.active Заголовок

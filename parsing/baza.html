@@ -43,7 +43,7 @@
             <div class="col-auto">
               <div class="menu_list">
                 <ul>
-                  <li class="active"><a href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
+                  <li><a class="active" href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
                   <li><a href="#"><i class="fas fa-list-ul"></i><span>База</span></a></li>
                 </ul>
               </div>
@@ -74,19 +74,25 @@
           <div class="base-menu">
             <div class="row align-items-center justify-content-between">
               <div class="col-auto">
-                <div class="base-category"><span>Категория</span>
-                  <div class="select-menu">
-                    <div class="selected">Овсянка</div>
-                    <div class="menu-list">
-                      <ul>
-                        <li>Овсянка</li>
-                        <li>Пункт 1</li>
-                        <li>Пункт 2</li>
-                        <li>Пункт 3</li>
-                      </ul>
+                <div class="base-category d-sm-flex align-items-center"><span>Категория</span>
+                  <div class="base-category_menu add-box d-flex">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
                     </div>
                   </div>
-                  <div class="add-button"><i class="fas fa-plus"></i></div>
                 </div>
               </div>
               <div class="col-auto">
@@ -128,7 +134,7 @@
                     <tr>
                       <td colspan="2">
                         <div class="item-category"><span>Категория</span>
-                          <div class="item-category_select">
+                          <div class="item-category_select add-box">
                             <div class="select-menu">
                               <div class="selected">Овсянка</div>
                               <div class="menu-list">
@@ -140,7 +146,11 @@
                                 </ul>
                               </div>
                             </div>
-                            <div class="add-button"><i class="fas fa-plus"></i></div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -174,7 +184,7 @@
                     <tr>
                       <td colspan="2">
                         <div class="item-category"><span>Категория</span>
-                          <div class="item-category_select">
+                          <div class="item-category_select add-box">
                             <div class="select-menu">
                               <div class="selected">Овсянка</div>
                               <div class="menu-list">
@@ -186,7 +196,11 @@
                                 </ul>
                               </div>
                             </div>
-                            <div class="add-button"><i class="fas fa-plus"></i></div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -220,7 +234,7 @@
                     <tr>
                       <td colspan="2">
                         <div class="item-category"><span>Категория</span>
-                          <div class="item-category_select">
+                          <div class="item-category_select add-box">
                             <div class="select-menu">
                               <div class="selected">Овсянка</div>
                               <div class="menu-list">
@@ -232,7 +246,11 @@
                                 </ul>
                               </div>
                             </div>
-                            <div class="add-button"><i class="fas fa-plus"></i></div>
+                            <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                            <div class="add-form">
+                              <input type="text">
+                              <button><i class="fas fa-plus"></i></button>
+                            </div>
                           </div>
                         </div>
                       </td>
@@ -257,7 +275,7 @@
                 <div class="item-price"><span>Цена</span><span>5000</span></div>
                 <div class="item-phone"><span>Телефон</span><span>651657912654</span></div>
                 <div class="item-category"><span>Категория</span>
-                  <div class="item-category_select">
+                  <div class="item-category_select add-box">
                     <div class="select-menu">
                       <div class="selected">Овсянка</div>
                       <div class="menu-list">
@@ -269,7 +287,43 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="add-button"><i class="fas fa-plus"></i></div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-remove"><i class="fas fa-trash-alt"></i></div>
+            </div>
+            <div class="list-item">
+              <div class="item-img"></div>
+              <div class="item-text">
+                <h3>Заголовок объявления</h3>
+                <p>Описание объявления ,   Максимум 3  строки Максимум 3 строки</p>
+              </div>
+              <div class="item-info">
+                <div class="item-price"><span>Цена</span><span>5000</span></div>
+                <div class="item-phone"><span>Телефон</span><span>651657912654</span></div>
+                <div class="item-category"><span>Категория</span>
+                  <div class="item-category_select add-box">
+                    <div class="select-menu">
+                      <div class="selected">Овсянка</div>
+                      <div class="menu-list">
+                        <ul>
+                          <li>Овсянка</li>
+                          <li>Пункт 1</li>
+                          <li>Пункт 2</li>
+                          <li>Пункт 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
                   </div>
                 </div>
               </div>

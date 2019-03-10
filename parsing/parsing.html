@@ -43,7 +43,7 @@
             <div class="col-auto">
               <div class="menu_list">
                 <ul>
-                  <li class="active"><a href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
+                  <li><a class="active" href="#"><i class="fas fa-bars"></i><span>Парсинг</span></a></li>
                   <li><a href="#"><i class="fas fa-list-ul"></i><span>База</span></a></li>
                 </ul>
               </div>
@@ -76,7 +76,7 @@
               <div class="col-lg-3 col-md-4 col-sm-6">
                 <div class="parsing-menu_category">
                   <div class="parsing-menu_title">Категория</div>
-                  <div class="parsing-menu_select">
+                  <div class="parsing-menu_select add-box">
                     <div class="select-menu">
                       <div class="selected">Овсянка</div>
                       <div class="menu-list">
@@ -88,12 +88,16 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="add-button"><i class="fas fa-plus"></i></div>
+                    <div class="add-button"><i class="fas fa-plus plus"></i><i class="fas fa-times exit"></i></div>
+                    <div class="add-form">
+                      <input type="text">
+                      <button><i class="fas fa-plus"></i></button>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-9 col-md-8 col-sm-6">
-                <div class="parsing-menu_params">
+                <div class="parsing-menu_params h-100 d-flex flex-column justify-content-between">
                   <div class="parsing-menu_title">Что будем брать?</div>
                   <div class="parsing-menu_checkboxes">
                     <div class="checkbox active">Заголовок</div>

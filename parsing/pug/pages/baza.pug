@@ -9,18 +9,24 @@ block content
 		.base-menu
 			.row.align-items-center.justify-content-between
 				.col-auto
-					.base-category
+					.base-category.d-sm-flex.align-items-center
 						span Категория
-						.select-menu
-							.selected Овсянка
-							.menu-list
-								ul
-									li Овсянка
-									li Пункт 1
-									li Пункт 2
-									li Пункт 3
-						.add-button
-								i.fas.fa-plus
+						.base-category_menu.add-box.d-flex
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+									i.fas.fa-plus.plus
+									i.fas.fa-times.exit
+							.add-form
+									input(type="text")
+									button
+										i.fas.fa-plus
 				.col-auto
 					.base-download
 						span Скачать
@@ -54,7 +60,7 @@ block content
 								td(colspan="2")
 									.item-category
 										span Категория
-										.item-category_select
+										.item-category_select.add-box
 											.select-menu
 												.selected Овсянка
 												.menu-list
@@ -64,7 +70,12 @@ block content
 														li Пункт 2
 														li Пункт 3
 											.add-button
-												i.fas.fa-plus
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
 					td
 						.item-remove
 							i.fas.fa-trash-alt
@@ -86,7 +97,7 @@ block content
 								td(colspan="2")
 									.item-category
 										span Категория
-										.item-category_select
+										.item-category_select.add-box
 											.select-menu
 												.selected Овсянка
 												.menu-list
@@ -96,7 +107,12 @@ block content
 														li Пункт 2
 														li Пункт 3
 											.add-button
-												i.fas.fa-plus
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
 					td
 						.item-remove
 							i.fas.fa-trash-alt
@@ -118,7 +134,7 @@ block content
 								td(colspan="2")
 									.item-category
 										span Категория
-										.item-category_select
+										.item-category_select.add-box
 											.select-menu
 												.selected Овсянка
 												.menu-list
@@ -128,7 +144,12 @@ block content
 														li Пункт 2
 														li Пункт 3
 											.add-button
-												i.fas.fa-plus
+												i.fas.fa-plus.plus
+												i.fas.fa-times.exit
+											.add-form
+												input(type="text")
+												button
+													i.fas.fa-plus
 					td
 						.item-remove
 							i.fas.fa-trash-alt
@@ -148,7 +169,7 @@ block content
 						span 651657912654
 					.item-category
 						span Категория
-						.item-category_select
+						.item-category_select.add-box
 							.select-menu
 								.selected Овсянка
 								.menu-list
@@ -158,7 +179,44 @@ block content
 										li Пункт 2
 										li Пункт 3
 							.add-button
-								i.fas.fa-plus
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
+				.item-remove
+					i.fas.fa-trash-alt
+			.list-item
+				.item-img
+				.item-text
+					h3 Заголовок объявления
+					p Описание объявления ,   Максимум 3  строки Максимум 3 строки
+				.item-info
+					.item-price
+						span Цена
+						span 5000
+					.item-phone
+						span Телефон
+						span 651657912654
+					.item-category
+						span Категория
+						.item-category_select.add-box
+							.select-menu
+								.selected Овсянка
+								.menu-list
+									ul
+										li Овсянка
+										li Пункт 1
+										li Пункт 2
+										li Пункт 3
+							.add-button
+								i.fas.fa-plus.plus
+								i.fas.fa-times.exit
+							.add-form
+								input(type="text")
+								button
+									i.fas.fa-plus
 				.item-remove
 					i.fas.fa-trash-alt
 
