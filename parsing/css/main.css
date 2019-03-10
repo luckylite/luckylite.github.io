@@ -87,6 +87,11 @@ h3 {
   font-size: 21px;
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .btn {
   -webkit-border-radius: 50px;
           border-radius: 50px;
@@ -146,6 +151,7 @@ h3 {
 .select-menu .menu-list {
   display: none;
   position: absolute;
+  z-index: 10;
   left: 0;
   background-color: #262C34;
   border: 1px solid #3E4855;
@@ -286,6 +292,10 @@ h3 {
   list-style-type: none;
   display: inline-block;
   font-size: 16px;
+}
+
+.menu ul li.active a {
+  background-color: #2C91DA;
 }
 
 .menu a {
@@ -554,6 +564,273 @@ h3 {
 .parsing-page .parsing-menu_button {
   padding: 15px;
   text-align: right;
+}
+
+.base-page .content {
+  margin-top: 0;
+}
+
+.base-page .base-list_mobile {
+  display: none;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.base-page .base-list_mobile h4 {
+  margin-bottom: 15px;
+}
+
+.base-page .base-list_mobile .item-img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 160px;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
+  height: 160px;
+  background-color: #C4C4C4;
+}
+
+.base-page .base-list_mobile .item-text {
+  padding: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.base-page .base-list_mobile .item-text p {
+  width: 90%;
+  font-weight: 300;
+}
+
+.base-page .base-list_mobile .item-info {
+  width: 30%;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 300;
+}
+
+.base-page .base-list_mobile .item-price, .base-page .base-list_mobile .item-phone {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.base-page .base-list_mobile .item-remove {
+  height: 160px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40px;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333B46;
+  cursor: pointer;
+}
+
+.base-page .base-list_mobile .list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3D4955;
+  min-width: 800px;
+}
+
+.base-page .base-menu {
+  padding: 30px 20px;
+  background-color: #333B46;
+  color: #fff;
+  font-weight: 300;
+  border: 2px solid #2B333C;
+  margin-bottom: 30px;
+}
+
+.base-page .base-category span {
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+.base-page .base-category .select-menu {
+  width: 200px;
+}
+
+.base-page .base-download span {
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+.base-page .base-download a {
+  font-size: 25px;
+  color: #FF8A00;
+  font-weight: 200;
+  margin-right: 15px;
+}
+
+.base-page .base-download a:last-child {
+  margin-right: 0;
+}
+
+.base-page .base-list {
+  color: #fff;
+  font-weight: 300;
+  overflow-x: auto;
+}
+
+.base-page .base-list table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.base-page .base-list table tr {
+  padding-bottom: 20px;
+}
+
+.base-page .base-list table tr > td:nth-child(1) {
+  width: 65%;
+}
+
+.base-page .base-list table tr > td:nth-child(2) {
+  width: 15%;
+}
+
+.base-page .base-list table tr > td:nth-child(3) {
+  width: 10%;
+}
+
+.base-page .base-list table tr > td:nth-child(4) {
+  width: auto;
+  text-align: right;
+}
+
+.base-page .base-list table tr > td {
+  vertical-align: top;
+}
+
+.base-page .base-list table tr > td table {
+  min-width: 0;
+  border-spacing: 0;
+}
+
+.base-page .base-list table tr > td table td:nth-child(1) {
+  width: 60% !important;
+}
+
+.base-page .base-list table tr > td table td:nth-child(2) {
+  width: 40% !important;
+}
+
+.base-page .base-list table .list-item {
+  background-color: #3D4955;
+}
+
+.base-page .base-list table .item-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.base-page .base-list table .item-img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 187px;
+      -ms-flex: 0 0 187px;
+          flex: 0 0 187px;
+  height: 150px;
+  background-color: #C4C4C4;
+  overflow: hidden;
+}
+
+.base-page .base-list table .item-text {
+  padding: 15px;
+}
+
+.base-page .base-list table .item-text p {
+  margin: 0;
+  width: 90%;
+  font-weight: 300;
+}
+
+.base-page .base-list table .item-price {
+  padding: 5px 0;
+}
+
+.base-page .base-list table .item-phone {
+  padding: 5px 0;
+}
+
+.base-page .base-list table .item-category {
+  margin-top: 10px;
+}
+
+.base-page .base-list table .item-category_select {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.base-page .base-list table .item-category_select .select-menu {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.base-page .base-list table .item-remove {
+  width: 50px;
+  height: 150px;
+  margin-left: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333B46;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .footer {
