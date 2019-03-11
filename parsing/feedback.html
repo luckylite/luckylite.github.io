@@ -80,48 +80,60 @@
             </div>
             <div class="col-lg-9 col-md-8 col-sm-7 col-12">
               <div class="feedback-form">
-                <h2>Тех. поддержка</h2>
-                <div class="row">
-                  <div class="col-sm-8">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <p>Ваш E-mail</p>
-                        <input type="text">
+                <div class="form-title d-flex flex-sm-column flex-md-row flex-column">
+                  <h2>Тех. поддержка</h2>
+                  <p class="d-md-block d-lg-none">Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.</p>
+                </div>
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="row justify-content-between flex-sm-column flex-md-row flex-column">
+                            <div class="small-input">
+                              <label>Ваш E-mail</label>
+                              <input type="text" required>
+                            </div>
+                            <div class="small-input">
+                              <label>Ваше имя</label>
+                              <input type="text" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <p>Сообщение</p>
+                          <textarea required></textarea>
+                        </div>
                       </div>
-                      <div class="col-sm-6">
-                        <p>Ваше имя</p>
-                        <input type="text">
-                      </div>
-                      <div class="col-sm-12">
-                        <p>Сообщение</p>
-                        <textarea></textarea>
-                      </div>
-                    </div>
-                    <div class="row justify-content-between">
-                      <div class="col-auto">
-                        <p>Прикрепите файл</p>
-                        <input type="file">
-                        <p>Допустимые типы файлов: .jpg, .png, .gif, .pdf, .doc, .docx<br>Максимальный размер файла: 3 Мб</p>
-                      </div>
-                      <div class="col-auto">
-                        <div class="captcha-block">
-                          <div class="captcha">Тут капча</div>
-                          <div class="answer">
-                            <input type="text" placeholder="Ответ">
+                      <div class="row justify-content-between">
+                        <div class="col-md-6">
+                          <p>Прикрепите файл</p>
+                          <div class="input-file">
+                            <label for="upload">Выберите файл</label>
+                            <input id="upload" type="file" multiple="true">
+                          </div>
+                          <p>Допустимые типы файлов: .jpg, .png, .gif, .pdf, .doc, .docx<br>Максимальный размер файла: 3 Мб</p>
+                        </div>
+                        <div class="col-md-auto">
+                          <div class="captcha-block">
+                            <div class="captcha">Тут капча</div>
+                            <div class="answer">
+                              <input type="text" placeholder="Ответ" required>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="row justify-content-end">
-                      <div class="col-auto">
-                        <button class="btn btn-green btn-wb" type="submit">Отправить</button>
+                      <div class="row justify-content-md-end justify-content-sm-center justify-content-center">
+                        <div class="col-auto">
+                          <button class="btn btn-green btn-wb" type="submit">Отправить</button>
+                        </div>
                       </div>
                     </div>
+                    <div class="col-sm-4 d-none d-sm-none d-md-none d-lg-block">
+                      <p>Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.</p>
+                    </div>
                   </div>
-                  <div class="col-sm-4">
-                    <p>Возникли сложности с использованием сайта? Заполните форму слева и опишите ваш вопрос.</p>
-                  </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>

@@ -51,6 +51,23 @@ $(document).ready(function() {
 		sideBarHeight();
 	});
 
+
+
+	$('.input-file input').on('change', function(e) {
+		var parent = $(this).closest('.input-file');
+		var label = parent.children('label');
+
+		var files = $(this)[0].files;
+
+		if (files.length === 1) {
+			var filename = e.target.value.split('\\').pop();
+
+			label.html(filename);
+		} else {
+			label.html(files.length + ' файлов готово к загрузке');
+		}
+	});
+
 });
 
 function bodyPadding() {
@@ -58,5 +75,5 @@ function bodyPadding() {
 }
 
 function sideBarHeight() {
-	$('.sidebar').css('height', $('html').height() - $('.top-line').height() - $('.menu').height() - $('.progress-info').height() - $('.footer').height() + 'px');
+	$('.sidebar').css('height', $(document).height() - $('.top-line').height() - $('.menu').height() - $('.progress-info').height() - $('.footer').height() + 'px');
 }
