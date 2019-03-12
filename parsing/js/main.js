@@ -68,6 +68,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.sidebar li.li-dropdown').click(function() {
+		$(this).toggleClass('dropdown-active');
+	});
+
 });
 
 function bodyPadding() {
