@@ -1,0 +1,59 @@
+@import 'fonts'
+@import 'vars'
+
+*
+    box-sizing: border-box
+    outline: none
+    &:focus
+        outline: none
+
+body
+    min-width: 320px
+    overflow-x: hidden
+    font-family: $default-font
+    font-size: 15px
+
+h1, h2, h3, h4, h5
+    font-family: $title-font
+
+h1
+    font-size: 62px
+
+.container
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 20px
+
+.btn
+    color: #fff
+    padding: 25px 40px
+    font-size: 14px
+    border-radius: 2px
+    -webkit-box-shadow: 0px 0px 77px -45px rgba(0,0,0,0.76)
+    -moz-box-shadow: 0px 0px 77px -45px rgba(0,0,0,0.76)
+    box-shadow: 0px 0px 77px -45px rgba(0,0,0,0.76)
+    display: inline-block
+    text-decoration: none
+    position: relative
+    border: none
+    cursor: pointer
+    &:after
+        content: ''
+        width: 0
+        height: 3px
+        border-radius: 0 0 3px 3px
+        background-color: #fff
+        position: absolute
+        left: 0
+        bottom: 0
+        transition: all .3s ease
+    &:hover
+        &:after
+            width: 100%
+
+@media screen and (max-width: 500px)
+    .btn
+        padding: 15px 30px
+
+@import 'blocks/header'
