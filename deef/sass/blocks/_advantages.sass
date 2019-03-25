@@ -1,0 +1,67 @@
+.advantages
+    background: #2193b0
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0)
+    background: linear-gradient(to right, #6dd5ed, #2193b0)
+
+    &_block
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    &_col
+        &:first-child
+            flex-basis: 40%
+        &:last-child
+            flex-basis: 60%
+    &_text
+        color: #fff
+        line-height: 1.6
+        margin-bottom: 40px
+    &_btn
+        .btn
+            background-color: $accent-blue
+    &_img
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 100%
+            max-width: 400px
+            max-height: 400px
+
+@media screen and (max-width: 1200px)
+    .advantages
+        &_col
+            &:first-child
+                flex-basis: 40%
+            &:last-child
+                flex-basis: 40%
+
+@media screen and (max-width: 991px)
+    .advantages
+        &_col
+            &:first-child
+                flex-basis: 40%
+            &:last-child
+                flex-basis: 55%
+
+@media screen and (max-width: 767px)
+    .advantages
+        .section_overhead p, .section_title h2
+            text-align: center !important
+        &_col
+            &:first-child
+                flex-basis: 80%
+            &:last-child
+                flex-basis: 80%
+        &_text
+            p
+                text-align: center
+        &_btn
+            display: flex
+            justify-content: center
+
+@media screen and (max-width: 500px)
+    .advantages
+        &_col
+            &:last-child
+                flex-basis: 100%
