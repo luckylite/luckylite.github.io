@@ -1,0 +1,41 @@
+.features
+    &_block
+        display: flex
+        flex-wrap: wrap
+    &_item
+        flex-basis: 25%
+
+.features-item
+    text-align: center
+    padding: 0 15px
+    &_icon
+        color: $accent-color
+        font-size: 68px
+    &_descr
+        p
+            width: 100%
+            max-width: 380px
+            margin: 0 auto
+            color: #000
+            line-height: 1.8
+
+@media screen and (max-width: 1200px)
+    .features
+        &_item
+            flex-basis: 50%
+
+    .features-item
+        margin-bottom: 50px
+        &:last-child
+            margin-bottom: 0
+
+@media screen and (max-width: 991px)
+    //
+
+@media screen and (max-width: 768px)
+    .features
+        &_item
+            flex-basis: 100%
+
+@media screen and (max-width: 500px)
+    //
