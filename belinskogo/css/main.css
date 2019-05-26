@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "opensans-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "opensans-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-weight: normal;
+  font-family: "opensans-example";
+  font-size: 17px;
+  line-height: 1.5;
+  background: url("../img/bg.png");
+}
+
+.hide {
+  display: none;
+}
+
+.form-error, .form-success {
+  margin-top: 15px;
+}
+
+.form-error {
+  color: #ca2525;
+}
+
+.form-success {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table table th, .table table td {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+form p {
+  margin: 0;
+}
+
+form input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #49C0F3;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.admin-button {
+  width: 100%;
+  margin-top: 80px;
+  text-align: right;
+}
+
+.admin-button a {
+  display: inline-block;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  color: #000;
+}
+
+.admin-auth {
+  text-align: center;
+  margin: 20px 0;
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+.action-container {
+  width: 100%;
+}
+
+.action-container img.logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.action-form {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid silver;
+}
+
+.last-actions tr.done {
+  background-color: rgba(0, 128, 0, 0.3);
+}

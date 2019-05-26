@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <title>ОАО "Исеть-фонд". ул. Белинского 34</title>
+
+   <link rel="stylesheet" href="libs/grid.min.css">
+
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+   <div class="container">
+
+      <div class="row">
+         
+         <div class="admin-button">
+
+            <a href="#">Админ-панель</a>
+
+         </div>
+
+         <div class="admin-auth hide">
+
+            <h2>Вход в админку</h2>
+
+            <form action="">
+
+               <p>Логин:</p>
+               <p><input type="text" name="login"></p>
+
+               <p>Пароль:</p>
+               <p><input type="text" name="pass"></p>
+
+               <button type="submit">Войти</button>
+
+               <div class="form-error"></div>
+               <div class="form-success"></div>
+
+            </form>
+
+         </div>
+
+         <div class="main-container">
+
+            <div class="action-container">
+
+               <div class="action-form">
+         
+                  <h2>Оставить заявку</h2>
+
+                  <img src="img/logo.jpg" class="logo" alt="">
+
+                  <form action="">
+
+                     <p>Номер офиса:</p>
+                     <p><input type="text" name="office-number"></p>
+
+                     <p>ФИО:</p>
+                     <p><input type="text" name="fio"></p>
+
+                     <p>Телефон(без префикса +7):</p>
+                     <p><input type="phone" name="phone"></p>
+
+                     <p>Описание проблемы:</p>
+                     <p><textarea name="problem"></textarea></p>
+
+                     <button type="submit">Отправить заявку</button>
+
+                     <div class="form-error"></div>
+                     <div class="form-success"></div>
+
+                  </form>
+         
+               </div>
+         
+               <div class="last-actions">
+         
+                  <h2>Последние заявки</h2>
+
+                  <div class="table">
+
+                     <table>
+
+                        <tr>
+                           <th>ID</th>
+                           <th>Дата и время</th>
+                           <th>Телефон</th>
+                           <th>Текст</th>
+                           <th>Офис</th>
+                           <th>ФИО</th>
+                        </tr>
+   
+                        <tr>
+                           <td>10</td>
+                           <td>01.03.2019 14:00</td>
+                           <td>+79186551218</td>
+                           <td>Нет электричества в офисе</td>
+                           <td>106</td>
+                           <td>Иванов Иван Иванович</td>
+                        </tr>
+   
+                        <tr class="done">
+                           <td>10</td>
+                           <td>01.03.2019 14:00</td>
+                           <td>+79186551218</td>
+                           <td>Нет электричества в офисе</td>
+                           <td>106</td>
+                           <td>Иванов Иван Иванович</td>
+                        </tr>
+   
+                        <tr>
+                           <td>10</td>
+                           <td>01.03.2019 14:00</td>
+                           <td>+79186551218</td>
+                           <td>Нет электричества в офисе</td>
+                           <td>106</td>
+                           <td>Иванов Иван Иванович</td>
+                        </tr>
+   
+                        <tr>
+                           <td>10</td>
+                           <td>01.03.2019 14:00</td>
+                           <td>+79186551218</td>
+                           <td>Нет электричества в офисе</td>
+                           <td>106</td>
+                           <td>Иванов Иван Иванович</td>
+                        </tr>
+   
+                        <tr>
+                           <td>10</td>
+                           <td>01.03.2019 14:00</td>
+                           <td>+79186551218</td>
+                           <td>Нет электричества в офисе</td>
+                           <td>106</td>
+                           <td>Иванов Иван Иванович</td>
+                        </tr>
+   
+                     </table>
+
+                  </div>
+         
+               </div>
+         
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+   <script src="libs/jquery.min.js"></script>
+   
+   <script src="js/main.js"></script>
+
+</body>
+</html>

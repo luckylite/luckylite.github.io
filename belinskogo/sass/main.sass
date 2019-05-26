@@ -1,0 +1,122 @@
+@import "_mixins/font-face"
+
++font-face("opensans-example", "../fonts/OpenSans-Regular/OpenSans-Regular")
++font-face("opensans-example", "../fonts/OpenSans-Bold/OpenSans-Bold", bold)
+
+body
+   margin: 0
+   padding: 0
+   min-width: 320px
+   font-weight: normal
+   font-family: "opensans-example"
+   font-size: 17px
+   line-height: 1.5
+   background: url("../img/bg.png")
+
+.hide
+   display: none
+
+.form-error, .form-success
+   margin-top: 15px
+
+.form-error
+   color: #ca2525
+
+.form-success
+   color: green
+
+a
+   text-decoration: none
+
+.table
+   width: 100%
+   overflow-x: auto
+
+   table
+      width: 100%
+      border: 1px solid black
+      border-collapse: collapse
+
+      th, td
+         text-align: left
+         padding: 5px
+         border: 1px solid black
+
+form
+   p
+      margin: 0
+   
+   input
+      margin-top: 5px
+      margin-bottom: 10px
+      padding: 10px
+      width: 100%
+      max-width: 300px
+      font-size: 16px
+
+   textarea
+      width: 100%
+      max-width: 500px
+      height: 200px
+      margin-top: 5px
+      margin-bottom: 10px
+      padding: 10px
+      font-size: 16px
+
+   button
+      background-color: #49C0F3
+      border: none
+      font-size: 16px
+      padding: 15px 20px
+      cursor: pointer
+      color: #fff
+      margin-top: 10px
+
+// Main
+
+.admin-button
+   width: 100%
+   margin-top: 80px
+   text-align: right
+   
+   a
+      display: inline-block
+      padding: 15px
+      background-color: #fff
+      border: 1px solid #dcdcdc
+      color: #000
+
+.admin-auth
+   text-align: center
+   margin: 20px 0
+   padding: 30px
+   background-color: #fff
+   width: 100%
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05)
+
+.main-container
+   margin-top: 20px
+   margin-bottom: 50px
+   padding: 30px
+   background-color: #fff
+   width: 100%
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05)
+
+.action-container
+   width: 100%
+   
+   img.logo
+      width: 200px
+      height: auto
+      margin-bottom: 20px
+
+.action-form
+   text-align: center
+   padding-bottom: 30px
+   border-bottom: 1px solid silver
+
+.last-actions
+   tr
+      &.done
+         background-color: rgba(green, 0.3)
+
