@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+*:focus
+    outline: none
+
+body
+    margin: 0
+    padding: 0
+    background: #000000
+    color: white
+    font-family: "Oxygen", sans-serif
+    overflow-y: hidden
+
+a
+    text-decoration: none
+    color: #fff
+
+h1
+    letter-spacing: 7px
+
+h2
+    letter-spacing: 4px
+
+h3
+    letter-spacing: 2px
+
+.button
+    display: inline-block
+    padding: 15px 24px
+    border: 1px solid #222
+    background: transparent
+    color: #fff
+    font-size: 16px
+    cursor: pointer
+
+img
+    width: 100%
+
+aside
+    position: fixed
+    background: #222
+    top: 0
+    left: 0
+    width: 120px
+    height: 100%
+    overflow: none
+    z-index: 1
+    text-align: center
+    padding: 0
+    p
+        margin: 0
+        padding: 0
+    a
+        width: 100%
+        padding: 20px 0
+        display: block
+        &:hover
+            background-color: #000
+
+header, section, footer
+    height: 100vh
+
+.material-icons.md-36
+    font-size: 36px
+
+header
+    display: flex
+    justify-content: center
+    align-items: center
+    letter-spacing: 2px
+    .header-container
+        text-align: center
+    h1
+        font-weight: bold
+        font-size: 4em
+        letter-spacing: 4px
+    h5
+        font-weight: 300
+        font-size: 1em
+        letter-spacing: 4px
+        color: #2b2b2b
+
+.about
+    margin-left: 180px
+    display: flex
+    align-items: center
+    overflow-y: auto
+    p
+        width: 100%
+        max-width: 800px
+        line-height: 1.8
+    ul
+        line-height: 1.5
+        margin-bottom: 20px
+
+.folio
+    margin-left: 180px
+    padding-right: 3%
+    padding-top: 30px
+    overflow-y: auto
+    .row-halves
+        display: flex
+        flex-wrap: wrap
+        .col
+            width: 33%
+            margin-bottom: 20px
+            padding: 10px
+    ul
+        li
+            a
+                text-decoration: underline
+
+.contact
+    margin-left: 200px
+    margin-right: 10%
+    display: flex
+    align-items: center
+    overflow-y: auto
+    &-container
+        width: 100%
+        max-width: 500px
+    label
+        color: #b2b2b2
+        margin-bottom: 15px
+        display: block
+    input
+        width: 100%
+        max-width: 350px
+        padding: 12px
+        border: none
+        border: 1px solid #222
+        background: transparent
+        margin-top: 
+        margin-bottom: 16px
+        resize: vertical
+        color: #b2b2b2
+    textarea
+        width: 100%
+        height: 150px
+        padding: 12px
+        border: none
+        border: 1px solid #222
+        margin-bottom: 10px
+        background: transparent
+        margin-top: 
+        margin-bottom: 16px
+        resize: vertical
+        color: #b2b2b2
+    input:focus, textarea:focus
+        outline: none
+        border: 1px solid #fff
+
+@media screen and (max-width: 1200px)
+    header
+        margin-left: 160px
+
+@media screen and (max-width: 1000px)
+    .folio
+        .row-halves
+            .col
+                flex-basis: 50%
+
+
+@media screen and (max-width: 800px)
+    h1
+        font-size: 27px !important
+    
+    h2
+        font-size: 20px !important
+
+    h3
+        font-size: 18px !important
+
+    header
+        margin-left: 50px
+
+    .about
+        margin-left: 100px
+        padding-right: 50px
+
+    .folio
+        margin-left: 60px
+
+    .contact
+        margin-left: 80px
+
+    aside
+        width: 50px
+        p
+            display: none
+        
+    .material-icons.md-36
+        font-size: 25px
+
+@media screen and (max-width: 600px)
+    .folio
+        .row-halves
+            .col
+                flex-basis: 100%
