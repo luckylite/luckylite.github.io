@@ -111,23 +111,23 @@ function playGame(wi) {
             createMouse();
             score++;
 
-            if (score == 2) {
-                prize *= 2;
-                if (confirm('Вы набрали 2 очков. Ваша ставка увеличивается в 2 раза, вы можете забрать приз или продолжить. Теперь Вам нужно набрать 5 очков - и Ваша ставка увеличится в 5 раз. Если вы проиграете, то потеряете всю сумму. Желаете продолжить?') == false) {
-                    setTimeout(function() {
-                        alert('Вы заработали ' + prize + ' шифек.')
-                    }, 100);
-                    clearInterval(interval);
-                }
-            }
+            // if (score == 60) {
+            //     prize *= 2;
+            //     if (confirm('Вы набрали 60 очков. Ваша ставка увеличивается в 2 раза, вы можете забрать приз или продолжить. Теперь Вам нужно набрать 5 очков - и Ваша ставка увеличится в 5 раз. Если вы проиграете, то потеряете всю сумму. Желаете продолжить?') == false) {
+            //         setTimeout(function() {
+            //             alert('Вы заработали ' + prize + ' шифек.')
+            //         }, 100);
+            //         clearInterval(interval);
+            //     }
+            // }
 
-            if (score == 5) {
-                prize *= 5;
-                setTimeout(function() {
-                    alert('Вы заработали ' + prize + ' шифек.')
-                }, 100);
-                clearInterval(interval);
-            }
+            // if (score == 100) {
+            //     prize *= 5;
+            //     setTimeout(function() {
+            //         alert('Вы заработали ' + prize + ' шифек.')
+            //     }, 100);
+            //     clearInterval(interval);
+            // }
 
             $('.game-score span').html(score);
         }
