@@ -1,0 +1,286 @@
+@import 'fonts'
+@import 'vars'
+    
+*
+    box-sizing: border-box
+
+*:focus
+    outline: none
+
+body
+    font-family: 'Manrope'
+    font-size: 18px
+    min-width: 320px
+    overflow-x: hidden
+    line-height: 1.5
+
+.container
+    width: 100%
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 30px
+
+a
+    text-decoration: none
+
+h1
+    font-weight: 800
+
+.btn
+    display: inline-block
+    border-radius: 6px
+    font-size: 14px
+    font-weight: 600
+    letter-spacing: 0.3px
+    padding: 18px 36px
+    transition-duration: 0.2s
+    border: none
+    cursor: pointer
+    &.btn-gray
+        background-color: #dadee6
+        color: #525b6d
+        &:hover
+            background-color: darken(#dadee6, 5%)
+    &.btn-blue
+        background-color: #1966ff
+        color: #fff
+        &:hover
+            background-color: darken(#1966ff, 10%)
+
+.w-100
+    width: 100%
+
+.h-100
+    height: 100%
+
+.header
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 130px
+    &__buttons
+        margin-top: 30px
+        text-align: center
+        p
+            font-size: 12px
+            font-weight: 400
+            color: #525b6d
+            margin: 0
+            margin-top: 10px
+            a
+                color: #9ca4b4
+                &:hover
+                    text-decoration: underline
+
+.logo
+    text-decoration: none
+    color: #000
+    font-weight: 800
+    font-size: 22px
+
+.email-address
+    color: #6699ff
+    font-size: 14px
+    font-weight: 500
+    position: relative
+    padding-left: 22px
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 7px
+        width: 14px
+        height: 10px
+        background-image: url(../img/email-icon.png)
+
+.nav
+    &__list
+        list-style-type: none
+        margin: 0
+        padding: 0
+    &__item
+        margin-right: 40px
+        display: inline-block
+        &:last-child
+            margin-right: 0
+    &__link
+        font-size: 15px
+        font-weight: 600
+        color: $gray-color
+        text-decoration: none
+        &:hover
+            color: darken($gray-color, 20%)
+
+.create-account
+    margin-top: 120px
+    margin-bottom: 150px
+    &__title
+        margin-bottom: 50px
+    &__steps
+        margin-bottom: 65px
+    &__main
+        display: flex
+        margin: 0 -30px
+    &__form
+        flex-basis: 35%
+        padding: 0 30px
+    &__image
+        flex-basis: 65%
+        padding: 0 30px
+    &__img
+        background-image: url(../img/sign-up-image.png)
+        height: 100%
+        background-size: cover
+        border-radius: 15px
+        background-position: right  top
+
+.steps
+    display: flex
+    flex-wrap: wrap
+    background-color: #f0f2f5
+    border-radius: 6px
+    padding: 18px
+    &__item
+        flex-basis: 0
+        flex-grow: 1
+        max-width: 100%
+        font-weight: 700
+        color: #7a8599
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            background-image: url(../img/steps-arrow.png)
+            width: 11px
+            height: 18px
+            right: -5px
+        &:last-child
+            &::after
+                display: none
+        span
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 25px
+            height: 25px
+            border: 2px solid #7a8599
+            border-radius: 5em
+            text-align: center
+            margin-right: 15px
+        &--active
+            span
+                border-color: #222426
+            color: #222426
+
+.form
+    &__field
+        margin-bottom: 40px
+    &__label
+        display: block
+        font-size: 18px
+        color: #2d2d2d
+        font-weight: 700
+        margin-bottom: 15px
+    &__input
+        display: block
+        width: 100%
+        padding: 15px 20px
+        border: 1px solid #dadee6
+        border-radius: 6px
+        font-size: 16px
+        &::placeholder
+            color: #adb8cc
+    &__checkbox
+        font-size: 14px
+        margin-bottom: 15px
+        input
+            display: none
+            &:checked + label
+                &::after
+                    position: absolute
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    border-radius: 3px
+                    background-color: #1966ff
+                    left: -10px
+                    top: 3.5px
+        label
+            position: relative
+            padding-left: 28px
+            cursor: pointer
+            display: inline-block
+            &::before
+                position: absolute
+                content: ''
+                width: 14px
+                height: 14px
+                border-radius: 3px
+                border: 1px solid #d5d8de
+                left: 0
+                top: 3px
+            a
+                color: #7a8599
+                &:hover
+                    text-decoration: underline
+    &__small-text
+        display: block
+        margin: 0
+        margin-top: 15px
+        font-weight: 400
+        color: #7a8599
+        font-size: 14px
+
+.footer
+    background-color: #222426
+    padding-top: 80px
+    padding-bottom: 70px
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &__left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__right
+        text-align: left
+    &__logo
+        color: #525b6d
+        font-size: 25px
+    &__copyright
+        color: #7a8599
+        font-size: 14px
+        font-weight: 500
+        p
+            margin: 0
+    &__menu
+        margin-bottom: 60px
+        ul
+            list-style-type: none
+            margin: 0
+            padding: 0
+            li
+                margin-bottom: 25px
+                &:last-child
+                    margin-bottom: 0
+                &:hover
+                    a
+                        color: darken(#adb8cc, 20%)
+                a
+                    color: #adb8cc
+                    font-size: 16px
+                    font-weight: 500
+    &__info
+        font-size: 14px
+        a
+            color: #7a8599
+            &:hover
+                text-decoration: underline
+    &__email
+        margin-bottom: 10px
+
+@import 'media'
