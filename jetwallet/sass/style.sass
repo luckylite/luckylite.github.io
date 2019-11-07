@@ -59,6 +59,8 @@ h1
         justify-content: space-between
         align-items: center
         height: 130px
+    &__mobile-button, &__user-button
+        display: none
     &__buttons
         text-align: center
         p
@@ -71,6 +73,51 @@ h1
                 color: #9ca4b4
                 &:hover
                     text-decoration: underline
+
+.mobile-button
+    cursor: pointer
+    min-height: 16px
+    min-width: 26px
+    &__line
+        display: block
+        width: 26px
+        height: 2px
+        background-color: #000
+        margin-bottom: 5px
+        &:last-child
+            margin-bottom: 0
+    &.mobile-button--opened
+        position: relative
+        .mobile-button__line
+            position: absolute
+            margin-bottom: 0
+            top: 8px
+            &:nth-child(1)
+                transform: rotate(45deg)
+            &:nth-child(2)
+                transform: rotate(-45deg)
+            &:last-child
+                display: none
+
+.mobile-menu
+    margin-bottom: 40px
+    display: none
+    &.mobile-menu--opened
+        display: block
+    &__list
+        margin: 0
+        padding: 0
+        list-style-type: none
+    &__item
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+        &:hover > .mobile-menu__link
+            color: #000
+    &__link
+        font-size: 24px
+        color: #6b6c6c
+        font-weight: 800
 
 .logo
     text-decoration: none
@@ -146,7 +193,7 @@ h1
         width: 100%
         max-width: 940px
         margin: 0 auto
-        padding: 0 20px
+        padding: 0 30px
     &__title
         margin-bottom: 50px
     &__main
@@ -191,7 +238,7 @@ h1
             background-image: url(../img/steps-arrow.png)
             width: 11px
             height: 18px
-            right: -5px
+            right: -9px
         &:last-child
             &::after
                 display: none
@@ -219,6 +266,7 @@ h1
         color: #2d2d2d
         font-weight: 700
         margin-bottom: 15px
+        line-height: 1.7
     &__input
         display: block
         width: 100%
@@ -298,6 +346,8 @@ h1
         justify-content: space-between
     &__right
         text-align: left
+        .footer__copyright
+            display: none
     &__logo
         color: #525b6d
         font-size: 25px
