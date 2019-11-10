@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Главная</title>
+</head>
+<body class="main-page">
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="header__mobile-button mobile-button">
+                    <span class="mobile-button__line"></span>
+                    <span class="mobile-button__line"></span>
+                    <span class="mobile-button__line"></span>
+                </div>
+                <a href="#" class="logo header__logo">jetwallet</a>
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">О сервисе</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Как это работает</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Частые вопросы</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <a href="#" class="btn btn-gray">Инвестировать</a>
+                    <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+                </div>
+                <div class="header__user-button">
+                    <a href="#"><img src="img/user-icon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">О сервисе</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Как это работает</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Частые вопросы</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+   <section class="hero">
+       <div class="container">
+           <div class="hero-wrap">
+               <div class="hero__content">
+                    <h1 class="hero__title">Простой способ получать двойной доход от инвестиций в криптовалюты</h1>
+                    <p class="hero__text">Зарабатывайте на росте курса и получайте процент на остаток! Ваши сбережения работают в режиме автопилота ✈️</p>
+                    <div class="hero__buttons">
+                        <a href="" class="btn btn-blue btn-shadow">Открыть инвестиционный счет</a>
+                        <a href="" class="btn btn-white btn-shadow">Рассчитать доходность</a>
+                    </div>                   
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="advantages">
+       <div class="container">
+           <div class="advantages__items">
+               <div class="advantages__item">
+                   <img src="img/advantages/1.png" alt="">
+                   <h3>Обслуживание<br>на доступных условиях</h3>
+                   <p>Минимальная сумма – 1000₽. Фиксированная комиссия за  сделки. Все остальное – бесплатно</p>
+               </div>
+               <div class="advantages__item">
+                   <img src="img/advantages/2.png" alt="">
+                   <h3>Сбережения могут<br>зарабатывать больше</h3>
+                   <p>Потенциальная доходность выше чем ставка на депозите или пассивное инвестирование</p>
+               </div>
+               <div class="advantages__item">
+                   <img src="img/advantages/3.png" alt="">
+                   <h3>Покупка с карты<br>и быстрый вывод</h3>
+                   <p>Оплачивайте крипту, как покупки в супермаркете. Вывод средств происходит в течение 24 часов.</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="calculator">
+       <div class="container">
+           <div class="calculator__header">
+                <h2>Рассчитайте доходность</h2>
+                <p>Все прозрачно. Для рассчета процент по вкладу мы используем два фактора: стоимость активов в Bitcoin и срок хранения на инвестиционном счете.</p>           
+           </div>
+           <div class="calculator__main">
+               <div class="calculator__col">
+                   <div class="calculator__quantity">
+                        <p>Вы кладете <span><span class="quantity">50000</span> <span class="currency">рублей</span></span></p>
+                        <div class="calculator__input">
+                            <input type="text" id="quantity" value="50000">
+                            <select name="currency" id="">
+                                <option value="рублей;0.0000018">Руб</option>
+                                <option value="долларов;0.00011">Дол</option>
+                                <option value="гривен;0.0000046">Грн</option>
+                            </select>
+                            <input type="range" value="50000" min="1000" max="100000" id="quantity_range" data-range-value="quantity">
+                        </div>
+                        <p class="small-text">Примерно <span>0.15</span> BTC</p>
+                   </div>
+                   <div class="calculator__deadline">
+                        <p>На срок</p>
+                        <div class="calculator__input">
+                            <input type="text" id="deadline" value="15">
+                            <select name="date" id="deadline_select" dir="rtl">
+                                <option value="0.3;0.3% в день">Дней</option>
+                                <option value="0.4;0.4% в неделю">Недель</option>
+                                <option value="0.5;0.5% в месяц">Месяцев</option>
+                                <option value="0.6;0.6% в год">Лет</option>
+                            </select>
+                            <input type="range" value="15" min="1" max="30" id="deadline_range" data-range-value="deadline">
+                        </div>
+                        <p class="small-text">Тогда процентная ставка на остаток будет <span class="percent">0.3% в день</span></p>
+                   </div>
+               </div>
+               <div class="calculator__col">
+                   <div class="calculator__result">
+                        <p class="profit">И получаете <span>+0.0230 BTC (14,72%)</span></p>
+                        <div class="on-balance">
+                            <h1>123 423<span>,83 ₽</span></h1>
+                            <p class="in-btc">Примерно 0.1730 BTC</p>
+                        </div>
+                        <p class="info">Для рассчета дохода мы используем только Bitcoin, потому что поведение стоимости актива в рублях или долларах невозможно прогнозировать</p>
+                        <a href="#" class="btn btn-green btn-shadow">Стать инвестором</a>                       
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="about">
+       <div class="container">
+           <div class="about__header">
+               <h2 class="about__title">О сервисе</h2>
+               <div class="about__text">
+                   <div class="about__col">
+                       <p>Jetwallet – это платформа для покупки и хранения криптовалют, объединяющая в себе удобство привычных платежных систем и возможности инвестиционных инструментов будущего.</p>
+                   </div>
+                   <div class="about__col">
+                        <div class="about__header-images">
+                            <img src="img/about/visitors/1.png" alt="">
+                            <img src="img/about/visitors/2.png" alt="">
+                            <img src="img/about/visitors/3.png" alt="">
+                            <img src="img/about/visitors/4.png" alt="">
+                            <img src="img/about/visitors/5.png" alt="">
+                            <img src="img/about/visitors/6.png" alt="">
+                        </div>
+                   </div>
+               </div>
+           </div>
+           <div class="about__items">
+               <div class="about__item about__activities">
+                    <div class="about__col">
+                        <h3>Активы проверенные временем</h3>
+                        <p>Мы поддерживаем 5 самых популярных криптовалют, потому что в вопросах инвестирования «больше» не значит «лучше».</p>
+                        <p>Пока другие инвесторы теряют голову и деньги в сомнительных проектах, вы инвестируете в пионеров индустрии.</p>
+                    </div>
+                    <div class="about__col">
+                        <div class="about__activities-images">
+                            <img src="img/about/activities/1.png" alt="">
+                            <img src="img/about/activities/2.png" alt="">
+                            <img src="img/about/activities/3.png" alt="">
+                            <img src="img/about/activities/4.png" alt="">
+                            <img src="img/about/activities/5.png" alt="">
+                        </div>
+                    </div>
+               </div>
+               <div class="about__item about__you-need about__item--big-image">
+                   <div class="about__col">
+                       <div class="about-big-image about__you-need__image"></div>
+                   </div>
+                   <div class="about__col">
+                       <h3>Все необходимое под рукой</h3>
+                       <p>Любое действие начинается в простом и удобном кабинете инвестора – это единая точка доступа к вашим средствам и операциям.</p>
+                        <ul class="about__list custom-list">
+                            <li>Отправка на сторонние кошельки</li>
+                            <li>Актуальные курсы</li>
+                            <li>История всех операций</li>
+                            <li>Статистика начисления процентов</li>
+                            <li>Постоянная техническая поддержка</li>
+                        </ul>
+                        <a href="" class="btn btn-white btn-shadow w-100">Открыть демо кабинета</a>
+                   </div>
+               </div>
+               <div class="about__item about__security">
+                   <div class="about__col">
+                       <h3>Безопасность в приоритете</h3>
+                       <p>Анонимность цифровых счетов не гарантирует сохранность средств перед лицом злоумышленников. Поэтому мы надежно защищаем ваши счета.</p>
+                        <ul class="custom-list">
+                            <li>Все операции проходят по безопасным платежным каналам. Такими же пользуются банки.</li>
+                            <li>Важные действия требуют два пароля: код приложения Google Authenticator на смартфоне и код, который мы отправляем на почту.</li>
+                        </ul>                                               
+                   </div>
+                   <div class="about__col">
+                       <img src="img/about/security.png" alt="">
+                   </div>
+               </div>
+               <div class="about__item about__accounts about__item--big-image">
+                    <div class="about__col">
+                        <div class="about-big-image about__accounts__image"></div>
+                    </div>
+                    <div class="about__col">
+                        <h3>Два вида счетов</h3>
+                        <p class="heading_p">Ручное управление или автопилот — решаете только вы.</p>
+                        <p><strong>Горячий счет</strong> — это криптовалютный кошелек с неограниченным доступом: пополнение, отправка средств на другие кошельки или вывод на карту с автоматической конвертацией по текущему курсу.</p>
+                        <p><strong>Инвестиционный счет</strong> — это счет вашего криптовалютного вклада, на который ежедневно начисляется фиксированный процент.</p>
+                        <a href="" class="btn btn-white btn-shadow w-100">Стать инвестором</a>
+                    </div>
+                </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="how-it-works">
+       <div class="container">
+           <h2 class="how-it-works__title">Как это работает</h2>
+           <div class="how-it-works__tabs">
+               <div class="how-it-works__tab how-it-works__tab--active" data-item="first">Открытие и управление счетом</div>
+               <div class="how-it-works__tab" data-item="second">Начисление процентов</div>
+           </div>
+           <div class="how-it-works__tab-items">
+                <div class="how-it-works__tab-items__first how-it-works__tab-item active-tab">
+                    <div class="how-it-works__steps">
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__step-top">
+                                <h1>1</h1>
+                                <p class="subtitle"><a href="">Пройдите регистрацию</a> в сервисе</p>
+                                <p>Мы ценим вашу анонимность: потребуется лишь почта, пароль и имя.</p>
+                            </div>
+                            <div class="how-it-works__step-bottom">
+                                <p class="time">Процесс займет 2 минуты</p>
+                            </div>
+                        </div>
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__step-top">
+                                <h1>2</h1>
+                                <p class="subtitle">Выберите криптовалюту и пополните свой счет в личном кабинете</p>
+                                <p>Оплатите криптовалюту за местную валюту или переведите напрямую с другого кошелька.</p>
+                            </div>
+                            <div class="how-it-works__step-bottom">
+                                <p class="time">Для оплаты в местной валюте мы принимаем Qiwi, Яндекс.Деньги, VISA, Mastercard и другие.</p>
+                            </div>
+                        </div>
+                        <div class="how-it-works__step">
+                            <div class="how-it-works__step-top">
+                                <h1>3</h1>
+                                <p class="subtitle">Переведите валюту с горячего счета на инвестиционный.</p>
+                                <p>Выберите срок инвестиции и следите, как сбережения копятся. По истечению срока распоряжайтесь накоплениями как пожелаете!</p>
+                            </div>
+                            <div class="how-it-works__step-bottom">
+                                <p><a href="#">Откуда берутся начисляемые проценты?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-it-works__tab-items__second how-it-works__tab-item">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Дорогу повстречался если, ipsum подпоясал даже себя. Грамматики, живет залетают!</p>
+                </div>
+           </div>
+           <div class="how-it-works__buttons tac">
+                <a href="#" class="btn btn-blue btn-shadow">Открыть инвестиционный счет</a>
+           </div>
+       </div>
+   </section>
+
+   <section class="questions">
+       <div class="container">
+           <h2>Частые вопросы</h2>
+           <div class="questions__items">
+               <div class="questions__item opened">
+                   <div class="questions__question">Я только что написал текст, где еще раз я могу написать такой текст?</div>
+                   <div class="questions__answer">Так, пажжди. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь хуй, скрытый в середине абзаца. </div>
+               </div>
+               <div class="questions__item">
+                    <div class="questions__question">Я только что написал текст, где еще раз я могу написать такой текст?</div>
+                    <div class="questions__answer">Так, пажжди. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь хуй, скрытый в середине абзаца. </div>
+                </div>
+                <div class="questions__item">
+                    <div class="questions__question">Я только что написал текст, где еще раз я могу написать такой текст?</div>
+                    <div class="questions__answer">Так, пажжди. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь хуй, скрытый в середине абзаца. </div>
+                </div>
+                <div class="questions__item">
+                    <div class="questions__question">Я только что написал текст, где еще раз я могу написать такой текст?</div>
+                    <div class="questions__answer">Так, пажжди. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь хуй, скрытый в середине абзаца. </div>
+                </div>
+           </div>
+           <div class="questions__buttons tac">
+               <a href="#" class="btn btn-blue btn-shadow">Задать свой вопрос</a>
+           </div>
+       </div>
+   </section>
+
+    <section class="ending">
+        <div class="container">
+            <div class="ending-wrap">
+                <div class="ending__title">
+                    <h2>Откройте для себя все возможности криптовалют и даже больше</h2>
+                </div>
+                <div class="ending__text">
+                    <a href="#">
+                        <div class="ending__block">
+                            <h3>Создать аккаунт jetwallet®</h3>
+                            <p>Неважно, есть у вас криптовалюта или нет. Следите за курсами, без труда покупайте и получайте процент за хранение в удобном кабинете jetwallet.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer__left">
+                    <div class="logo footer__logo">jetwallet</div>
+                    <div class="footer__copyright">
+                        <p>© 2019 JETWALLET INC. Все права защищены.</p>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">О сервисе</a></li>
+                            <li><a href="#">Условия</a></li>
+                            <li><a href="#">Частые вопросы</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__email email-address">info@jet.wallet</div>
+                        <a href="#">Политика использования персональных данных</a>
+                    </div>
+                    <div class="footer__copyright">
+                        <p>© 2019 JETWALLET INC. Все права защищены.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
