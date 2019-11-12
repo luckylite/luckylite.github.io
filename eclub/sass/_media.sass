@@ -1,0 +1,133 @@
+@media screen and (max-width: 1700px)
+    .container
+        max-width: 1200px
+
+@media screen and (max-width: 1250px)
+    .container
+        max-width: 768px
+
+    .header
+        &__address
+            display: none
+    
+    .card-form
+        padding: 50px 25px
+        h1
+            font-size: 37px
+        &__container
+            width: 671px
+        .progress-bar
+            .progress-bar__item
+                &:last-child
+                    .progress-bar__dot
+                        &::after
+                            width: 44px
+                .progress-bar__dot
+                    &::before
+                        width: 77px
+            &__text
+                width: -38px
+                text-align: center
+        .tabs
+            .tab
+                h2
+                    width: 100%
+                    max-width: 460px
+                    margin-left: auto
+                    margin-right: auto
+                .directions__col
+                    &:first-child
+                        flex-basis: 45%
+                    &:last-child
+                        flex-basis: 55%
+                .form
+                    h2
+                        text-align: center
+                    .ywg-sc
+                        display: block
+                    .ywg-fc
+                        display: none
+                .form__col
+                    &:first-child, &:last-child
+                        flex-basis: 100%
+                    &:first-child
+                        order: 1
+                    &:last-child
+                        order: 0
+            .last-tab
+                padding-top: 60px
+                        
+                    
+
+@media screen and (max-width: 780px)
+    .container
+        max-width: 500px
+
+    .header
+        &__phone
+            .btn
+                display: none
+
+    .card-form
+        padding: 30px 25px
+        h1
+            font-size: 24px
+            max-width: 240px
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 30px
+        &__container
+            max-width: 500px
+            width: 100%
+            padding-top: 100px
+        .progress-bar
+            padding: 0 30px
+            &::before
+                width: 30px
+                top: 11px
+            .progress-bar__item
+                flex-basis: 23%
+                width: 23%
+                &:nth-child(even)
+                    .progress-bar__text
+                        top: -90px
+                .progress-bar__dot
+                    &::before
+                        width: 500%
+                        top: 5px
+                        right: 18px
+                &:last-child
+                    .progress-bar__dot
+                        &::after
+                            width: 30px
+                            top: 4px
+                            left: 17px
+
+    .card-form .tabs .tab ul.big-buttons
+        display: block
+
+    .card-form .tabs .tab ul.big-buttons li
+        height: auto
+        line-height: 1.5
+        padding: 25px
+        margin-bottom: 15px
+    
+    .card-form .progress-bar__text
+        left: -27px
+        font-size: 14px
+
+    .card-form .progress-bar .second-border
+        width: 24px
+        height: 24px
+
+    .card-form .progress-bar__dot
+        width: 18px
+        height: 18px
+        border: 3px solid #fff
+
+    .card-form .tabs .tab .directions
+        display: block
+
+@media screen and (max-width: 450px)
+    .container
+        max-width: 320px
