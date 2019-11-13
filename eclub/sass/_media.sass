@@ -60,13 +60,25 @@
                     
 
 @media screen and (max-width: 780px)
+    .btn
+        padding: 18px 24px
+
+    .card-form .tabs .tab__bottom .btn
+        width: 100%
+
     .container
         max-width: 500px
+
+    .header__phone a
+        margin-right: 0
 
     .header
         &__phone
             .btn
                 display: none
+
+    .last-tab
+        margin-top: -75px
 
     .card-form
         padding: 30px 25px
@@ -128,6 +140,103 @@
     .card-form .tabs .tab .directions
         display: block
 
+@media screen and (max-width: 560px)
+    .card-form .progress-bar .progress-bar__item .progress-bar__dot::before
+        display: none
+    
+    .card-form .progress-bar
+        padding: 0 15px
+
+    .card-form .progress-bar .progress-bar__item:last-child .progress-bar__dot::after
+        width: 23px
+        top: 5px    
+
+    .card-form .progress-bar .progress-bar__item
+        position: relative
+        &::before
+            content: ''
+            width: 100%
+            height: 2px
+            top: 11px
+            background-color: #e8e8e8
+            position: absolute
+            left: 0
+        &:last-child
+            &::before
+                display: none
+        .second-border
+            position: relative
+            z-index: 2
+
+    .header
+        &-wrap
+            height: 66px
+        &__logo
+            img
+                width: auto
+                height: 38px
+
+    .header__phone a
+        font-size: 15px
+
 @media screen and (max-width: 450px)
     .container
-        max-width: 320px
+        width: 100%
+        padding: 0 13px
+    
+    .card-form__container
+        padding: 20px
+        padding-top: 65px
+        max-height: 1250px
+
+    .card-form .progress-bar__text
+        font-size: 13px
+
+    .card-form .progress-bar .progress-bar__item:nth-child(even) .progress-bar__text
+        top: -85px
+
+    .card-form .tabs .tab h2
+        font-size: 17px
+        margin-bottom: 23px
+
+    .card-form .tabs .tab
+        margin-top: 25px
+
+    .card-form .tabs .tab ul.big-buttons li
+        font-size: 15px
+
+    .card-form .tabs .tab__bottom
+        margin-top: 20px
+
+    .card-form .tabs .tab__bottom a
+        font-size: 15px
+
+    .card-form .tabs .tab .directions label
+        font-size: 14px
+
+    .card-form .tabs .tab .directions__col
+        margin-right: 0
+
+    .card-form .tabs .tab .form .card-images img:first-child
+        margin-right: 5px
+
+    .card-form .tabs .tab .form .card-images img
+        width: calc(49% - 3px)
+        border-radius: 15px
+
+    .card-form .tabs .tab .cards-info .card p
+        font-size: 18px
+
+    .card-form .tabs .tab .cards-info .card ul li
+        font-size: 18px
+
+    .card-form .tabs .tab .form .ywg-sc
+        margin-top: 20px
+        margin-bottom: 20px
+
+    .card-form
+        padding-bottom: 140px
+
+    .card-form .tabs .tab .consent
+        font-size: 12px
+        bottom: -65px
