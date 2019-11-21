@@ -50,6 +50,59 @@
         &__item
             font-size: 16px
 
+
+
+
+    // index page
+
+    .main-page .hero__title
+        font-size: 24px
+
+    .main-page .hero__text 
+        font-size: 15px
+        line-height: 28px
+        margin-bottom: 34px
+
+    .main-page .hero-wrap
+        background-position: left center
+        border-radius: 0 25px 25px 0
+        height: 380px
+        padding: 0 20px
+
+    .main-page .hero
+        margin-top: 0
+
+    .main-page .advantages__item h3
+        font-size: 15px
+        margin-bottom: 10px
+
+    .main-page .advantages__item p
+        font-size: 13px
+        width: 93%
+        line-height: 1.6
+
+    .main-page .advantages__item img
+        margin-bottom: 15px
+
+    .main-page .calculator__main
+        display: block
+
+    .main-page .calculator__col
+        width: 100%
+
+    .main-page .about__header img
+        margin: 0 20px
+        margin-bottom: 25px
+
+    .main-page .about__you-need__image, .main-page .about__accounts__image
+        background-size: cover
+
+    .main-page .about__col:last-child
+        width: 45%
+        margin-left: 4%
+        
+        
+
 @media screen and (max-width: 768px)
     .container
         max-width: 540px
@@ -69,6 +122,96 @@
 
     h1
         font-size: 25px
+
+    .main-page .hero-wrap
+        background-image: none
+        min-height: 400px
+        height: auto
+        padding: 20px 0
+
+    .main-page .hero
+        background-image: url(../img/hero-bg.png)
+        background-repeat: no-repeat
+        background-position: center top
+        background-size: 110%
+
+    .main-page .hero__buttons a
+        margin-right: 0
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+
+    .main-page .advantages__items
+        flex-wrap: wrap
+        justify-content: center
+
+    .main-page .advantages__item
+        width: 50%
+        margin-bottom: 45px
+
+    .main-page .advantages
+        margin-bottom: 80px
+
+    .main-page .about__you-need__image, .main-page .about__accounts__image
+        min-width: auto !important
+        right: 0 !important
+        min-height: 350px
+
+    .main-page .about__col
+        width: 100%
+        margin-bottom: 35px
+        margin-left: 0 !important
+
+    .main-page .about__col:last-child
+        width: 100%
+
+    .main-page .about__item
+        flex-wrap: wrap
+        margin-bottom: 50px
+
+    .main-page .calculator
+        margin-bottom: 80px
+
+    .main-page .about
+        margin-bottom: 0
+
+    .main-page .how-it-works
+        margin-bottom: 80px
+
+    .main-page .questions
+        margin-bottom: 80px
+
+    .main-page .ending
+        padding: 50px 0
+
+    .main-page .ending__title, .main-page .ending__text
+        width: 100%
+
+    .main-page .ending__title
+        margin-bottom: 35px
+
+    .main-page .how-it-works__step
+        width: 50%
+        margin-bottom: 30px
+
+    .main-page .how-it-works__steps
+        flex-wrap: wrap
+        justify-content: center
+
+    .main-page .ending-wrap
+        flex-wrap: wrap
+
+    .main-page .questions__item::before
+        left: 25px
+        right: auto
+        top: 25px
+
+    .main-page .questions__question, .main-page .questions .questions__item.opened .questions__answer
+        padding: 25px
+        font-size: 15px
+
+    .main-page .questions__question
+        padding-left: 60px
 
 @media screen and (max-width: 560px)
     .header
@@ -135,6 +278,75 @@
 
     .steps
         display: none
+
+    .main-page .advantages__item
+        width: 100%
+        max-width: 300px
+        margin-bottom: 30px
+
+    .main-page .hero
+        margin-bottom: 50px
+
+    .main-page .advantages
+        margin-bottom: 50px
+
+    .main-page .how-it-works__step
+        width: 100%
+        max-width: 380px
+
+    .main-page .how-it-works__step h1
+        margin-bottom: 15px
+
+    .main-page .hero__text
+        display: none
+
+    .main-page .hero__title
+        font-size: 18px
+
+    .main-page .hero-wrap
+        min-height: auto
+
+    .main-page .how-it-works__step h1::after
+        display: none
+
+    .main-page .hero__buttons a
+        margin-bottom: 8px
+        width: 100%
+
+    .btn
+        font-size: 11px
+
+    .main-page .calculator__col input[type='text']
+        width: 40%
+
+    .main-page .calculator__col select
+        width: 50%
+        padding: 16px 24px
+        font-size: 13px
+        top: -1px
+
+    .main-page .calculator__deadline select
+        padding: 16px 24px
+        padding-right: 40px
+
+    .main-page .calculator__input::after
+        right: 45px
+    
+    .main-page .calculator__col input[type='range']
+        width: 40%
+
+    .main-page .calculator__result .on-balance h1
+        font-size: 30px
+    
+    .main-page .calculator p
+        font-size: 14px
+        margin-bottom: 20px !important
+
+    .main-page .about__text
+        flex-wrap: wrap
+
+    .main-page .about__header-images
+        text-align: left
 
 @media screen and (max-width: 410px)
     .form
