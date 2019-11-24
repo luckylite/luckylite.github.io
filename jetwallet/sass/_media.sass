@@ -355,4 +355,129 @@
             input
                 margin: 0 5px
                 padding: 5px 8px
+
+
+
+
+@media screen and (max-width: 1450px)
+    .dash .overview__header h1
+        font-size: 35px
+
+    .dash .overview .overview-actives__item .item-title h3
+        font-size: 16px
+
+    .dash .overview .overview-actives__item .item-total h1
+        font-size: 30px
+
+    .dash .overview .overview-actives__item .item-profit h3
+        font-size: 12px
+
+    .dash .overview .overview-stats .overview-diagrams__item
+        width: 80%
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+
+@media screen and (max-width: 1300px)
+    .dash .overview .overview-actives__item
+        width: 80%
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 0
+
+    .dash .overview .overview-operats .last-operats__item .item-text h3
+        font-size: 15px
+
+    .dash .overview .overview-operats .last-operats__item .item-info h2
+        font-size: 18px
+
+@media screen and (max-width: 1100px)
+    .dash .overview .overview-actives__item, .dash .overview .overview-stats .overview-diagrams__item
+        width: 100%
+
+    .dash .overview .overview-operats .last-operats__item .item-icon
+        display: none
+
+@media screen and (max-width: 950px)
+    .dash .overview .overview-actives__item
+        padding: 14px
     
+    .dash .overview .overview-stats .overview-diagrams__item
+        padding: 14px
+
+    .dash .overview .overview-operats .last-operats__item
+        display: block
+
+    .dash .overview .overview-operats .last-operats__item .item-text span
+        display: none
+
+    .dash .overview .overview-operats .last-operats__item .item-info
+        display: flex
+        justify-content: space-between
+
+    .dash__right-bar, .dash__notifications-bar
+        width: 250px
+        padding: 0 15px
+
+    .dash__main
+        width: calc(100% - 250px)
+        padding: 0 15px
+
+    .dash__content
+        padding: 0 15px
+
+    .dash .dash-menu__list ul li a span, .dash .dash-menu__bottom ul li a
+        font-size: 12px
+
+    .dash__right-bar
+        border: none
+
+@media screen and (max-width: 768px)
+    .dash .overview .overview-operats h1::after
+        top: 8px
+
+@media screen and (max-width: 560px)
+    .dash .overview .overview-operats h1::after
+        top: 4px
+
+@media screen and (max-width: 750px)
+    .dash__right-bar, .dash__notifications-bar, .dash__menu
+        display: none
+    
+    .dash__main, .dash__content
+        width: 100%
+    
+    .dash__content
+        padding: 40px
+
+    .dash .overview .overview-actives__item, .dash .overview .overview-stats .overview-diagrams__item
+        max-width: 450px
+
+    .dash .overview .overview-operats .last-operats
+        max-width: 450px
+
+    .dash__logo
+        display: none
+
+    .dash .overview .overview-stats .ratio-diagram
+        display: block
+
+    .dash .overview .overview-stats .ratio-diagram .diagram-labels
+        width: 100%
+        max-width: 300px
+        margin: 0 auto
+        margin-bottom: 30px
+
+    .dash .overview .overview-stats .ratio-diagram .diagram-circle
+        width: 70%
+        margin: 0 auto
+
+    .dash .overview .overview-stats .overview-diagrams__item .item-title h3
+        font-size: 12px
+
+    .dash .overview .overview-stats .overview-diagrams__item .item-title select
+        font-size: 10px
+
+    .dash .overview__header select
+        width: 140px
+        padding: 10px

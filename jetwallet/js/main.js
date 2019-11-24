@@ -157,4 +157,15 @@ $(document).ready(function() {
         item.toggleClass('opened');
     });
 
+
+
+
+    $('.dash__right-bar .notifications-icon').click(function() {
+        $('.dash__notifications-bar').addClass('showed');
+    });
+
+    $('.dash__notifications-bar .notifics-hide').click(function() {
+        $('.dash__notifications-bar').removeClass('showed');
+    });
+
 });
