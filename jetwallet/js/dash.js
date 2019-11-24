@@ -22,4 +22,19 @@ $(document).ready(function() {
         $('.mobile-menu-dash .mobile-menu__accounts').toggleClass('hidden');
     });
 
+
+
+
+    $('.form__multiple-inputs input').keyup(function() {
+        var length = $(this).val().length;
+        var id = parseInt($(this).attr('data-input-id'));
+        var parent = $(this).parent();
+        
+        if (length == 1) {
+            parent.children('input[data-input-id="' + (id + 1) + '"]').focus();
+        } else {
+            parent.children('input[data-input-id="' + (id - 1) + '"]').focus();
+        }
+    });
+
 });

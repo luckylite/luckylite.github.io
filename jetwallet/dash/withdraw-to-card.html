@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.min.css">
 
-    <title>main</title>
+    <title>withdraw to card</title>
 </head>
 <body class="main-page">
     
@@ -101,7 +101,13 @@
         <div class="dash-wrap">
             <div class="dash__main">
                 <div class="dash__logo">
-                    <a href="#" class="logo">jetwallet</a>
+                    <div class="dash-logo">
+                        <a href="#" class="logo">jetwallet</a>
+                    </div>
+                    <div class="dash-bread-crumbs bread-crumbs">
+                        <div class="bread-crumbs__item"><a href="#">Обзор</a></div>
+                        <div class="bread-crumbs__item">Вывести на карту</div>
+                    </div>
                 </div>
                 <div class="dash__main-content">
                     <div class="dash__menu dash-menu">
@@ -152,225 +158,54 @@
                     </div>
                     <div class="dash__content">
                         <div class="overview">
+                            <div class="bread-crumbs bread-crumbs--mobile">
+                                <div class="bread-crumbs__item"><a href="#">Обзор</a></div>
+                            </div>
                             <div class="overview__header">
-                                <h1>Обзор</h1>
-                                <div class="overview-select">
-                                    <select name="" id="">
-                                        <option value="">Вчера</option>
-                                        <option value="" selected>Сегодня</option>
-                                        <option value="">Завтра</option>
-                                    </select>
-                                </div>
+                                <h1>Вывести деньги на карту</h1>
                             </div>
-                            <div class="overview__actives overview-actives">
-                                <div class="overview-actives__item all-actives">
-                                    <div class="item-top">
-                                        <div class="item-header">
-                                            <div class="item-title">
-                                                <h3>Всего активов</h3>
-                                                <select name="" id="">
-                                                    <option value="">РУБ</option>
-                                                    <option value="">ГРН</option>
-                                                    <option value="">ЕВРО</option>
-                                                </select><br>
-                                                <p>На всех счетах</p>
-                                            </div>
-                                            <div class="item-icon">
-                                                <img src="../img/wallet.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item-total">
-                                            <h1>194 300<span>,32₽</span></h1>
-                                            <p>≈ 4.342 BTC <span class="up"></span> 24 900,28 ₽ (14,72%)</p>
-                                        </div>
+                            <div class="withdraw-to-card">
+                                <form class="form withdraw-to-card__form" action="">
+                                    <div class="form__field">
+                                        <label for="" class="form__label">Счет</label>
+                                        <select name="" id="" class="form__select">
+                                            <option value="">Bitcoin BTC</option>
+                                            <option value="">Litecoin LTC</option>
+                                            <option value="">Ethereum ETH</option>
+                                        </select>
                                     </div>
-                                    <div class="item-bottom">
-                                        <div class="item-profit">
-                                            <p>Наибольший прирост<br>портфеля за сегодня</p>
-                                            <span><h3>Bitcoin BTC</h3><p><span class="up"></span> +20%</p></span>
-                                        </div>
-                                        <div class="item-buttons">
-                                            <a href="" class="btn btn-blue">Пополнить</a>
-                                            <a href="" class="btn btn-white">Снять</a>
-                                        </div>
+                                    <div class="form__field sum">
+                                        <label for="" class="form__label">Сумма вывода</label>
+                                        <input type="text" class="form__input" placeholder="1.32">
+                                        <select name="" id="" class="form__select">
+                                            <option value="">BTC</option>
+                                            <option value="">LTC</option>
+                                            <option value="">ETH</option>
+                                        </select>
+                                        <p class="form__small-text">Количество BTC или сумма покупки в фиатной валюте (РУБ, USD)</p>
                                     </div>
-                                </div>
-                                <div class="overview-actives__item today-actives">
-                                    <div class="item-top">
-                                        <div class="item-header">
-                                            <div class="item-title">
-                                                <h3>Всего активов</h3>
-                                                <select name="" id="">
-                                                    <option value="">РУБ</option>
-                                                    <option value="">ГРН</option>
-                                                    <option value="">ЕВРО</option>
-                                                </select><br>
-                                                <p>На всех счетах</p>
-                                            </div>
-                                            <div class="item-icon">
-                                                <img src="../img/star.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item-total">
-                                            <h1>194 300<span>,32₽</span></h1>
-                                            <p>≈ 4.342 BTC <span class="up"></span> 24 900,28 ₽ (14,72%)</p>
-                                        </div>
+                                    <div class="form__field card">
+                                        <label for="" class="form__label">Карта для оплаты</label>
+                                        <input type="text" class="form__input" name="card-number" placeholder="Номер карты">
+                                        <input type="text" name="name" class="form__input" placeholder="Имя держателя карты">
+                                        <input type="text" name="date" class="form__input" placeholder="12/19">
+                                        <input type="password" name="csv" class="form__input" placeholder="***">
                                     </div>
-                                    <div class="item-bottom">
-                                        <div class="item-profit">
-                                            <p>Наибольший прирост<br>портфеля за сегодня</p>
-                                            <span><h3>Bitcoin BTC</h3><p><span class="up"></span> +20%</p></span>
-                                        </div>
-                                        <div class="item-profit">
-                                            <p>Наибольший прирост<br>портфеля за сегодня</p>
-                                            <span><h3>Bitcoin BTC</h3><p><span class="up"></span> +20%</p></span>
-                                        </div>
-                                        <div class="item-buttons">
-                                            <a href="" class="btn btn-blue">Пополнить</a>
-                                            <a href="" class="btn btn-white">Снять</a>
-                                        </div>
+                                    <div class="form__field">
+                                        <label for="" class="form__label">Двухфакторное подтверждение</label>                                        
+                                        <div class="form__multiple-inputs">
+                                            <input type="text" data-input-id="1" maxlength="1" placeholder="-">
+                                            <input type="text" data-input-id="2" maxlength="1" placeholder="-">
+                                            <input type="text" data-input-id="3" maxlength="1" placeholder="-">
+                                            <input type="text" data-input-id="4" maxlength="1" placeholder="-">
+                                            <input type="text" data-input-id="5" maxlength="1" placeholder="-">
+                                            <input type="text" data-input-id="6" maxlength="1" placeholder="-">
+                                        </div>                            
                                     </div>
-                                </div>
-                            </div>
-                            <div class="overview__stats overview-stats">
-                                <h2>Статистика активов</h2>
-                                <div class="overview-diagrams">
-                                    <div class="overview-diagrams__item">
-                                        <div class="item-header">
-                                            <div class="item-title">
-                                                <h3>Соотношение</h3>
-                                                <select name="" id="">
-                                                    <option value="">BTC</option>
-                                                    <option value="">LTC</option>
-                                                    <option value="">ETH</option>
-                                                </select>
-                                            </div>
-                                            <div class="item-download">
-                                                <img src="../img/download_icon.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <div class="ratio-diagram">
-                                                <div class="diagram-labels">
-                                                    <div class="diagram-label label-btc">
-                                                        <div class="label-name"><span class="label-color"></span> Bitcoin</div>
-                                                        <div class="label-percent">41 %</div>
-                                                    </div>
-                                                    <div class="diagram-label label-ltc">
-                                                        <div class="label-name"><span class="label-color"></span> Litecoin</div>
-                                                        <div class="label-percent">28 %</div>
-                                                    </div>
-                                                    <div class="diagram-label label-eth">
-                                                        <div class="label-name"><span class="label-color"></span> Ethereum</div>
-                                                        <div class="label-percent">25 %</div>
-                                                    </div>
-                                                    <div class="diagram-label label-anth">
-                                                        <div class="label-name"><span class="label-color"></span> Другое</div>
-                                                        <div class="label-percent">6 %</div>
-                                                    </div>
-                                                </div>
-                                                <div class="diagram-circle">
-                                                    <div id="chart"></div>
-                                                    <div class="diagram-circle__text">
-                                                        <p>Все счета</p>
-                                                        <h3>4.342 <span>BTC</span></h3>
-                                                        <span>100%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="form__button">
+                                        <button class="btn btn-blue w-100">Войти</button>
                                     </div>
-                                    <div class="overview-diagrams__item">
-                                        <div class="item-header">
-                                            <div class="item-title">
-                                                <h3>Стоимость</h3>
-                                                <select name="" id="">
-                                                    <option value="">BTC</option>
-                                                    <option value="">LTC</option>
-                                                    <option value="">ETH</option>
-                                                </select>
-                                                <select name="" id="">
-                                                    <option value="">День</option>
-                                                    <option value="">Неделя</option>
-                                                    <option value="">Месяц</option>
-                                                </select>
-                                            </div>
-                                            <div class="item-download">
-                                                <img src="../img/download_icon.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="item-text">
-                                            <div class="columns-diagram">
-                                                <div id="chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overview__operats overview-operats">
-                                <a href="#"><h1>Последние операции</h1></a>
-                                <div class="last-operats">
-                                    <div class="last-operats__item in-process">
-                                        <div class="item-main">
-                                            <div class="item-icon">
-                                                <img src="../img/operations/btc.svg" alt="">
-                                            </div>
-                                            <div class="item-text">
-                                                <h3>Пополнение Bitcoin с карты (РУБ)</h3>
-                                                <p>2 сентября, понедельник, 19:12</p>
-                                                <span>Bitcoin BTC</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="item-profit">
-                                                <h2>+0.35 <span>BTC</span></h2>
-                                                <p>≈ 89 354,32 ₽</p>
-                                                <span class="item-status in-process">В процессе</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="last-operats__item done">
-                                        <div class="item-main">
-                                            <div class="item-icon">
-                                                <img src="../img/operations/ltc.svg" alt="">
-                                            </div>
-                                            <div class="item-text">
-                                                <h3>Вывод LTC на сторонний кошелек</h3>
-                                                <p>31 августа, среда, 16:36</p>
-                                                <span>Litecoin LTC</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="item-profit">
-                                                <h2>-2.74 <span>LTC</span></h2>
-                                                <p>≈ 89 354,32 ₽</p>
-                                                <span class="item-status done">Исполнено</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="last-operats__item canceled">
-                                        <div class="item-main">
-                                            <div class="item-icon">
-                                                <img src="../img/operations/eth.svg" alt="">
-                                            </div>
-                                            <div class="item-text">
-                                                <h3>Пополнение Ethereum с кошелька</h3>
-                                                <p>2 сентября, понедельник, 19:12</p>
-                                                <span>Ethereum ETH</span>
-                                            </div>
-                                        </div>
-                                        <div class="item-info">
-                                            <div class="item-profit">
-                                                <h2>+7.27 <span>ETH</span></h2>
-                                                <p>≈ 89 354,32 ₽</p>
-                                                <span class="item-status canceled">Отмена</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="last-operats__button">
-                                        <a href="#" class="btn btn-gray d-block">Посмотреть все операции</a>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
